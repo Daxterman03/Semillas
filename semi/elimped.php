@@ -1,11 +1,8 @@
 <?php
 require 'conexion.php';
 require '1a.php';
-
-
-
- ?>
- ?>
+?>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -21,8 +18,6 @@ require '1a.php';
         mysqli_close($conexion);
         echo "lugar eliminado";
     ?>
-
-
-
+    
   </body>
 </html>

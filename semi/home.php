@@ -10,18 +10,16 @@ while($mostrar=mysqli_fetch_assoc($result)) {
 if(!isset($dni)){
     header("location: index");
 } else {
-  ?>
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <h1>bienvenido   <?php echo $mostrar['nombre']; ?></h1>
-  </body>
-</html>
-
-
-  <?php } ?>
+?>
+      <!DOCTYPE html>
+      <html lang="en" dir="ltr">
+        <head>
+          <meta charset="utf-8">
+          <title></title>
+        </head>
+        <body>
+          <h1>Bienvenido<?php echo $mostrar['nombre']; ?></h1>
+        </body>
+      </html>
+        <?php } ?>
 <?php } ?>
