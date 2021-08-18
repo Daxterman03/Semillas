@@ -1,0 +1,33 @@
+*{
+    margin: 0px;
+}
+h1{
+    background: #126E82;
+    color: #D8E3E7;
+    padding-top: 50px;
+    text-align: center;
+    text-transform: uppercase;
+}
+form{
+    margin: 5px 10px;
+    letter-spacing: 1px;
+}
+.form{
+    background: #D8E3E7;
+    color: #132C33;
+    border-radius: 5px;
+}
+.botton{
+    background: #132C33;
+    color: #D8E3E7;
+    border-style: none;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    margin-top: 5px;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+}
+.botton:hover{
+    background: #126E82;
+}

@@ -1,0 +1,106 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    background: #5E8B7E;
+    padding: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+    .menu{
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        height: 175px;
+        width: auto;
+        background: #A7C4BC;
+    }
+        .logo{
+            flex: 1 1 auto;
+        }
+            .logo img{
+                width: 175px;
+                height: 175px;
+                object-fit: contain;
+            }
+        .ventanas{
+            flex: 4 1 auto;
+        }
+            .fas, .far{
+                margin-right: 5px;
+            }
+            .ventanas a{
+                color: #DFEEEA;
+                text-transform: uppercase;
+                padding: 0px 5px;
+            }
+            .ventanas a:hover{
+                color: #5E8B7E;
+            }
+        .registro{
+            flex: 1 1 auto;
+        }
+            .registro a{
+                color: #DFEEEA;
+                text-transform: uppercase;
+                padding: 0px 5px;
+            }
+            .registro a:hover{
+                color: #5E8B7E;
+            }
+.cuerpo{
+    background: #DFEEEA;
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+    display: flex;
+    flex-flow:column nowrap;
+    text-align: center;
+    color: #57837B;
+    height: 20rem;
+}
+    .cuerpo h1{
+        font-size: 50px;
+        padding-top: 5rem;
+    }
+    .cuerpo p{
+        font-size: 20px;
+    }
+.margen-interno{
+    padding: 0px 50px;
+}
+.pie{
+    background: #5E8B7E;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+    .box_izq{
+        padding: 1rem;
+        color: #DFEEEA;
+    }
+        .box_izq b{
+            text-transform: uppercase;
+        }
+    .box_der{
+        padding: 1rem;
+    }
+        .box_der a{
+            color: #DFEEEA;
+            font-size: 25px;
+        }
+        .box_der a:hover{
+            color: white;
+        }
+
+
+@media all and (max-width:700px){
+    .off{display: none;}
+    .ventanas a{font-size: 25px;}
+    .cuerpo h1{font-size: 40px;}
+    .cuerpo p{font-size: 18px;}
+    .box_der a{font-size: 18px;}
+}

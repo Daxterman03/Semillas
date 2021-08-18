@@ -1,0 +1,19 @@
+<?php
+require 'conexion.php';
+require 'navbar.php';
+session_start();
+  $nombre = $_POST['nombre'];
+  $dni = $_POST['dni'];
+
+    $q= "SELECT COUNT(*) as contar from usu1 where nombre = '$nombre ' and dni = '$dni'";
+    $consulta = mysqli_query($conexion,$q);
+    $array = mysqli_fetch_array($consulta);
+
+    if($array['contar']>0){
+      $_SESSION['dni'] = $dni;
+      header("location: /semi/home");
+
+    }else {
+      echo "datos incorrectos";
+    }
+ ?>
