@@ -1,9 +1,5 @@
 <?php
-
 require 'conexion.php';
-
-
-
  ?>
 
 <!DOCTYPE html>
@@ -17,9 +13,7 @@ require 'conexion.php';
       $sql="SELECT * from usu1";
       $result=mysqli_query($conexion,$sql);
       while($mostrar=mysqli_fetch_assoc($result)) {
-
-
-        echo "<tr>";
+          echo "<tr>";
           echo "<td>"; echo $mostrar['nombre']; echo "</td>";
           echo "<td>"; echo $mostrar['apellido']; echo "</td>";
           echo "<td>"; echo $mostrar['mail']; echo "</td>";
@@ -29,8 +23,7 @@ require 'conexion.php';
           echo "<td>"; echo $mostrar['direccion']; echo "</td>";
           echo "<td>"; echo $mostrar['id']; echo "</td>";
           echo "</tr>";
-}
-?>
-    <h1>ello worls</h1>
+      }
+    ?>
   </body>
 </html>
