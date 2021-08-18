@@ -28,19 +28,11 @@
       <title></title>
 
           <style media="screen">
-
-
           form{background-color: rgb(227, 150, 133);
             color: rgb(191, 27, 50);
             margin:0 auto;
             width: 50%;
-
-
               }
-
-
-
-
               body{
                 background-color: rgb(2, 128, 79)
               }
