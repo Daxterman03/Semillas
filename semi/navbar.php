@@ -9,9 +9,9 @@
           | <img src="../semi/css/logo5.png" alt="LogoCultivar">
         </div>
         <div class="ventanas">
-            <a href="/semillas/semi/index.php">Inicio</a>
-            <a href="/semillas/semi/regis1.php">Registrar Usuario</a>
-            <a href="/semillas/semi/inia.php">Administrador</a>
+            <a href="index.php">Inicio</a>
+            <a href="regis1.php">Registrar Usuario</a>
+            <a href="inia.php">Administrador</a>
         </div>
       </nav>
     </header>
