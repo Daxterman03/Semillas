@@ -15,18 +15,18 @@ $inserto = "INSERT INTO usu1 (nombre, apellido, mail, telefono, dni, direccion,i
 
 $veri_usu = mysqli_query($conexion, "SELECT * FROM usu1 WHERE dni = '$dni'");
 if (mysqli_num_rows($veri_usu) > 0){
-echo "el dni ya existe";
+echo "El DNI ya existe";
+header('Location: regis1.php');
 exit;
-
-
 }
 
-//ejecutamos la axion inserto
+//ejecutamos la accion inserto
 $resultado = mysqli_query($conexion, $inserto);
 if (!$resultado) {
-  echo "error al registrar";
+  echo "Error al Registrar";
 }else {
-  echo "registrado correcto";
+  echo "Registrado Correcto";
 }
 mysqli_close($conexion);
+header('Location: login_page.php')
 ?>

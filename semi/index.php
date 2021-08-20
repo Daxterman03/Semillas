@@ -1,43 +1,29 @@
+<?php require('conexion.php') ?>
 
-<?php require 'conexion.php';
-
- require 'navbar.php';
-
- ?>
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <style media="screen">
-      td{
-        text-align: center;
-      }
-      body{
-        background-color: rgb(2, 128, 79)
-      }
-    </style>
-  </head>
-  <body>
-    <h1>Inicio de Sesión</h1>
-    <form action="login.php" method="post">
-      <table>
-        <tr>
-          <td>Nombre</td>
-          <td>
-            <label for="nombre"></label>
-            <input type="text" name="nombre" required  />
-          </td>
-        </tr>
-        <tr>
-          <td>DNI</td>
-          <td>
-            <label for="dni"></label>
-            <input type="text" name="dni" required  />
-          </td>
-        </tr>
-      </table>
-    <input style="width: 100%;" type="submit" value="enviar">
-    </form>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa Cultivar</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <!-- Inclusión de barra de navegación por php -->
+    <?php include('navbar.php') ?>
+
+    <div class="cuerpo">
+        <div class="superior">
+            <img src="css/Logo_Cultivar.png" alt="Logo Programa Cultivar">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, omnis quam numquam est voluptas repudiandae officia rem sit commodi natus minus! Doloremque similique quibusdam tempora possimus? Ipsam laboriosam deleniti laborum.
+            <br>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut labore neque temporibus quo assumenda earum aspernatur quasi in nam, ex excepturi id accusamus mollitia maiores vero repudiandae deleniti! Quibusdam, nihil?
+            </p>
+        </div>
+    </div>
+
+    <!-- Inclusión de pié de página-->
+    <?php include('pie.php') ?>
+</body>
 </html>

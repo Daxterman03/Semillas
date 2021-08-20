@@ -14,7 +14,7 @@
           </div>
           <div class="log_reg">
             <a href="">Ingresar</a>
-            <a href="">Registrarse</a>
+            <a href="regis1.php">Registrarse</a>
           </div>
         </nav>
       </header>

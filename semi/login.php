@@ -1,6 +1,5 @@
 <?php
 require 'conexion.php';
-require 'navbar.php';
 session_start();
   $nombre = $_POST['nombre'];
   $dni = $_POST['dni'];
@@ -11,9 +10,10 @@ session_start();
 
     if($array['contar']>0){
       $_SESSION['dni'] = $dni;
-      header("location: /semi/home");
+      header("location:index.php");
 
     }else {
-      echo "datos incorrectos";
+      echo "Datos Incorrectos";
+      header('location:login_page.php');
     }
  ?>
