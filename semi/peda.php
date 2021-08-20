@@ -12,7 +12,7 @@ require '1a.php';
     </style>
   </head>
   <body>
-    <h1>pedidos</h1>
+    <h1>Pedidos</h1>
     <div class="row">
       <div class="col-sm-12">
       <br>

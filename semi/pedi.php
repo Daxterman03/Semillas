@@ -18,7 +18,7 @@ require '1u.php';
     </style>
   </head>
   <body style="background-color:rgb(0, 0, 0)">
-    <h1>pedidos de semillas</h1>
+    <h1>Pedidos de Semillas</h1>
     <div class="row">
       <div class="col-sm-12">
         <br>

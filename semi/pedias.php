@@ -15,7 +15,7 @@ require 'conexion.php';
 
 
      WHERE id='$id'")
-    or die ("error al modificar");
+    or die ("Error al Modificar");
         mysqli_close($conexion);
-        echo "datos actualisados";
+        echo "Datos Actualizados";
     ?>

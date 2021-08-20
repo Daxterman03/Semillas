@@ -6,7 +6,7 @@
     $sql="SELECT * from lugares where id='$clave'";
     $result=mysqli_query($conexion,$sql);
     while($mostrar=mysqli_fetch_assoc($result)) {
- ?>
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -25,7 +25,7 @@
       </style>
   </head>
   <body>
-    <h1>pedido</h1>
+    <h1>Pedido</h1>
     <form action="envio.php" method="post">
       <table>
         <tr>

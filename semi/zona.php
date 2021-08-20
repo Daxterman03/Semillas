@@ -22,8 +22,4 @@ $inserto = "INSERT INTO lugares (temporada, ano, zona, calle,dia)
   }
   mysqli_close($conexion);
 
-
-
-
-
   ?>
