@@ -10,12 +10,12 @@
     <meta charset="utf-8">
     <title></title>
     <style media="screen">
-    td{
-      text-align: center;
-    }
-    body{
-      background-color: rgb(2, 128, 79)
-    }
+      td{
+        text-align: center;
+      }
+      body{
+        background-color: rgb(2, 128, 79)
+      }
     </style>
   </head>
   <body>

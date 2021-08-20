@@ -1,0 +1,20 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.cuerpo{
+    background: #D8E3E7;
+    padding: 10px;
+}
+    .superior{
+        display: flex;
+    }
+        .superior img{
+            background-color: #132c3380;
+            width: 400px;
+            height: 250px;
+        }
+        .superior p{
+            font-size: 22px;
+        }
