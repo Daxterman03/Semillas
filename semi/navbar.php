@@ -13,7 +13,7 @@
             <a href="">Información del Programa</a>
           </div>
           <div class="log_reg">
-            <a href="">Ingresar</a>
+            <a href="login_page.php">Ingresar</a>
             <a href="regis1.php">Registrarse</a>
           </div>
         </nav>
