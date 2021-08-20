@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="es" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="../semi/css/estilos copy.css">
+    <script src="https://kit.fontawesome.com/5ad54e1f93.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/estilos.css">
   </head>
   <body>
     <header class="header">
         <nav class="menu">
           <div class="ventanas">
-            <a href="index.php">Inicio</a>
-            <a href="">Contacto</a>
-            <a href="">Información del Programa</a>
+            <a href="index.php"><i class="fas fa-home">Inicio</i></a>
+            <a href=""><i class="fas fa-address-book">Contacto</i></a>
+            <a href=""><i class="fas fa-info-circle">Información</i></a>
           </div>
           <div class="log_reg">
             <a href="login_page.php">Ingresar</a>

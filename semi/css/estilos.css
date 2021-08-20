@@ -3,7 +3,9 @@
     margin: 0px;
     text-decoration: none;
 }
-
+.icon{
+    font-size: 200px;
+}
 .header{
     background: #132C33;
     padding: 10px;
