@@ -1,8 +1,26 @@
 *{
     padding: 0px;
     margin: 0px;
+    text-decoration: none;
 }
 
+.header{
+    background: #132C33;
+    padding: 10px;
+}
+    .header a{
+        color: #D8E3E7;
+    }
+    .menu{
+        display: flex;
+        padding: 5px;
+    }
+        .ventanas{
+            flex: 4 1 auto;
+        }
+        .log_reg{
+            flex: 2 1 auto;
+        }
 .cuerpo{
     background: #D8E3E7;
     padding: 10px;
@@ -17,4 +35,22 @@
         }
         .superior p{
             font-size: 22px;
+        }
+
+.pie_pagina{
+    background: #132C33;
+    padding: 10px;
+    display: flex;
+}
+    .info{
+        flex: 3 1 auto;
+    }
+        .info h4{
+            color: #D8E3E7;
+        }
+    .contacto{
+        flex: 2 1 auto;
+    }
+        .contacto a, h6{
+            color: #D8E3E7;
         }

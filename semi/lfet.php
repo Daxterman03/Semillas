@@ -20,7 +20,7 @@ require '1a.php';
     </style>
   </head>
   <body>
-    <h1>datos de lugares</h1>
+    <h1>Datos de Lugares</h1>
     <form action="zona.php" method="post">
       <table>
         <tr>

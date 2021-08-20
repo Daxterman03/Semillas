@@ -27,7 +27,7 @@ require 'conexion.php';
       </style>
     </head>
     <body>
-      <h1>modificar datos de usuario</h1>
+      <h1>Modificar Datos de Usuario</h1>
       <form action="modificara.php" method="post">
         <table>
           <tr>
