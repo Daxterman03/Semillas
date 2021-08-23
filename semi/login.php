@@ -10,7 +10,7 @@ session_start();
 
     if($array['contar']>0){
       $_SESSION['dni'] = $dni;
-      header("location:index.php");
+      header("location:home.php");
 
     }else {
       echo "Datos Incorrectos";
