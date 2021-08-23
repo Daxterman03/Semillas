@@ -8,15 +8,14 @@ require '1u.php';
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <style media="screen">
-      br, td, tr{
-        color:rgb(27, 143, 109);
-        margin-left:35px;
-        margin-right:35px;
-        padding-left:35px;
-        padding-right: 35px;
-       }
+
+
+
     </style>
+
   </head>
+  <link rel="stylesheet" href="css/pedi.css">
+
   <body style="background-color:rgb(0, 0, 0)">
     <h1>Pedidos de Semillas</h1>
     <div class="row">
@@ -29,7 +28,7 @@ require '1u.php';
               <td>Zona</td>
               <td>Calle</td>
               <td>Día</td>
-              <td>ID</td>
+          
           </tr>
           <?php
             $sql="SELECT * from lugares";
@@ -41,12 +40,11 @@ require '1u.php';
                 echo "<td>"; echo $mostrar['zona']; echo "</td>";
                 echo "<td>"; echo $mostrar['calle']; echo "</td>";
                 echo "<td>"; echo $mostrar['dia']; echo "</td>";
-                echo "<td>"; echo $mostrar['id']; echo "</td>";
                 echo "<td>  <a href='ped1.php?id=".$mostrar['id']."'> <button type='button' class='btn btn-success'>pedir</button> </a> </td>";
               echo "</tr>";}?>
         </table>
       </div>
     </div>
   </body>
+      <?php include('pie.php')?>
 </html>
-
