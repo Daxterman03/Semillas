@@ -12,7 +12,9 @@ require '1u.php';
 
 
     </style>
-
+h1{
+  color: rgb(107, 0, 87);
+}
   </head>
   <link rel="stylesheet" href="css/pedi.css">
 
