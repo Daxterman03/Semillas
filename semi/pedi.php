@@ -28,7 +28,6 @@ require '1u.php';
               <td>Zona</td>
               <td>Calle</td>
               <td>Día</td>
-          
           </tr>
           <?php
             $sql="SELECT * from lugares";
