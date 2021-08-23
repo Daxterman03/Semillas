@@ -16,7 +16,7 @@ $inserto = "INSERT INTO usu1 (nombre, apellido, mail, telefono, dni, direccion,i
 $veri_usu = mysqli_query($conexion, "SELECT * FROM usu1 WHERE dni = '$dni'");
 if (mysqli_num_rows($veri_usu) > 0){
 echo "El DNI ya existe";
-
+header('Location: regis1.php');
 exit;
 }
 
@@ -28,5 +28,6 @@ if (!$resultado) {
   echo "Registrado Correcto";
 }
 mysqli_close($conexion);
+header('Location: login_page.php')
 
 ?>
