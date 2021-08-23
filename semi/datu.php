@@ -11,13 +11,17 @@ require 'conexion.php';
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+<link rel="stylesheet" href="css/datu.css">
+      <link rel="stylesheet" href="css/estilos.css">
     <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title></title>
     <style media="screen">
       form{background-color: rgb(227, 150, 133);
-      color: rgb(191, 27, 50);
+      color: rgb(64, 0, 58);
+
       margin:0 auto;
-      width: 50%;
+
       }
       body{
         background-color: rgb(2, 128, 79)
@@ -71,15 +75,15 @@ require 'conexion.php';
           </td>
         </tr>
         <tr>
-          <td>ID</td>
+          <td></td>
           <td>
             <label for="id"></label>
             <input type="hidden" name="id"value="<?php echo $mostrar['id']; ?>" required  />
           </td>
         </tr>
       </table>
-    <input style="width: 100%;" type="submit" value="modificar">
+    <input style=" margin-left: 66px;" type="submit" value="modificar">
     </form>
  <?php } ?>
-          <?php include('pie.php')?>
+     <?php include('pie.php')?>
  </html>
