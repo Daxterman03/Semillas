@@ -15,15 +15,15 @@
     <style media="screen">
       form{
         background-color: rgb(227, 150, 133);
-        color: rgb(191, 27, 50);
-        margin:0 auto;
-        width: 300px;
+        color: rgb(0, 0, 0);
       }
       body{
         background-color: rgb(2, 128, 79)
       }
       </style>
   </head>
+  <link rel="stylesheet" href="css/ped1.css">
+
   <body>
     <h1>Pedido</h1>
     <form action="envio.php" method="post">
@@ -69,7 +69,6 @@
           </td>
         </tr>
         <tr>
-          <td>ID</td>
           <td>
             <label for="id"></label>
             <input type="hidden" name="id"value="<?php echo $mostrar['id']; ?>" required  />
@@ -93,7 +92,7 @@
             </td>
         </tr>
       </table>
-      <input style="width: 300px;" type="submit" value="pedir">
+      <input style="margin-left: 20%;" type="submit" value="pedir">
     </form>
 <?php } ?>
 </html>
