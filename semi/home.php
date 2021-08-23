@@ -18,7 +18,7 @@ if(!isset($dni)){
           <title></title>
         </head>
         <body>
-          <h1>Bienvenido<?php echo $mostrar['nombre']; ?></h1>
+          <h1>Bienvenido <?php echo $mostrar['nombre']; ?></h1>
         </body>
       </html>
         <?php } ?>
