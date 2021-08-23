@@ -81,4 +81,5 @@ require 'conexion.php';
     <input style="width: 100%;" type="submit" value="modificar">
     </form>
  <?php } ?>
+          <?php include('pie.php')?>
  </html>
