@@ -24,9 +24,9 @@ $inserto = "INSERT INTO pdo (temporada, ano, zona, calle, dia, dni)
 //ejecutamos la axion inserto
 $resultado = mysqli_query($conexion, $inserto);
 if (!$resultado) {
-  echo "error al registrar";
+  echo "error al pedir";
 }else {
-  echo "registrado correcto";
+  echo "pedido enviado";
 }
 mysqli_close($conexion);
 ?>
