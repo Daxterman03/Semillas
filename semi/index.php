@@ -21,7 +21,6 @@
             </p>
         </div>
     </div>
-
     <!-- Inclusión de pié de página-->
     <?php include('pie.php') ?>
 </body>
