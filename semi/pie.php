@@ -7,5 +7,6 @@
         <a href="#"><i class="fab fa-facebook-square"></i> Facebook</a>
         <a href="#"><i class="fab fa-instagram-square"></i> Instagram</a>
         <h6><i class="fas fa-phone-square-alt"></i> Celular: 3462 - ******</h6>
+        <a href="inia.php"><i class="fas fa-users-cog"></i></a>
     </div>
 </div>

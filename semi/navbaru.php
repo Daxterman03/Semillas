@@ -8,15 +8,14 @@
   </head>
   <body>
     <header class="header">
-        <nav class="menu">
-
-          <div class="log_reg">
-            <a href="http://localhost/semi/datu">Usuario</a>
-            <a href="http://localhost/semi/pedi">Pedir Semillas</a>
-            <a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSd9aNHOmZ2Ufzgu0JAXUzFBvnrtFixAeSVgwncNUzEYFY7Prw/viewform?usp=sf_link">Cuéntanos cómo te fue con la cosecha</a>
-            <a href="http://localhost/semi/serse">Cerrar Sesión</a>
-          </div>
-        </nav>
-      </header>
+      <nav class="menu">
+        <div class="log_reg">
+          <a href="datu.php">Usuario</a>
+          <a href="pedi.php">Pedir Semillas</a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSd9aNHOmZ2Ufzgu0JAXUzFBvnrtFixAeSVgwncNUzEYFY7Prw/viewform?usp=sf_link">Cuéntanos cómo te fue con la cosecha</a>
+          <a href="serse.php">Cerrar Sesión</a>
+        </div>
+      </nav>
+    </header>
   </body>
 </html>

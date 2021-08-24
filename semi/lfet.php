@@ -7,17 +7,6 @@ require '1a.php';
   <head>
   <meta charset="utf-8">
   <title></title>
-  <style media="screen">
-    td{
-      text-align: center;
-    }
-    form{background-color: rgb(227, 150, 133);
-      color: rgb(191, 27, 50);
-    }
-    body{
-      background-color: rgb(2, 128, 79)
-    }
-    </style>
   </head>
   <body>
     <h1>Datos de Lugares</h1>
@@ -59,13 +48,13 @@ require '1a.php';
           </td>
         </tr>
       </table>
-      <input style="width: 100%;" type="submit" value="enviar">
+      <input type="submit" value="enviar">
     </form>
     <h1>Lugares para el retiro de las semillas</h1>
-    <div class="row">
-      <div class="col-sm-12">
+    <div>
+      <div>
         <br>
-        <table class=" table-success table-striped" style="text-align: center">
+        <table>
           <tr>
             <td>Temporada</td>
             <td>Año</td>
@@ -92,5 +81,6 @@ require '1a.php';
         </table>
       </div>
     </div>
+    <?php include('pie.php') ?>
   </body>
 </html>

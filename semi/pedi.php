@@ -7,16 +7,8 @@ require '1u.php';
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <style media="screen">
-
-
-
-    </style>
-h1{
-  color: rgb(107, 0, 87);
-}
+    <link rel="stylesheet" href="css/pedi.css">
   </head>
-  <link rel="stylesheet" href="css/pedi.css">
 
   <body style="background-color:rgb(0, 0, 0)">
     <h1>Pedidos de Semillas</h1>

@@ -7,17 +7,6 @@ require 'conexion.php';
   <head>
     <meta charset="utf-8">
     <title></title>
-    <style media="screen">
-      td{
-        text-align: center;
-      }
-      form{background-color: rgb(227, 150, 133);
-      color: rgb(191, 27, 50);
-      }
-      body{
-        background-color: rgb(2, 128, 79)
-      }
-     </style>
   </head>
   <body>
     <h1>Inicio de Sesión del Administrador</h1>

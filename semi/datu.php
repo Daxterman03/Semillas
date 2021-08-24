@@ -16,17 +16,6 @@ require 'conexion.php';
     <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title></title>
-    <style media="screen">
-      form{background-color: rgb(227, 150, 133);
-      color: rgb(64, 0, 58);
-
-      margin:0 auto;
-
-      }
-      body{
-        background-color: rgb(2, 128, 79)
-      }
-    </style>
   </head>
   <body>
     <h1>Modificar Datos de Usuario</h1>

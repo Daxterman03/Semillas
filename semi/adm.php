@@ -7,17 +7,6 @@ require 'conexion.php';
   <head>
     <meta charset="utf-8">
     <title></title>
-    <style media="screen">
-    td{
-      text-align: center;
-    }
-    form{background-color: rgb(227, 150, 133);
-      color: rgb(191, 27, 50);
-        }
-        body{
-          background-color: rgb(2, 128, 79)
-        }
-    </style>
   </head>
   <body>
     <h1>Datos del administrador</h1>
@@ -46,7 +35,8 @@ require 'conexion.php';
             <input type="text" name="contra" required  />
           </tr>
         </table>
-        <input style="width: 100%;" type="submit" value="Enviar">
+        <input type="submit" value="Enviar">
       </form>
+      <?php include('pie.php') ?>
   </body>
 </html>

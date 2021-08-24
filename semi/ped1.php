@@ -12,17 +12,8 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <style media="screen">
-      form{
-        background-color: rgb(227, 150, 133);
-        color: rgb(0, 0, 0);
-      }
-      body{
-        background-color: rgb(2, 128, 79)
-      }
-      </style>
+    <link rel="stylesheet" href="css/ped1.css">
   </head>
-  <link rel="stylesheet" href="css/ped1.css">
 
   <body>
     <h1>Pedido</h1>

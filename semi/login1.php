@@ -11,7 +11,7 @@ session_start();
 
     if($array['contar']>0){
       $_SESSION['nombre'] = $nombre;
-      header("location: /semi/admin");
+      header("location: admin.php");
 
     }else {
       echo "datos incorrectos";

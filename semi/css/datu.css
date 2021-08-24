@@ -1,24 +1,24 @@
 @media only screen and (max-width: 600px) {
   input{
-width: 250px;
+    width: 250px;
   }
 }
 
 @media only screen and (min-width: 600px) {
   input{
-width: 310px;
+    width: 310px;
   }
 }
 
 @media only screen and (min-width: 768px) {
   input{
-width: 420px;
+    width: 420px;
   }
 }
 
 @media only screen and (min-width: 992px) {
   input{
-width: 590px;
+    width: 590px;
   }
   h1 {
     text-align: center;
@@ -27,7 +27,7 @@ width: 590px;
 
 @media only screen and (min-width: 1200px) {
   input{
-width: 590px;
+    width: 590px;
   }
   h1 {
     text-align: center;
