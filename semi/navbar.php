@@ -13,7 +13,7 @@
         <nav class="menu">
           <div class="ventanas">
             <a href="index.php"><i class="fas fa-home">Inicio</i></a>
-            <a href=""><i class="fas fa-address-book">Contacto</i></a>
+            <a href="https://venadotuerto.gob.ar/contacto/"><i class="fas fa-address-book">Contacto</i></a>
             <a href=""><i class="fas fa-info-circle">Información</i></a>
           </div>
           <div class="log_reg">
