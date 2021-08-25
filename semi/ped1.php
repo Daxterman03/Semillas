@@ -82,7 +82,7 @@
             </td>
         </tr>
       </table>
-      <input type="submit" value="pedir">
+      <input class="button" type="submit" value="Pedir">
     </form>
     <?php include('pie.php')?>
 <?php } ?>

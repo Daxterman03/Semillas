@@ -40,9 +40,7 @@ require 'conexion.php';
                 <input type="text" name="contra" required  />
               </tr>
             </table>
-            <div class="button">
-              <input type="submit" value="Enviar">
-            </div>
+            <input class="button" type="submit" value="Enviar">
           </form>
         </div>
       </div>

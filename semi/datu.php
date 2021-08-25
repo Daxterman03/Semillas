@@ -75,7 +75,7 @@ require 'conexion.php';
                 </tr>
               </table>
               <div class="button">
-                <input type="submit" value="Modificar">
+                <input class="button" type="submit" value="Modificar">
               </div>
             </form>
           </div>

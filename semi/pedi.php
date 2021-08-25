@@ -31,7 +31,7 @@ require '1u.php';
                 echo "<td>"; echo $mostrar['zona']; echo "</td>";
                 echo "<td>"; echo $mostrar['calle']; echo "</td>";
                 echo "<td>"; echo $mostrar['dia']; echo "</td>";
-                echo "<td>  <a href='ped1.php?id=".$mostrar['id']."'> <button type='button'>pedir</button> </a> </td>";
+                echo "<td>  <a href='ped1.php?id=".$mostrar['id']."'> <button type='button' class='button'>pedir</button> </a> </td>";
               echo "</tr>";}?>
         </table>
       </div>

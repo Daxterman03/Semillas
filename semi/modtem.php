@@ -58,7 +58,7 @@
           </td>
         </tr>
       </table>
-      <input style="width: 300px;" type="submit" value="modificar">
+      <input class="button" type="submit" value="Modificar">
     </form>
   </body>
 </html>

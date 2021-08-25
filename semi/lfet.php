@@ -48,7 +48,7 @@ require '1a.php';
           </td>
         </tr>
       </table>
-      <input type="submit" value="enviar">
+      <input class="button" type="submit" value="enviar">
     </form>
     <h1>Lugares para el retiro de las semillas</h1>
     <div>
@@ -61,7 +61,6 @@ require '1a.php';
             <td>Zona</td>
             <td>Calle</td>
             <td>Día</td>
-            <td>ID</td>
           </tr>
             <?php
               $sql="SELECT * from lugares";
@@ -73,9 +72,8 @@ require '1a.php';
                 echo "<td>"; echo $mostrar['zona']; echo "</td>";
                 echo "<td>"; echo $mostrar['calle']; echo "</td>";
                 echo "<td>"; echo $mostrar['dia']; echo "</td>";
-                echo "<td>"; echo $mostrar['id']; echo "</td>";
-                echo "<td>  <a href='modped.php?id=".$mostrar['id']."'> <button type='button' class='btn btn-success'>modificar</button> </a> </td>";
-                echo "<td> <a href='elimped.php?id=".$mostrar['id']."''><button type='button' class='btn btn-danger'>Eliminar</button></a> </td>";
+                echo "<td>  <a href='modped.php?id=".$mostrar['id']."'> <button type='button' class='button'>modificar</button> </a> </td>";
+                echo "<td> <a href='elimped.php?id=".$mostrar['id']."''><button type='button' class='button'>Eliminar</button></a> </td>";
                 echo "</tr>";}
             ?>
         </table>

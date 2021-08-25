@@ -33,8 +33,8 @@ require '1a.php';
                   echo "<td>"; echo $mostrar['dia']; echo "</td>";
                   echo "<td>"; echo $mostrar['dni']; echo "</td>";
                   echo "<td>"; echo $mostrar['entregado']; echo "</td>";
-                  echo "<td>  <a href='pedias.php?id=".$mostrar['id']."'> <button type='button'>si</button> </a> </td>";
-                  echo "<td> <a href='pedielim.php?id=".$mostrar['id']."''><button type='button'>no</button></a> </td>";
+                  echo "<td>  <a href='pedias.php?id=".$mostrar['id']."'> <button type='button' class='button'>si</button> </a> </td>";
+                  echo "<td> <a href='pedielim.php?id=".$mostrar['id']."''><button type='button' class='button'>no</button></a> </td>";
                 echo "</tr>";}?>
         </table>
       </div>

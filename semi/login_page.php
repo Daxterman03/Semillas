@@ -21,21 +21,17 @@
               <tr>
                 <td>Nombre</td>
                 <td>
-                  <label for="nombre"></label>
                   <input type="text" name="nombre" required  />
                 </td>
               </tr>
               <tr>
                 <td>DNI</td>
                 <td>
-                  <label for="dni"></label>
                   <input type="text" name="dni" required  />
                 </td>
               </tr>
             </table>
-            <div class="button">
-              <input type="submit" value="Enviar">
-            </div>
+            <input class="button" type="submit" value="Enviar">
           </form>
         </div>
       </div>

@@ -68,7 +68,7 @@
                 </td>
               </tr>
             </table>
-            <input type="submit" value="Enviar">
+            <input class="button" type="submit" value="Enviar">
           </form>
         </div>
       </div>

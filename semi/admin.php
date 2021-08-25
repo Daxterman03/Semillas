@@ -61,9 +61,7 @@ require 'conexion.php';
                   </td>
                 </tr>
               </table>
-              <div class="button">
-                <input type="submit" value="modificar">
-              </div>
+              <input class="button" type="submit" value="modificar">
             </form>
           </div>
         </div>
