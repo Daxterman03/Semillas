@@ -19,14 +19,16 @@
           <form action="login.php" method="post">
             <table>
               <tr>
+                <td>Nombre</td>
                 <td>
-                  <label for="nombre">Nombre</label>
+                  <label for="nombre"></label>
                   <input type="text" name="nombre" required  />
                 </td>
               </tr>
               <tr>
+                <td>DNI</td>
                 <td>
-                  <label for="dni">DNI</label>
+                  <label for="dni"></label>
                   <input type="text" name="dni" required  />
                 </td>
               </tr>
