@@ -9,34 +9,44 @@ require 'conexion.php';
     <title></title>
   </head>
   <body>
-    <h1>Datos del administrador</h1>
-      <form action="dat2" method="post">
-        <table>
-          <tr>
-            <td>Nombre</td>
-            <td><label for="nom"></label>
-              <input type="text" name="nombre" required  />
-            </td>
-          </tr>
-          <tr>
-            <td>Apellido</td>
-            <td><label for="apell"></label>
-              <input type="text" name="apellido" required  />
-            </td>
-          </tr>
-          <tr>
-            <td>DNI</td>
-            <td><label for="dni"></label>
-            <input type="text" name="dni" required  />
-          </tr>
-          <tr>
-            <td>Contraseña</td>
-            <td><label for="contra"></label>
-            <input type="text" name="contra" required  />
-          </tr>
-        </table>
-        <input type="submit" value="Enviar">
-      </form>
+    <div class="cuerpo">
+      <div class="form">
+        <div class="form_head">
+          <h1>Datos del administrador</h1>
+        </div>
+        <div class="form_body">
+          <form action="dat2" method="post">
+            <table>
+              <tr>
+                <td>Nombre</td>
+                <td><label for="nom"></label>
+                  <input type="text" name="nombre" required  />
+                </td>
+              </tr>
+              <tr>
+                <td>Apellido</td>
+                <td><label for="apell"></label>
+                  <input type="text" name="apellido" required  />
+                </td>
+              </tr>
+              <tr>
+                <td>DNI</td>
+                <td><label for="dni"></label>
+                <input type="text" name="dni" required  />
+              </tr>
+              <tr>
+                <td>Contraseña</td>
+                <td><label for="contra"></label>
+                <input type="text" name="contra" required  />
+              </tr>
+            </table>
+            <div class="button">
+              <input type="submit" value="Enviar">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
       <?php include('pie.php') ?>
   </body>
 </html>

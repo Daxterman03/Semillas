@@ -8,6 +8,7 @@ font-family: 'Source Sans Pro', sans-serif;*/
 }
 .icon{
     margin-right: 5px;
+    font-size: 20px;
 }
 
 /* CSS DEL NAVBAR */
@@ -52,23 +53,19 @@ font-family: 'Source Sans Pro', sans-serif;*/
         }
 
 .form{
-    background: #96d0e0b0;
+    background: #34525a67;
     padding: 10px;
-    display: flex;
-    width: 200px;
+    width: 300px;
     height: 300px;
+    display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     font-family: 'Source Sans Pro', sans-serif;
     border-radius: 10px;
     border: 3px solid #132C33;
 }
-    .form_head{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-    }
+
 /* CSS DEL PIÉ DE PÁGINA */
 
 .pie_pagina{

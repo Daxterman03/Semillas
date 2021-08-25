@@ -19,21 +19,21 @@
           <form action="login.php" method="post">
             <table>
               <tr>
-                <td>Nombre</td>
                 <td>
-                  <label for="nombre"></label>
+                  <label for="nombre">Nombre</label>
                   <input type="text" name="nombre" required  />
                 </td>
               </tr>
               <tr>
-                <td>DNI</td>
                 <td>
-                  <label for="dni"></label>
+                  <label for="dni">DNI</label>
                   <input type="text" name="dni" required  />
                 </td>
               </tr>
             </table>
-          <input type="submit" value="enviar">
+            <div class="button">
+              <input type="submit" value="Enviar">
+            </div>
           </form>
         </div>
       </div>
