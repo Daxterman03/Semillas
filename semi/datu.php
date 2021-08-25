@@ -11,10 +11,8 @@ require 'conexion.php';
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-<link rel="stylesheet" href="css/datu.css">
-      <link rel="stylesheet" href="css/estilos.css">
     <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title></title>
   </head>
   <body>
@@ -71,7 +69,7 @@ require 'conexion.php';
           </td>
         </tr>
       </table>
-    <input style=" margin-left: 66px;" type="submit" value="modificar">
+    <input type="submit" value="modificar">
     </form>
  <?php } ?>
      <?php include('pie.php')?>

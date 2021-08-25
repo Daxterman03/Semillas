@@ -27,7 +27,8 @@ require 'conexion.php';
           </td>
         </tr>
       </table>
-      <input style="width: 100%;" type="submit" value="Enviar">
+      <input type="submit" value="Enviar">
     </form>
+    <?php include('pie.php')?>
   </body>
 </html>

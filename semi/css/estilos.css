@@ -1,5 +1,4 @@
 /*font-family: 'Montserrat', sans-serif;
-
 font-family: 'Source Sans Pro', sans-serif;*/
 
 *{
@@ -8,14 +7,19 @@ font-family: 'Source Sans Pro', sans-serif;*/
     text-decoration: none;
 }
 .icon{
-    font-size: 200px;
+    margin-right: 5px;
 }
+
+/* CSS DEL NAVBAR */
+
 .header{
     background: #132C33;
     padding: 10px;
+    
 }
     .header a{
         color: #D8E3E7;
+        font-family: 'Montserrat', sans-serif;
     }
     .menu{
         display: flex;
@@ -27,6 +31,9 @@ font-family: 'Source Sans Pro', sans-serif;*/
         .log_reg{
             flex: 2 1 auto;
         }
+
+/* CSS DEL CUERPO DE LAS PÁGINAS */
+
 .cuerpo{
     background: #D8E3E7;
     padding: 10px;
@@ -41,22 +48,41 @@ font-family: 'Source Sans Pro', sans-serif;*/
         }
         .superior p{
             font-size: 22px;
+            font-family: 'Source Sans Pro', sans-serif;
         }
+
+.form{
+    background: #96d0e0b0;
+    padding: 10px;
+    display: flex;
+    width: 200px;
+    height: 300px;
+    flex-direction: column;
+    font-family: 'Source Sans Pro', sans-serif;
+    border-radius: 10px;
+    border: 3px solid #132C33;
+}
+    .form_head{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+/* CSS DEL PIÉ DE PÁGINA */
 
 .pie_pagina{
     background: #132C33;
     padding: 10px;
     display: flex;
 }
+    .pie_pagina h5, h6, a{
+        color: #D8E3E7;
+        font-family: 'Montserrat', sans-serif;
+    }
     .info{
         flex: 3 1 auto;
     }
-        .info h4{
-            color: #D8E3E7;
-        }
     .contacto{
         flex: 2 1 auto;
     }
-        .contacto a, h6{
-            color: #D8E3E7;
-        }

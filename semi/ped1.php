@@ -12,7 +12,6 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <link rel="stylesheet" href="css/ped1.css">
   </head>
 
   <body>
@@ -83,7 +82,8 @@
             </td>
         </tr>
       </table>
-      <input style="margin-left: 20%;" type="submit" value="pedir">
+      <input type="submit" value="pedir">
     </form>
+    <?php include('pie.php')?>
 <?php } ?>
 </html>

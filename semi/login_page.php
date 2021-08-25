@@ -10,27 +10,34 @@
   <body>
 
     <?php include('navbar.php') ?>
-
-    <h1>Inicio de Sesión</h1>
-    <form action="login.php" method="post">
-      <table>
-        <tr>
-          <td>Nombre</td>
-          <td>
-            <label for="nombre"></label>
-            <input type="text" name="nombre" required  />
-          </td>
-        </tr>
-        <tr>
-          <td>DNI</td>
-          <td>
-            <label for="dni"></label>
-            <input type="text" name="dni" required  />
-          </td>
-        </tr>
-      </table>
-    <input type="submit" value="enviar">
-    </form>
+    <div class="cuerpo">
+      <div class="form">
+        <div class="form_head">
+          <h1>Inicio de Sesión</h1>
+        </div>
+        <div class="form_body">
+          <form action="login.php" method="post">
+            <table>
+              <tr>
+                <td>Nombre</td>
+                <td>
+                  <label for="nombre"></label>
+                  <input type="text" name="nombre" required  />
+                </td>
+              </tr>
+              <tr>
+                <td>DNI</td>
+                <td>
+                  <label for="dni"></label>
+                  <input type="text" name="dni" required  />
+                </td>
+              </tr>
+            </table>
+          <input type="submit" value="enviar">
+          </form>
+        </div>
+      </div>
+    </div>
 
     <?php include('pie.php')?>
 

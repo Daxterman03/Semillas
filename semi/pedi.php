@@ -7,15 +7,13 @@ require '1u.php';
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/pedi.css">
   </head>
-
-  <body style="background-color:rgb(0, 0, 0)">
+  <body>
     <h1>Pedidos de Semillas</h1>
-    <div class="row">
-      <div class="col-sm-12">
+    <div>
+      <div>
         <br>
-        <table class=" table-success table-striped" style="text-align: center">
+        <table>
           <tr>
             <td>Temporada</td>
               <td>Año</td>
@@ -33,7 +31,7 @@ require '1u.php';
                 echo "<td>"; echo $mostrar['zona']; echo "</td>";
                 echo "<td>"; echo $mostrar['calle']; echo "</td>";
                 echo "<td>"; echo $mostrar['dia']; echo "</td>";
-                echo "<td>  <a href='ped1.php?id=".$mostrar['id']."'> <button type='button' class='btn btn-success'>pedir</button> </a> </td>";
+                echo "<td>  <a href='ped1.php?id=".$mostrar['id']."'> <button type='button'>pedir</button> </a> </td>";
               echo "</tr>";}?>
         </table>
       </div>
