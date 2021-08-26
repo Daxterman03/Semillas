@@ -16,58 +16,14 @@
           <h1>Ingrese sus datos</h1>
         </div>
         <div class="form_body">
-          <form action="dat1.php" method="post">
-            <table>
-              <tr>
-                <td>Nombre</td>
-                <td>
-                  <label for="nom"></label>
-                  <input type="text" name="nombre" required  />
-                </td>
-              </tr>
-              <tr>
-                <td>Apellido</td>
-                <td>
-                  <label for="apell"></label>
-                  <input type="text" name="apellido" required  />
-                </td>
-              </tr>
-              <tr>
-                <td>Email</td>
-                <td>
-                  <label for="mail"></label>
-                  <input type="text" name="mail" required  />
-                </td>
-              </tr>
-              <tr>
-                <td>Teléfono</td>
-                <td>
-                  <label for="telefono"></label>
-                  <input type="text" name="telefono" required  />
-                </td>
-              </tr>
-              <tr>
-                <td>DNI</td>
-                <td>
-                  <label for="dni"></label>
-                  <input type="text" name="dni" required  />
-                </td>
-              </tr>
-              <tr>
-                <td>Dirección</td>
-                  <td>
-                    <label for="direccion"></label>
-                    <input type="text" name="direccion" required  />
-                  </td>
-              </tr>
-              <tr>
-                <td>Integrantes de la familia</td>
-                <td>
-                  <label for="inte"></label>
-                  <input type="text" name="inte" required  />
-                </td>
-              </tr>
-            </table>
+          <form class="form_order" action="dat1.php" method="post">
+            <input class="entrada" type="text" name="nombre" placeholder="Nombre" required  />
+            <input class="entrada" type="text" name="apellido" placeholder="Apellido" required  />
+            <input class="entrada" type="text" name="mail" placeholder="Mail" required  />
+            <input class="entrada" type="text" name="telefono" placeholder="Teléfono" required  />
+            <input class="entrada" type="text" name="dni" placeholder="DNI" required  />
+            <input class="entrada" type="text" name="direccion" placeholder="Dirección" required  />
+            <input class="entrada" type="text" name="inte" placeholder="Integrantes grupo familiar" required  />
             <input class="button" type="submit" value="Enviar">
           </form>
         </div>

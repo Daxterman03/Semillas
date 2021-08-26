@@ -15,23 +15,9 @@ require 'conexion.php';
           <h1>Inicio de Sesión del Administrador</h1>
         </div>
         <div class="form_body">
-          <form action="login1.php" method="post">
-            <table>
-              <tr>
-                <td>Nombre</td>
-                <td>
-                  <label for="nombre"></label>
-                  <input type="text" name="nombre" required  />
-                </td>
-              </tr>
-              <tr>
-                <td>Contraseña</td>
-                <td>
-                  <label for="contra"></label>
-                  <input type="text" name="contra" required  />
-                </td>
-              </tr>
-            </table>
+          <form class="form_order" action="login1.php" method="post">
+            <input class="entrada" type="text" name="nombre" placeholder="Nombre" required  />
+            <input class="entrada" type="text" name="contra" placeholder="Contraseña" required  />
             <input class="button" type="submit" value="Enviar">
           </form>
         </div>

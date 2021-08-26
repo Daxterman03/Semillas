@@ -16,21 +16,9 @@
           <h1>Inicio de Sesión</h1>
         </div>
         <div class="form_body">
-          <form action="login.php" method="post">
-            <table>
-              <tr>
-                <td>Nombre</td>
-                <td>
-                  <input type="text" name="nombre" required  />
-                </td>
-              </tr>
-              <tr>
-                <td>DNI</td>
-                <td>
-                  <input type="text" name="dni" required  />
-                </td>
-              </tr>
-            </table>
+          <form class="form_order" action="login.php" method="post">
+            <input class="entrada" type="text" name="nombre" placeholder="Nombre" required  />
+            <input class="entrada" type="text" name="dni" placeholder="DNI" required  />
             <input class="button" type="submit" value="Enviar">
           </form>
         </div>

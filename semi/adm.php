@@ -15,31 +15,11 @@ require 'conexion.php';
           <h1>Datos del administrador</h1>
         </div>
         <div class="form_body">
-          <form action="dat2" method="post">
-            <table>
-              <tr>
-                <td>Nombre</td>
-                <td><label for="nom"></label>
-                  <input type="text" name="nombre" required  />
-                </td>
-              </tr>
-              <tr>
-                <td>Apellido</td>
-                <td><label for="apell"></label>
-                  <input type="text" name="apellido" required  />
-                </td>
-              </tr>
-              <tr>
-                <td>DNI</td>
-                <td><label for="dni"></label>
-                <input type="text" name="dni" required  />
-              </tr>
-              <tr>
-                <td>Contraseña</td>
-                <td><label for="contra"></label>
-                <input type="text" name="contra" required  />
-              </tr>
-            </table>
+          <form class="form_order" action="dat2" method="post">
+            <input class="entrada" type="text" name="nombre" placeholder="Nombre" required  />
+            <input class="entrada" type="text" name="apellido" placeholder="Apellido" required  />
+            <input class="entrada" type="text" name="dni" placeholder="DNI" required  />
+            <input class="entrada" type="text" name="contra" placeholder="Contraseña" required  />
             <input class="button" type="submit" value="Enviar">
           </form>
         </div>
