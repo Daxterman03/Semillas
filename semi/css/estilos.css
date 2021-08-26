@@ -21,16 +21,18 @@ font-family: 'Source Sans Pro', sans-serif;*/
     .header a{
         color: #D8E3E7;
         font-family: 'Montserrat', sans-serif;
+        font-size: 22px;
+        margin: 0px 5px;
     }
     .menu{
         display: flex;
-        padding: 5px;
+        padding: 15px;
     }
         .ventanas{
             flex: 4 1 auto;
         }
         .log_reg{
-            flex: 2 1 auto;
+            flex: 0 1 auto;
         }
 
 /* CSS DEL CUERPO DE LAS PÁGINAS */
@@ -54,7 +56,7 @@ font-family: 'Source Sans Pro', sans-serif;*/
 .form{
     background: #34525a67;
     padding: 10px;
-    width: 35vh;
+    width: 300px;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -64,6 +66,13 @@ font-family: 'Source Sans Pro', sans-serif;*/
     border-radius: 10px;
     border: 3px solid #132C33;
 }
+    .form_head{
+        text-align: center;
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #154350;
+    }
     .form_order{
         display: flex;
         flex-flow: column;
