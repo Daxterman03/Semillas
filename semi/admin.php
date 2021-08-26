@@ -23,44 +23,12 @@ require 'conexion.php';
             <h1>Modificar Datos de Usuario</h1>
           </div>
           <div class="form_body">
-            <form action="modificara.php" method="post">
-              <table>
-                <tr>
-                  <td>Nombre</td>
-                  <td>
-                    <label for="nombre"></label>
-                    <input type="text" name="nombre"value="<?php echo $mostrar['nombre']; ?>" required  />
-                  </td>
-                </tr>
-                <tr>
-                  <td>Apellido</td>
-                  <td>
-                    <label for=apellido></label>
-                    <input type="text" name="apellido" value="<?php echo $mostrar['apellido']; ?>"required  />
-                  </td>
-                </tr>
-                <tr>
-                  <td>DNI</td>
-                  <td>
-                    <label for="dni"></label>
-                    <input type="text" name="dni"value="<?php echo $mostrar['dni']; ?>" required  />
-                  </td>
-                </tr>
-                <tr>
-                  <td>Clave</td>
-                  <td>
-                    <label for="contra"></label>
-                    <input type="text" name="contra"value="<?php echo $mostrar['contra']; ?>" required  />
-                  </td>
-                </tr>
-                <tr>
-                  <td>ID</td>
-                  <td>
-                    <label for="id"></label>
-                    <input type="hidden" name="id"value="<?php echo $mostrar['id']; ?>" required  />
-                  </td>
-                </tr>
-              </table>
+            <form class="form_order" action="modificara.php" method="post">
+              <input class="entrada" type="text" name="nombre" placeholder="<?php echo $mostrar['nombre']; ?>" required  />
+              <input class="entrada" type="text" name="apellido" placeholder="<?php echo $mostrar['apellido']; ?>"required  />
+              <input class="entrada" type="text" name="dni" placeholder="<?php echo $mostrar['dni']; ?>" required  />
+              <input class="entrada" type="text" name="contra" placeholder="<?php echo $mostrar['contra']; ?>" required  />
+              <input type="hidden" name="id"value="<?php echo $mostrar['id']; ?>" required  />
               <input class="button" type="submit" value="Modificar">
             </form>
           </div>

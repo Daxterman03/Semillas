@@ -100,7 +100,7 @@ font-family: 'Source Sans Pro', sans-serif;*/
     padding: 10px;
     display: flex;
 }
-    .pie_pagina h5, h6, a{
+    .pie_pagina h5, .pie_pagina h6, .pie_pagina a{
         color: #D8E3E7;
         font-family: 'Montserrat', sans-serif;
     }

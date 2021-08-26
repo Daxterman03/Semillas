@@ -2,7 +2,7 @@
 require '1a.php';
 require 'conexion.php';
 
-//resivimos los datos de regis1
+//recibimos los datos de regis1
   $nombre    = $_POST["nombre"];
   $apellido  = $_POST["apellido"];
   $dni       = $_POST["dni"];
@@ -20,7 +20,7 @@ exit;
 
 }
 
-//ejecutamos la axion inserto
+//ejecutamos la acción inserto
 $resultado = mysqli_query($conexion, $inserto);
 if (!$resultado) {
   echo "error al registrar";

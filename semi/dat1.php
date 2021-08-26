@@ -1,6 +1,6 @@
 <?php require 'conexion.php';
   require 'navbar.php';
-//resivimos los datos de regis1
+//recibimos los datos de regis1
   $nombre    = $_POST["nombre"];
   $apellido  = $_POST["apellido"];
   $mail      = $_POST["mail"];
@@ -20,7 +20,7 @@ header('Location: regis1.php');
 exit;
 }
 
-//ejecutamos la accion inserto
+//ejecutamos la acción inserto
 $resultado = mysqli_query($conexion, $inserto);
 if (!$resultado) {
   echo "Error al Registrar";
