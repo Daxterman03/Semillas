@@ -1,2 +1,2 @@
 # Programa Cultivar
-Página Web del programa Cultivar para presentar en la municipalidad de Venado Tuerto
+Página Web para el programa Cultivar de la Municipalidad de Venado Tuerto.
