@@ -15,6 +15,7 @@
             <a href="index.php"><i class="fas fa-home icon"></i>Inicio</a>
             <a href="https://venadotuerto.gob.ar/contacto/"><i class="fas fa-address-book icon"></i>Contacto</a>
             <a href=""><i class="fas fa-info-circle icon"></i>Información</a>
+            <a href="#"><i class="fas fa-hands icon"></i>Nosotros</a>
           </div>
           <div class="log_reg">
             <a href="login_page.php">Ingresar</a>
