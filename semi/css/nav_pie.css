@@ -1,0 +1,56 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+}
+body{
+    background: #D8E3E7;
+}
+.icon{
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+/* CSS DEL NAVBAR */
+
+.header{
+    background: #132C33;
+    padding: 10px;
+    height: 10vh;
+    
+}
+    .header a{
+        color: #D8E3E7;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 22px;
+        margin: 0px 5px;
+    }
+    .menu{
+        display: flex;
+        padding: 15px;
+    }
+        .ventanas{
+            flex: 4 1 auto;
+        }
+        .log_reg{
+            flex: 0 1 auto;
+        }
+
+/* CSS DEL PIÉ DE PÁGINA */
+
+.pie_pagina{
+    background: #132C33;
+    padding: 10px;
+    display: flex;
+    height: 8vh;
+}
+    .pie_pagina h5, .pie_pagina h6, .pie_pagina a{
+        color: #D8E3E7;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .info{
+        flex: 4 1 auto;
+    }
+    .contacto{
+        flex: 2 1 auto;
+    }

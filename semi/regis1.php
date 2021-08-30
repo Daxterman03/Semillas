@@ -3,13 +3,11 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="css/estilos.css">
   </head>
   <body>
 
     <?php include('navbar.php')?>
+
     <div class="cuerpo">
       <div class="form">
         <div class="form_head">
@@ -29,7 +27,7 @@
         </div>
       </div>
     </div>
-
+    
     <?php include('pie.php') ?>
 
   </body>
