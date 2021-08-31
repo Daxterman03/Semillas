@@ -16,8 +16,8 @@ require 'conexion.php';
     <title></title>
   </head>
     <body>
-      <div class="cuerpo">
-        <div class="form">
+      <div class="cuerpo_forms">
+        <div class="form_reg">
           <div class="form_head">
             <h1>Ingrese sus nuevos datos</h1>
           </div>

@@ -10,13 +10,13 @@
   <body>
 
     <?php include('navbar.php') ?>
-    <div class="cuerpo">
+    <div class="cuerpo_forms">
       <div class="form">
         <div class="form_head">
           <h1>Inicio de Sesión</h1>
         </div>
         <div class="form_body">
-          <form class="form_order" action="login.php" method="post">
+          <form class="form_orderLog" action="login.php" method="post">
             <input class="entrada" type="text" name="nombre" placeholder="Nombre" required  />
             <input class="entrada" type="text" name="dni" placeholder="DNI" required  />
             <input class="button" type="submit" value="Enviar">

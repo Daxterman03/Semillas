@@ -9,13 +9,13 @@ require 'conexion.php';
     <title></title>
   </head>
   <body>
-    <div class="cuerpo">
+    <div class="cuerpo_forms">
       <div class="form">
         <div class="form_head">
           <h1>Datos del administrador</h1>
         </div>
         <div class="form_body">
-          <form class="form_order" action="dat2" method="post">
+          <form class="form_orderLog" action="dat2" method="post">
             <input class="entrada" type="text" name="nombre" placeholder="Nombre" required  />
             <input class="entrada" type="text" name="apellido" placeholder="Apellido" required  />
             <input class="entrada" type="text" name="dni" placeholder="DNI" required  />

@@ -8,8 +8,8 @@
 
     <?php include('navbar.php')?>
 
-    <div class="cuerpo">
-      <div class="form">
+    <div class="cuerpo_forms">
+      <div class="form_reg">
         <div class="form_head">
           <h1>Ingrese sus datos</h1>
         </div>
