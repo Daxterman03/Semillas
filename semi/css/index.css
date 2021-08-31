@@ -20,7 +20,7 @@ font-family: 'Source Sans Pro', sans-serif;*/
     }
         .logoMuni{
             width: 50%;
-            height: 200px;
+            height: 130px;
             float: left;
             text-align: right;
         }
@@ -30,7 +30,7 @@ font-family: 'Source Sans Pro', sans-serif;*/
             }
         .logoProv{
             width: 50%;
-            height: 200px;
+            height: 130px;
             float: left;
         }
             .logoProv img{
