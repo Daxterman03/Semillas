@@ -10,7 +10,7 @@
 
     <div class="cuerpo">
         <div class="superior">
-            <img src="css/Logo_Cultivar.png" alt="Logo Programa Cultivar">
+            <img src="css/logo_cultivar.png" alt="Logo Programa Cultivar">
         </div>
         <div class="logos">
             <div class="logoMuni">

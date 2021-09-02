@@ -16,7 +16,7 @@ body{
 .header{
     background: #132C33;
     padding: 10px;
-    height: 10vh;
+    height: 15%;
 }
     .header a{
         color: #D8E3E7;
@@ -26,7 +26,7 @@ body{
         transition: 500ms;
     }
     .header a:hover{
-        color: #6a8994;
+        color: #ffffff;
         transition: 500ms;
         font-size: 25px;
     }
@@ -47,7 +47,7 @@ body{
     background: #132C33;
     padding: 10px;
     display: flex;
-    height: 10vh;
+    height: 15%;
 }
     .pie_pagina h5, .pie_pagina h6, .pie_pagina a{
         color: #D8E3E7;
@@ -55,9 +55,9 @@ body{
         transition: 500ms;
     }
     .pie_pagina a:hover{
-        color: #6a8994;
+        color: #ffffff;
         transition: 500ms;
-        font-size: 25px;
+        font-size: 20px;
     }
     .info{
         flex: 4 1 auto;
