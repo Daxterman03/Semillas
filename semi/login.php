@@ -13,7 +13,12 @@ session_start();
       header("location:home.php");
 
     }else {
-      echo "Datos Incorrectos";
-      header('location:login_page.php');
+      // Mensaje de alerta con su respectivo redireccionamiento
+      echo '
+      <script type="text/javascript">
+      alert("Datos incorrectos");
+      window.location.href="login_page.php";
+      </script>
+      ';
     }
  ?>
