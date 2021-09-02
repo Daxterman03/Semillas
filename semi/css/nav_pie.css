@@ -16,7 +16,7 @@ body{
 .header{
     background: #132C33;
     padding: 10px;
-    height: 15%;
+    height: 10vh;
 }
     .header a{
         color: #D8E3E7;
@@ -47,7 +47,7 @@ body{
     background: #132C33;
     padding: 10px;
     display: flex;
-    height: 15%;
+    height: 10vh;
 }
     .pie_pagina h5, .pie_pagina h6, .pie_pagina a{
         color: #D8E3E7;

@@ -45,5 +45,11 @@
                 color: #154350;
                 font-size: 18px;
                 font-weight: 600;
+                transition: 150ms;
+            }
+            .button:hover{
+                background: #ffffff;
+                color: #368ca7;
+                transition: 150ms;
             }
 
