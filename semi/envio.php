@@ -3,7 +3,7 @@
  require '1u.php';
 
 
-//resivimos los datos de regis1
+//recibimos los datos de regis1
   $temporada = $_POST['temporada'];
   $ano = $_POST['ano'];
   $zona  = $_POST['zona'];
@@ -13,20 +13,30 @@
 
 //insertamos los datos obtenidos
 $inserto = "INSERT INTO pdo (temporada, ano, zona, calle, dia, dni)
-                      VALUES ('$temporada','$ano','$zona','$calle','$dia','$dni')";
+            VALUES ('$temporada','$ano','$zona','$calle','$dia','$dni')";
 
-                      $veri_ped = mysqli_query($conexion, "SELECT * FROM pdo WHERE dni = '$dni' AND temporada = '$temporada' AND ano = '$ano'");
-                      if (mysqli_num_rows($veri_ped) > 0){
-                      echo "uste ya pidio espere ala siguiente temporada";
-                      exit;
+            $veri_ped = mysqli_query($conexion, "SELECT * FROM pdo WHERE dni = '$dni' AND temporada = '$temporada' AND ano = '$ano'");
+            if (mysqli_num_rows($veri_ped) > 0){
+              echo '
+              <script type="text/javascript">
+              alert("Usted ya encargó las semillas de esta temporada");
+              window.location.href="home.php";
+              </script>
+              ';
+            exit();
 }
 
-//ejecutamos la axion inserto
+//ejecutamos la acción inserto
 $resultado = mysqli_query($conexion, $inserto);
 if (!$resultado) {
   echo "error al pedir";
 }else {
-  echo "pedido enviado";
+  echo '
+  <script type="text/javascript">
+  alert("Su pedido ha sido cargado exitosamente");
+  window.location.href="home.php";
+  </script>
+  ';
 }
 mysqli_close($conexion);
 ?>

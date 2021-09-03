@@ -8,7 +8,7 @@ $result=mysqli_query($conexion,$sql);
 while($mostrar=mysqli_fetch_assoc($result)) {
 
 if(!isset($dni)){
-    header("location: index");
+    header("location: index.php");
 } else {
 ?>
       <!DOCTYPE html>
@@ -16,35 +16,35 @@ if(!isset($dni)){
         <head>
         </head>
         <body>
+          <div class="cuerpo_ped">
           <h1>Bienvenido <?php echo $mostrar['nombre']; ?></h1>
           <h1>Pedidos de Semillas</h1>
-          <div>
-            <div>
-              <br>
-              <table>
-                <tr>
-                  <td>Temporada</td>
-                    <td>Año</td>
-                    <td>Zona</td>
-                    <td>Calle</td>
-                    <td>Día</td>
-                </tr>
-                <?php
-                  $sql="SELECT * from lugares";
-                  $result=mysqli_query($conexion,$sql);
-                  while($mostrar=mysqli_fetch_assoc($result)) {
-                    echo "<tr>";
-                      echo "<td>"; echo $mostrar['temporada']; echo "</td>";
-                      echo "<td>"; echo $mostrar['ano']; echo "</td>";
-                      echo "<td>"; echo $mostrar['zona']; echo "</td>";
-                      echo "<td>"; echo $mostrar['calle']; echo "</td>";
-                      echo "<td>"; echo $mostrar['dia']; echo "</td>";
-                      echo "<td>  <a href='ped1.php?id=".$mostrar['id']."'> <button type='button' class='button'>pedir</button> </a> </td>";
-                    echo "</tr>";}?>
-              </table>
-            </div>
+          <?php
+            $sql="SELECT * from lugares";
+            $result=mysqli_query($conexion,$sql);
+            while($mostrar=mysqli_fetch_assoc($result)) {
+              echo '<div class="pedido">';
+                echo '<div class="temporada">';
+                  echo '<h4>Temporada</h4>'; 
+                  echo '<label for="temporada">'.$mostrar['temporada'].'</label>';
+                  echo '<label for="año">'.$mostrar['ano'].'</label>';
+                echo'</div>';
+                echo '<div class="retiro">';
+                  echo '<h5>Se retira el</h5>';
+                  echo '<label for="fecha">'.$mostrar['dia'].'</label>';
+                echo '</div>';
+                echo '<div class="lugar">';
+                  echo '<h5>Calle</h5>';
+                  echo '<label for="calle">'.$mostrar['calle'].'</label>';
+                  echo '<h5>Zona</h5>';
+                  echo '<label for="zona">'.$mostrar['zona'].'</label>';
+                echo '</div>';
+                echo "<a href='ped1.php?id=".$mostrar['id']."'> <button type='button' class='button'>Pedir</button></a>";
+              echo '</div>';
+          }?>
+          <a class="formulario" href="https://docs.google.com/forms/d/e/1FAIpQLSd9aNHOmZ2Ufzgu0JAXUzFBvnrtFixAeSVgwncNUzEYFY7Prw/viewform?usp=sf_link">Cuéntanos cómo te fue con la cosecha</a>
           </div>
-            <?php include('pie.php')?>
+          <?php include('pie.php')?>
         </body>
       </html>
         <?php } ?>

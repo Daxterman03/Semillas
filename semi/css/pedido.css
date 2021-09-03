@@ -1,0 +1,25 @@
+.cuerpo_ped{
+    padding: 10px;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+    .pedido{
+        padding: 5px;
+        width: 400px;
+        background: #34525a67;
+        border-radius: 10px;
+        border: 3px solid #132C33;
+    }
+        .temporada, .retiro, .lugar{
+            text-align: center;
+        }
+
+.formulario{
+    color: #000;
+    background: #34525a67;
+    border-radius: 5px;
+    border: 2px solid #132C33;
+}

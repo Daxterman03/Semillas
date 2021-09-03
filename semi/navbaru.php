@@ -15,20 +15,19 @@
     <link rel="stylesheet" href="css/nav_pie.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="css/pedido.css">
   </head>
   <body>
     <header class="header">
       <nav class="menu">
         <div class="ventanas">
-          <a href="index.php"><i class="fas fa-home icon"></i>Inicio</a>
+          <a href="home.php"><i class="fas fa-home icon"></i>Inicio</a>
           <a href="https://venadotuerto.gob.ar/contacto/"><i class="fas fa-address-book icon"></i>Contacto</a>
           <a href=""><i class="fas fa-info-circle icon"></i>Información</a>
           <a href="nosotros.php"><i class="fas fa-hands icon"></i>Nosotros</a>
         </div>
         <div class="log_reg">
           <a href="datu.php">Modificar datos</a>
-          <a href="pedi.php">Pedir Semillas</a>
-          <!--<a href="https://docs.google.com/forms/d/e/1FAIpQLSd9aNHOmZ2Ufzgu0JAXUzFBvnrtFixAeSVgwncNUzEYFY7Prw/viewform?usp=sf_link">Cuéntanos cómo te fue con la cosecha</a>-->
           <a href="serse.php">Cerrar Sesión</a>
         </div>
       </nav>

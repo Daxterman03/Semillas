@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/nav_pie.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="css/pedido.css">
   </head>
   <body>
     <header class="header">
