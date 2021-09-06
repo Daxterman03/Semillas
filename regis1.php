@@ -1,0 +1,42 @@
+
+<?php require 'conexion.php';?>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+  </head>
+  
+  <script type= "text/javascript">
+    function ConfirmRegist()   
+    { 
+       var respuesta= confirm("Usted se ha registrado con éxito")
+    }
+    </script>
+
+<body>
+
+    <?php include('navbar.php')?>
+
+    <div class="cuerpo_forms">
+      <div class="form_reg">
+        <div class="form_head">
+          <h1>Ingrese sus datos</h1>
+        </div>
+        <div class="form_body">
+          <form class="form_order" action="dat1.php" method="post">
+            <input class="entrada" type="text" name="nombre" placeholder="Nombre" required  />
+            <input class="entrada" type="text" name="apellido" placeholder="Apellido" required  />
+            <input class="entrada" type="text" name="mail" placeholder="Mail" required  />
+            <input class="entrada" type="text" name="telefono" placeholder="Teléfono" required  />
+            <input class="entrada" type="text" name="dni" placeholder="DNI" required  />
+            <input class="entrada" type="text" name="direccion" placeholder="Dirección" required  />
+            <input class="entrada" type="text" name="inte" placeholder="Integrantes grupo familiar" required  />
+            <input class="button" type="submit" value="Enviar" onclick= "return ConfirmRegist()">
+          </form>
+        </div>
+      </div>
+    </div>
+    
+    <?php include('pie.php') ?>
+
+  </body>
+</html>
