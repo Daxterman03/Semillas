@@ -3,6 +3,12 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <script type= "text/javascript">
+    function ConfirmRegist()   
+    { 
+       var respuesta= confirm("Usted se ha registrado con éxito")
+    }
+    </script>
   </head>
   <body>
 
