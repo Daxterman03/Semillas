@@ -1,0 +1,53 @@
+.text p{
+    text-align: justify;
+    font-size: 19px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-top:20px;
+    margin: 7px;
+    line-height: 150%;
+}
+.imagenes_programa{
+        width: 100%;
+        height: 260px;
+        float: left;
+    
+}
+        .imagen1 {
+            width: 50%; 
+            float: left;
+            text-align: right;
+        }
+            .imagen1 img {
+                width: 50%;
+                padding-top: 7px;
+            }
+
+        .imagen2 {
+            width: 50%;
+            float: left;
+        }  
+            .imagen2 img {
+                width: 50%;
+                padding-top: 7px;
+            }  
+.infoprograma p{
+        font-size: 19px;
+        text-align: justify;
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        padding-top: 15px;
+        margin: 5px;
+        line-height: 150%;
+}
+
+h1 {
+font-weight: normal;
+   font-size: 22px;
+   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   margin-left: 5px;
+}
+
+.maps iframe{
+    width:350px;
+    height:250px;
+    margin: 7px;
+}

@@ -1,0 +1,88 @@
+/*font-family: Apple Chancery, cursive*/
+
+.descripcion {
+    width: 100%;
+    height: auto;
+    
+}
+    .descripcion h1 {
+        font-weight: normal;
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        text-align: center;
+        padding-top: 17px;
+    }
+    .descripcion p {
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 20px;
+        
+        text-align: justify;
+        line-height: 130%;
+        padding: 15px;
+        margin: 5px;
+        background-color: #132C33;
+        color: #D5E5E5;
+        
+        
+    }
+    .contenedores {
+        width: 100%;
+        height: auto;
+        float: left;
+        padding: 7px;
+        
+    }
+        .pasoshuerta {
+            width: 50%;
+            float: left;
+
+    
+        }
+        .pasoshuerta ol {
+            margin: 12px;
+        }
+        .pasoshuerta h1 {
+            font-weight: normal;
+            font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 22px;
+            padding:15px;
+            text-align: center;
+
+        }
+        .pasoshuerta li {
+            margin-left: 30px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            font-size: 20px;
+        }
+        .pasoshuerta p {
+            font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 17px;
+            text-align: justify;
+        }
+        .tutoriales {
+            width: 50%;
+            float: left;
+            height: auto;
+    
+
+        }
+        .tutoriales h1 {
+            font-weight: normal;
+            font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 22px;
+            padding-top: 15px;
+            text-align: center;
+        }
+        .tutoriales iframe {
+            padding-top: 15px;
+            background-position:center;
+            margin:auto;
+            display: block;
+        }
+        .imagencultivar img {
+            padding-top: 22px;
+            margin: auto;
+            display: block;
+            width: 470px;
+            height: 365px;
+        }
