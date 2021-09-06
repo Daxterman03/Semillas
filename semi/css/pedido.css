@@ -1,9 +1,9 @@
 .cuerpo_ped{
-    padding: 10px;
+    padding: 5px;
     height: 70vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
     .pedido{
@@ -23,3 +23,17 @@
     border-radius: 5px;
     border: 2px solid #132C33;
 }
+.ped_realiz{
+    padding: 5px;
+    width: 300px;
+    background: #59a8be;
+    border: 3px solid rgb(41, 14, 138);
+    border-radius: 3px;
+    color: rgb(20, 9, 51);
+}
+    .ped_realiz h1{
+        text-align: center;
+    }
+    .info_ped{
+        padding: 10px 5px;
+    }
