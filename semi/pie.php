@@ -1,6 +1,6 @@
 <div class="pie_pagina">
     <div class="info">
-        <h5>COPYRIGHT "Alumnos 3° Desarrollo de Software, IES N°7"</h5>
+        <h5>COPYRIGHT "Alumnos de 3° año en Desarrollo de Software, IES N°7, Año 2021"</h5>
     </div>
     <div class="contacto">
         <div class="redes">

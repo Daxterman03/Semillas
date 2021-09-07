@@ -16,8 +16,10 @@ body{
 
 .header{
     background: #132C33;
-    padding: 10px;
+    padding: 10px 30px;
     height: 10vh;
+    display: flex;
+    align-items: center;
 }
     .header a{
         color: #D8E3E7;
@@ -32,11 +34,12 @@ body{
         font-size: 25px;
     }
     .menu{
+        width: 100%;
         display: flex;
         padding: 15px;
     }
         .ventanas{
-            flex: 4 1 auto;
+            flex: 5 1 auto;
         }
         .log_reg{
             flex: 0 1 auto;
@@ -46,7 +49,7 @@ body{
 
 .pie_pagina{
     background: #132C33;
-    padding: 10px;
+    padding: 10px 30px;
     display: flex;
     height: 10vh;
 }
@@ -61,6 +64,8 @@ body{
         font-size: 20px;
     }
     .info{
+        display: flex;
+        align-items: center;
         flex: 4 1 auto;
     }
     .contacto{
@@ -75,5 +80,6 @@ body{
             text-align: center;
         }
         .admin{
-            text-align: right;
+            display: flex;
+            justify-content: flex-end;
         }
