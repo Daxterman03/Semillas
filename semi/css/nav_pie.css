@@ -41,6 +41,34 @@ body{
         .log_reg{
             flex: 0 1 auto;
         }
+    
+    .btn-ingre {
+        background-color: #132C33;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        margin: 0px 10px;
+        margin: 0px 10px;
+        transition: 500ms;
+        background-color: Transparent;
+        background-repeat:no-repeat;
+        border: none;
+        cursor:pointer;
+        overflow: hidden;
+    }
+    .btn-regis {
+        background-color: #132C33;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        margin: 0px 10px;
+        margin: 0px 10px;
+        transition: 500ms;
+        background-color: Transparent;
+        background-repeat:no-repeat;
+        border: none;
+        cursor:pointer;
+        overflow: hidden;
+    
+    }
 
 /* CSS DEL PIÉ DE PÁGINA */
 
