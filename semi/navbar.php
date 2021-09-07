@@ -16,21 +16,28 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/forms.css">
     <link rel="stylesheet" href="css/pedido.css">
+    <script src="js/popup.js"></script>
   </head>
   <body>
     <header class="header">
-        <nav class="menu">
-          <div class="ventanas">
-            <a href="index.php"><i class="fas fa-home icon"></i>Inicio</a>
-            <a href="https://venadotuerto.gob.ar/contacto/"><i class="fas fa-address-book icon"></i>Contacto</a>
-            <a href="informacion.php"><i class="fas fa-info-circle icon"></i>Información</a>
-            <a href="nosotros.php"><i class="fas fa-hands icon"></i>Nosotros</a>
-          </div>
-          <div class="log_reg">
-            <a href="login_page.php">Ingresar</a>
-            <a href="regis1.php">Registrarse</a>
-          </div>
-        </nav>
-      </header>
+
+      <nav class="menu">
+
+        <div class="ventanas">
+          <a href="index.php"><i class="fas fa-home icon"></i>Inicio</a>
+          <a href="https://venadotuerto.gob.ar/contacto/"><i class="fas fa-address-book icon"></i>Contacto</a>
+          <a href=""><i class="fas fa-info-circle icon"></i>Información</a>
+          <a href="nosotros.php"><i class="fas fa-hands icon"></i>Nosotros</a>
+        </div>
+
+        <div class="log_reg">
+          <button class="btn-ingre" id='btn-ingre-popup'><a href="login_page.php">Ingresar</a></button>
+          <button class="btn-regis" id='btn-regis-popup'><a href="regis1.php">Registrarse</a></button>
+         </div> 
+
+      </nav>
+
+    </header>
+
   </body>
 </html>

@@ -3,38 +3,48 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <script type= "text/javascript">
-    function ConfirmRegist()   
-    { 
-       var respuesta= confirm("Usted se ha registrado con éxito")
-    }
-    </script>
+    <meta charset="utf-8">  
+    <link rel="stylesheet" href="css/ventana.css">
+    <script src="https://kit.fontawesome.com/5ad54e1f93.js" crossorigin="anonymous"></script>
+
   </head>
   <body>
+    <?php include('index.php')?>
+   
 
-    <?php include('navbar.php')?>
+    <div class="overlay" id='overlay'>
 
-    <div class="cuerpo_forms">
-      <div class="form_reg">
-        <div class="form_head">
-          <h1>Ingrese sus datos</h1>
+      <div class="cuerpo_forms">
+
+        <div class="popup"  id='popup'>
+          <a href="#" id='btn-cerrar-popup' class="btn-cerrar-popup"><i class="fas fa-times" id='btn-cerrar-popup'></i></a>
+
+            <div class="form_head">
+              <h1>Ingrese sus datos</h1>
+            </div>
+
+            <div class="contenedor-inputs">
+
+              <form class="form_order" action="dat1.php" method="post">
+                <input class="entrada" type="text" name="nombre" placeholder="Nombre" required  />
+                <input class="entrada" type="text" name="apellido" placeholder="Apellido" required  />
+                <input class="entrada" type="text" name="mail" placeholder="Mail" required  />
+                <input class="entrada" type="text" name="telefono" placeholder="Teléfono" required  />
+                <input class="entrada" type="text" name="dni" placeholder="DNI" required  />
+                <input class="entrada" type="text" name="direccion" placeholder="Dirección" required  />
+                <input class="entrada" type="text" name="inte" placeholder="Integrantes grupo familiar" required  />
+               <input class="button" type="submit" value="Enviar">
+              </form>
+
+            </div>
+
         </div>
-        <div class="form_body">
-          <form class="form_order" action="dat1.php" method="post">
-            <input class="entrada" type="text" name="nombre" placeholder="Nombre" required  />
-            <input class="entrada" type="text" name="apellido" placeholder="Apellido" required  />
-            <input class="entrada" type="text" name="mail" placeholder="Mail" required  />
-            <input class="entrada" type="text" name="telefono" placeholder="Teléfono" required  />
-            <input class="entrada" type="text" name="dni" placeholder="DNI" required  />
-            <input class="entrada" type="text" name="direccion" placeholder="Dirección" required  />
-            <input class="entrada" type="text" name="inte" placeholder="Integrantes grupo familiar" required  />
-            <input class="button" type="submit" value="Enviar">
-          </form>
-        </div>
+
       </div>
-    </div>
-    
-    <?php include('pie.php') ?>
 
+    </div>
+
+    <script src="js/popupregis.js"></script>
+    
   </body>
 </html>
