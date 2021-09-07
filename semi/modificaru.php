@@ -24,7 +24,7 @@ $direccion = $_POST["direccion"];
        mysqli_close($conexion);
          echo '
          <script type="text/javascript">
-         alert("datos actualisados");
+         alert("Los datos han sido actualizados correctamente");
          window.location.href="datu.php";
          </script>
          ';
