@@ -64,5 +64,16 @@ body{
         flex: 4 1 auto;
     }
     .contacto{
-        flex: 2 1 auto;
+        flex: 0.5 1 auto;
     }
+        .redes{
+            display: flex;
+            justify-content: space-around;
+        }
+        .celular{
+            margin-left: 5px;
+            text-align: center;
+        }
+        .admin{
+            text-align: right;
+        }

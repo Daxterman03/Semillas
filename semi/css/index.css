@@ -3,12 +3,12 @@ font-family: 'Source Sans Pro', sans-serif;*/
 
 .cuerpo{
     padding: 10px;
-    height: 70vh;
+    height: 75vh;
 }
     .superior{
         margin-top: 5vh;
         text-align: center;
-        margin-bottom: 3vh;
+        margin-bottom: 3%;
     }
         .superior img{
             width: 25%;
