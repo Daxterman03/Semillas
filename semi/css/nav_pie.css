@@ -8,6 +8,7 @@ body{
     font-family: 'Source Sans Pro', sans-serif;
 }
 .icon{
+    color: #D8E3E7;
     margin-right: 5px;
     font-size: 25px;
 }
@@ -79,17 +80,18 @@ body{
     background: #132C33;
     padding: 10px 30px;
     display: flex;
+    align-items: center;
     height: 10vh;
 }
-    .pie_pagina h5, .pie_pagina h6, .pie_pagina a{
+    .pie_pagina h5, .pie_pagina h6{
         color: #D8E3E7;
         font-family: 'Montserrat', sans-serif;
         transition: 500ms;
     }
-    .pie_pagina a:hover{
+    .pie_pagina i:hover{
         color: #ffffff;
         transition: 500ms;
-        font-size: 20px;
+        font-size: 35px;
     }
     .info{
         display: flex;
@@ -97,17 +99,27 @@ body{
         flex: 4 1 auto;
     }
     .contacto{
-        flex: 0.5 1 auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex: 0.3 1 auto;
     }
         .redes{
+            margin: 10px 0;
+            width: 100%;
             display: flex;
-            justify-content: space-around;
+            justify-content: space-evenly;
         }
         .celular{
-            margin-left: 5px;
             text-align: center;
+            width: 100%;
+            font-size: 20px;
         }
         .admin{
+            width: 100%;
             display: flex;
             justify-content: flex-end;
         }
+            .admin i{
+                color: #D8E3E7;
+            }

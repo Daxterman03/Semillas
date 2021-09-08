@@ -48,7 +48,6 @@
     opacity: 1;
     transform: scale(1);
 }
-.contenedor-inputs {}
 
 .popup .contenedor-inputs input{
     width: 250px;
