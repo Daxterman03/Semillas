@@ -23,9 +23,9 @@
 
           <div class="contenedor-inputs">
 
-            <form class="form_order" action="login1.php" method="post">
+            <form class="form_order" action="login.php" method="post">
               <input class="entrada" type="text" name="nombre" placeholder="Nombre" required  />
-              <input class="entrada" type="text" name="contra" placeholder="Contraseña" required  />
+              <input class="entrada" type="text" name="dni" placeholder="DNI" required  />
               <input class="button" type="submit" value="Enviar">
             </form>
 
