@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/forms.css">
     <link rel="stylesheet" href="css/pedido.css">
-    <script src="js/popup.js"></script>
   </head>
   <body>
     <header class="header">
@@ -38,6 +37,6 @@
       </nav>
 
     </header>
-
+  
   </body>
 </html>

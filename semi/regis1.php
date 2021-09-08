@@ -44,7 +44,7 @@
 
     </div>
 
-    <script src="js/popupregis.js"></script>
+    <script src="js/popups.js"></script>
     
   </body>
 </html>

@@ -37,7 +37,7 @@
 
     </div>
      
-    <script src="js/popupingres.js"></script>
+    <script src="js/popups.js"></script>
 
 
   </body>

@@ -8,12 +8,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    visibility: hidden;
-    
+    visibility: visible;
 }
 
-.overlay.active { 
-    visibility: visible;
+.overlay.desactive { 
+    visibility: hidden;
 }
 
 .cuerpo_forms{
@@ -40,13 +39,13 @@
     height: auto;
 
     transition: .3s ease all;
-    transform: scale(0.7);
-    opacity: 0;
+    transform: scale(1);
+    opacity: 1;
 }
 
-.popup.active{
-    opacity: 1;
-    transform: scale(1);
+.popup.desactive{
+    opacity: 0;
+    transform: scale(0.7);
 }
 
 .popup .contenedor-inputs input{
