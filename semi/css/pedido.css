@@ -1,6 +1,6 @@
 .cuerpo_ped{
     padding: 5px;
-    height: 70vh;
+    height: 75vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;

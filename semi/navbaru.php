@@ -26,7 +26,7 @@
           <a href="nosotros.php"><i class="fas fa-hands icon"></i>Nosotros</a>
         </div>
         <div class="log_reg">
-          <a href="datu.php">Modificar datos</a>
+          <button class="btn-ingre" id='btn-ingre-popup'><a href="datu.php">Modificar datos</a></button>
           <a href="serse.php">Cerrar Sesión</a>
         </div>
       </nav>

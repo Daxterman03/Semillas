@@ -13,29 +13,38 @@ require 'conexion.php';
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title></title>
+    <link rel="stylesheet" href="css/ventana.css">
   </head>
     <body>
-      <div class="cuerpo_forms">
-        <div class="form_reg">
-          <div class="form_head">
-            <h1>Ingrese sus nuevos datos</h1>
-          </div>
-          <div class="form_body">
-            <form class="form_order" action="modificaru.php" method="post">
-              <input class="entrada" type="text" name="nombre" placeholder="<?php echo $mostrar['nombre']; ?>" required  />
-              <input class="entrada" type="text" name="apellido" placeholder="<?php echo $mostrar['apellido']; ?>"required  />
-              <input class="entrada" type="text" name="dni" placeholder="<?php echo $mostrar['dni']; ?>" required  />
-              <input class="entrada" type="text" name="mail" placeholder="<?php echo $mostrar['mail']; ?>" required  />
-              <input class="entrada" type="text" name="telefono" placeholder="<?php echo $mostrar['telefono']; ?>" required  />
-              <input class="entrada" type="text" name="direccion" placeholder="<?php echo $mostrar['direccion']; ?>" required  />
-              <input type="hidden" name="id"value="<?php echo $mostrar['id']; ?>" required  />
-              <input class="button" type="submit" value="Modificar">
-            </form>
+      <div class="cuerpo">
+
+      </div>
+      <div class="overlay" id="overlay">
+        <div class="cuerpo_forms">
+          <div class="popup" id="popup">
+
+              <a href="#" id='btn-cerrar-popup' class="btn-cerrar-popup"><i class="fas fa-times" id='btn-cerrar-popup'></i></a>
+              <div class="form_head">
+                <h1>Ingrese sus nuevos datos</h1>
+              </div>
+              <div class="contenedor-inputs">
+                <form class="form_order" action="modificaru.php" method="post">
+                  <input class="entrada" type="text" name="nombre" placeholder="Nombre: <?php echo $mostrar['nombre']; ?>" required  />
+                  <input class="entrada" type="text" name="apellido" placeholder="Apellido: <?php echo $mostrar['apellido']; ?>"required  />
+                  <input class="entrada" type="text" name="dni" placeholder="DNI: <?php echo $mostrar['dni']; ?>" required  />
+                  <input class="entrada" type="text" name="mail" placeholder="Mail: <?php echo $mostrar['mail']; ?>" required  />
+                  <input class="entrada" type="text" name="telefono" placeholder="Teléfono: <?php echo $mostrar['telefono']; ?>" required  />
+                  <input class="entrada" type="text" name="direccion" placeholder="Dirección: <?php echo $mostrar['direccion']; ?>" required  />
+                  <input type="hidden" name="id"value="<?php echo $mostrar['id']; ?>" required  />
+                  <input class="button" type="submit" value="Modificar">
+                </form>
+              </div>
+
           </div>
         </div>
       </div>
-      <?php include('pie.php') ?>
+      <script src="js/popups.js"></script>
+      <?php include('pie.php'); ?>
     </body>
     <?php } ?>
  </html>

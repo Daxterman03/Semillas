@@ -16,4 +16,3 @@
         </div>
     </div>
 </div>
-<script src="js/popups.js"></script>
