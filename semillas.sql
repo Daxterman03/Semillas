@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 08-09-2021 a las 23:58:37
+-- Tiempo de generación: 09-09-2021 a las 00:21:49
 -- Versión del servidor: 10.3.20-MariaDB
 -- Versión de PHP: 7.3.12
 
@@ -30,10 +30,10 @@ SET time_zone = "+00:00";
 
 DROP TABLE IF EXISTS `admin`;
 CREATE TABLE IF NOT EXISTS `admin` (
-  `nombre` varchar(252) NOT NULL,
-  `apellido` varchar(252) NOT NULL,
+  `nombre` varchar(45) NOT NULL,
+  `apellido` varchar(69) NOT NULL,
   `dni` varchar(8) NOT NULL,
-  `contra` varchar(252) NOT NULL,
+  `contra` varchar(111) NOT NULL,
   `id` int(252) NOT NULL AUTO_INCREMENT,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
@@ -43,7 +43,7 @@ CREATE TABLE IF NOT EXISTS `admin` (
 --
 
 INSERT INTO `admin` (`nombre`, `apellido`, `dni`, `contra`, `id`) VALUES
-('gui', 'lopez', '41658978', '3315', 2);
+('gui', 'lepezosa42', '41658970', '3315', 2);
 
 -- --------------------------------------------------------
 
@@ -53,12 +53,12 @@ INSERT INTO `admin` (`nombre`, `apellido`, `dni`, `contra`, `id`) VALUES
 
 DROP TABLE IF EXISTS `lugares`;
 CREATE TABLE IF NOT EXISTS `lugares` (
-  `temporada` varchar(252) NOT NULL,
-  `ano` int(252) NOT NULL,
-  `zona` varchar(252) NOT NULL,
-  `calle` varchar(252) NOT NULL,
+  `temporada` varchar(26) NOT NULL,
+  `ano` int(4) NOT NULL,
+  `zona` varchar(18) NOT NULL,
+  `calle` varchar(33) NOT NULL,
   `dia` date NOT NULL,
-  `id` int(252) NOT NULL AUTO_INCREMENT,
+  `id` int(68) NOT NULL AUTO_INCREMENT,
   PRIMARY KEY (`id`),
   UNIQUE KEY `id` (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=17 DEFAULT CHARSET=latin1;
@@ -72,7 +72,6 @@ INSERT INTO `lugares` (`temporada`, `ano`, `zona`, `calle`, `dia`, `id`) VALUES
 ('otono-invierno', 2024, 'sentro', 'sopa 4', '2024-08-09', 15),
 ('otono-invierno', 2024, 'sur', 'miki12', '2021-08-26', 10),
 ('otono-invierno', 2024, 'norte', 'espana2059', '2024-02-02', 14),
-('otono-invierno', 2024, 'sur', 'espana2059', '2024-02-02', 13),
 ('otono-invierno', 2028, 'sur', 'espana2059', '2029-02-02', 11);
 
 -- --------------------------------------------------------
@@ -83,13 +82,13 @@ INSERT INTO `lugares` (`temporada`, `ano`, `zona`, `calle`, `dia`, `id`) VALUES
 
 DROP TABLE IF EXISTS `pdo`;
 CREATE TABLE IF NOT EXISTS `pdo` (
-  `temporada` varchar(252) NOT NULL,
+  `temporada` varchar(35) NOT NULL,
   `ano` int(4) NOT NULL,
-  `zona` varchar(252) NOT NULL,
-  `calle` varchar(252) NOT NULL,
+  `zona` varchar(20) NOT NULL,
+  `calle` varchar(33) NOT NULL,
   `dia` date NOT NULL,
   `dni` int(8) NOT NULL,
-  `entregado` varchar(252) DEFAULT NULL,
+  `entregado` varchar(4) DEFAULT NULL,
   `id` int(99) NOT NULL AUTO_INCREMENT,
   PRIMARY KEY (`id`),
   UNIQUE KEY `id` (`id`)
@@ -126,14 +125,14 @@ CREATE TABLE IF NOT EXISTS `simillas` (
 
 DROP TABLE IF EXISTS `usu1`;
 CREATE TABLE IF NOT EXISTS `usu1` (
-  `nombre` varchar(258) NOT NULL,
-  `apellido` varchar(352) NOT NULL,
-  `mail` varchar(547) NOT NULL,
-  `telefono` bigint(20) NOT NULL,
+  `nombre` varchar(63) NOT NULL,
+  `apellido` varchar(55) NOT NULL,
+  `mail` varchar(99) NOT NULL,
+  `telefono` bigint(22) NOT NULL,
   `dni` int(8) NOT NULL,
-  `direccion` varchar(689) NOT NULL,
+  `direccion` varchar(69) NOT NULL,
   `inte` int(3) NOT NULL,
-  `id` int(252) NOT NULL AUTO_INCREMENT,
+  `id` int(28) NOT NULL AUTO_INCREMENT,
   PRIMARY KEY (`id`),
   UNIQUE KEY `id` (`id`),
   UNIQUE KEY `dni` (`dni`)
@@ -144,7 +143,7 @@ CREATE TABLE IF NOT EXISTS `usu1` (
 --
 
 INSERT INTO `usu1` (`nombre`, `apellido`, `mail`, `telefono`, `dni`, `direccion`, `inte`, `id`) VALUES
-('gui', 'pegoraro', 'guillermojesus15@gmail.com', 3462368526, 41658970, 'espana1234', 5, 3),
+('gui', 'pegoraro', 'guillermojesus15@gmail.com', 3462368526, 41658970, 'espana2059', 5, 3),
 ('guuuuuu', 'pego', 'asdw', 436982, 41658972, 'saww', 8, 7),
 ('gui', 'lopez', 'jula@hotmail.com', 9874565848, 41658971, 'lopez587', 5, 6),
 ('guillermo', 'pegorarto', 'guillermojesus15@gmail.com', 6542378, 416589702, 'sarmiento 4', 8, 8),
