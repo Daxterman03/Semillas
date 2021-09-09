@@ -26,14 +26,27 @@
             <div class="contenedor-inputs">
 
               <form class="form_order" action="dat1.php" method="post">
-                <input class="entrada" type="text" name="nombre" placeholder="Nombre" required  />
-                <input class="entrada" type="text" name="apellido" placeholder="Apellido" required  />
-                <input class="entrada" type="text" name="mail" placeholder="Mail" required  />
-                <input class="entrada" type="text" name="telefono" placeholder="Teléfono" required  />
-                <input class="entrada" type="text" name="dni" placeholder="DNI" required  />
-                <input class="entrada" type="text" name="direccion" placeholder="Dirección" required  />
-                <input class="entrada" type="text" name="inte" placeholder="Integrantes grupo familiar" required  />
-               <input class="button" type="submit" value="Enviar">
+                <div class="dosColum">
+
+                
+                  <div class="miColumna">
+                    <input class="entrada" type="text" name="nombre" placeholder="Nombre" required  />
+                    <input class="entrada" type="text" name="apellido" placeholder="Apellido" required  />
+                    <input class="entrada" type="text" name="mail" placeholder="Mail" required  />
+                    <input class="entrada" type="text" name="telefono" placeholder="Teléfono" required  />
+
+                  </div>
+          
+                  <div class="miColumna">
+                    <input class="entrada" type="text" name="dni" placeholder="DNI" required  />
+                    <input class="entrada" type="text" name="direccion" placeholder="Dirección" required  />
+                    <input class="entrada" type="text" name="inte" placeholder="Integrantes grupo familiar" required  />
+                    <button class="button-modal" type="submit">Enviar</button>
+
+                  </div>
+                </div>
+                
+                
               </form>
 
             </div>

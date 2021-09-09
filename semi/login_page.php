@@ -26,7 +26,8 @@
             <form class="form_order" action="login.php" method="post">
               <input class="entrada" type="text" name="nombre" placeholder="Nombre" required  />
               <input class="entrada" type="text" name="dni" placeholder="DNI" required  />
-              <input class="button" type="submit" value="Enviar">
+             
+              <button class="button-modal" type="submit">Enviar</button>
             </form>
 
           </div>
