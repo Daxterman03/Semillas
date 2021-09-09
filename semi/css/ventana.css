@@ -35,10 +35,10 @@
     font-family: 'Montserrat', sans-serif;
     padding: 20px;
     text-align: center;
-    width: 300px;
+    width: 50%;
     height: auto;
 
-    transition: .3s ease all;
+    transition: .5s ease all;
     transform: scale(1);
     opacity: 1;
 }
@@ -73,22 +73,24 @@
     text-align: center;
 }
 
-.button {
-    
+.button-modal{
+    width: 76%;
+    height: 60px;
     padding: 5px;
     border: 2px solid #132C33;
     border-radius: 10px;
-    background: #D8E3E7;
-    color: #154350;
+    background: #126e82;
+    color: #fff;
     font-size: 18px;
     font-weight: 600;
     transition: 150ms;
     cursor: pointer;
-    }
-    .button:hover{
-        background: #ffffff;
-        color: #368ca7;
-        transition: 150ms;
+    
+}
+.button-modal:hover{
+    background: #ffffff;
+    color: #000;
+    transition: 150ms;
 }
 
 .popup .btn-cerrar-popup {
@@ -101,4 +103,12 @@
 }
 .popup .btn-cerrar-popup:hover {
     color: #000;
+}
+
+.dosColum {
+    float: left;
+}
+.miColumna {
+    width: 50%;
+    float: left;
 }
