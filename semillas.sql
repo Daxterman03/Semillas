@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 18-08-2021 a las 23:38:41
+-- Tiempo de generación: 08-09-2021 a las 23:58:37
 -- Versión del servidor: 10.3.20-MariaDB
 -- Versión de PHP: 7.3.12
 
@@ -32,7 +32,7 @@ DROP TABLE IF EXISTS `admin`;
 CREATE TABLE IF NOT EXISTS `admin` (
   `nombre` varchar(252) NOT NULL,
   `apellido` varchar(252) NOT NULL,
-  `dni` varchar(252) NOT NULL,
+  `dni` varchar(8) NOT NULL,
   `contra` varchar(252) NOT NULL,
   `id` int(252) NOT NULL AUTO_INCREMENT,
   PRIMARY KEY (`id`)
@@ -44,31 +44,6 @@ CREATE TABLE IF NOT EXISTS `admin` (
 
 INSERT INTO `admin` (`nombre`, `apellido`, `dni`, `contra`, `id`) VALUES
 ('gui', 'lopez', '41658978', '3315', 2);
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `fecha`
---
-
-DROP TABLE IF EXISTS `fecha`;
-CREATE TABLE IF NOT EXISTS `fecha` (
-  `temporada` varchar(253) NOT NULL,
-  `desde` date NOT NULL,
-  `asta` date NOT NULL,
-  `id` int(5) NOT NULL AUTO_INCREMENT,
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `id` (`id`),
-  UNIQUE KEY `id_2` (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
-
---
--- Volcado de datos para la tabla `fecha`
---
-
-INSERT INTO `fecha` (`temporada`, `desde`, `asta`, `id`) VALUES
-('otono-invierno 2021', '2021-06-18', '2222-02-02', 1),
-('primavera-verano 2021', '2021-10-18', '2022-07-21', 2);
 
 -- --------------------------------------------------------
 
@@ -86,30 +61,19 @@ CREATE TABLE IF NOT EXISTS `lugares` (
   `id` int(252) NOT NULL AUTO_INCREMENT,
   PRIMARY KEY (`id`),
   UNIQUE KEY `id` (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=17 DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `lugares`
 --
 
 INSERT INTO `lugares` (`temporada`, `ano`, `zona`, `calle`, `dia`, `id`) VALUES
-('otono-invierno', 2024, 'sur', 'miki12', '2021-08-26', 10);
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `mensaje`
---
-
-DROP TABLE IF EXISTS `mensaje`;
-CREATE TABLE IF NOT EXISTS `mensaje` (
-  `nombre` varchar(252) NOT NULL,
-  `apellido` varchar(252) NOT NULL,
-  `mail` varchar(252) NOT NULL,
-  `id` int(252) NOT NULL AUTO_INCREMENT,
-  `mensaje` varchar(55522) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+('primavera-verano', 2024, 'sur', 'espana2059', '2024-02-02', 16),
+('otono-invierno', 2024, 'sentro', 'sopa 4', '2024-08-09', 15),
+('otono-invierno', 2024, 'sur', 'miki12', '2021-08-26', 10),
+('otono-invierno', 2024, 'norte', 'espana2059', '2024-02-02', 14),
+('otono-invierno', 2024, 'sur', 'espana2059', '2024-02-02', 13),
+('otono-invierno', 2028, 'sur', 'espana2059', '2029-02-02', 11);
 
 -- --------------------------------------------------------
 
@@ -120,44 +84,25 @@ CREATE TABLE IF NOT EXISTS `mensaje` (
 DROP TABLE IF EXISTS `pdo`;
 CREATE TABLE IF NOT EXISTS `pdo` (
   `temporada` varchar(252) NOT NULL,
-  `ano` int(252) NOT NULL,
+  `ano` int(4) NOT NULL,
   `zona` varchar(252) NOT NULL,
   `calle` varchar(252) NOT NULL,
   `dia` date NOT NULL,
-  `dni` bigint(252) NOT NULL,
+  `dni` int(8) NOT NULL,
   `entregado` varchar(252) DEFAULT NULL,
   `id` int(99) NOT NULL AUTO_INCREMENT,
   PRIMARY KEY (`id`),
   UNIQUE KEY `id` (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=16 DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `pdo`
 --
 
 INSERT INTO `pdo` (`temporada`, `ano`, `zona`, `calle`, `dia`, `dni`, `entregado`, `id`) VALUES
-('otono_invierno', 2021, 'sur', 'espana2059', '2022-02-02', 41658970, 'si', 2),
-('otono_invierno', 2021, 'sur', 'espana2059', '2022-02-02', 41658970, 'si', 3),
-('otono_invierno', 2022, 'sur2', 'carne 222', '2021-06-28', 41658970, 'si', 4);
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `pdog`
---
-
-DROP TABLE IF EXISTS `pdog`;
-CREATE TABLE IF NOT EXISTS `pdog` (
-  `temporada` varchar(252) NOT NULL,
-  `ano` int(252) NOT NULL,
-  `zona` varchar(252) NOT NULL,
-  `calle` varchar(252) NOT NULL,
-  `dia` date NOT NULL,
-  `dni` int(252) NOT NULL,
-  `id` int(252) NOT NULL,
-  `id2` int(252) NOT NULL AUTO_INCREMENT,
-  PRIMARY KEY (`id2`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+('otono-invierno', 2028, 'sur', 'espana2059', '2029-02-02', 41658970, NULL, 15),
+('primavera-verano', 2024, 'sur', 'espana2059', '2024-02-02', 41658970, NULL, 13),
+('otono-invierno', 2024, 'sur', 'miki12', '2021-08-26', 41658970, NULL, 14);
 
 -- --------------------------------------------------------
 
@@ -176,30 +121,6 @@ CREATE TABLE IF NOT EXISTS `simillas` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `tutorial`
---
-
-DROP TABLE IF EXISTS `tutorial`;
-CREATE TABLE IF NOT EXISTS `tutorial` (
-  `nombre` varchar(252) NOT NULL,
-  `pag` longtext NOT NULL,
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `id` (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
-
---
--- Volcado de datos para la tabla `tutorial`
---
-
-INSERT INTO `tutorial` (`nombre`, `pag`, `id`) VALUES
-('juan', 'sdv', 1),
-('como plantar tomate', 'https://www.youtube.com/watch?v=hLmOfHPRtfQ', 2),
-('gui', 'sdv', 3);
-
--- --------------------------------------------------------
-
---
 -- Estructura de tabla para la tabla `usu1`
 --
 
@@ -209,26 +130,27 @@ CREATE TABLE IF NOT EXISTS `usu1` (
   `apellido` varchar(352) NOT NULL,
   `mail` varchar(547) NOT NULL,
   `telefono` bigint(20) NOT NULL,
-  `dni` int(252) NOT NULL,
+  `dni` int(8) NOT NULL,
   `direccion` varchar(689) NOT NULL,
-  `inte` int(252) NOT NULL,
+  `inte` int(3) NOT NULL,
   `id` int(252) NOT NULL AUTO_INCREMENT,
   PRIMARY KEY (`id`),
   UNIQUE KEY `id` (`id`),
   UNIQUE KEY `dni` (`dni`)
-) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `usu1`
 --
 
 INSERT INTO `usu1` (`nombre`, `apellido`, `mail`, `telefono`, `dni`, `direccion`, `inte`, `id`) VALUES
-('gui', 'pegoraroo', 'guillermojesus15@gmail.com', 3462368526, 41658970, 'espana2059', 5, 3),
+('gui', 'pegoraro', 'guillermojesus15@gmail.com', 3462368526, 41658970, 'espana1234', 5, 3),
 ('guuuuuu', 'pego', 'asdw', 436982, 41658972, 'saww', 8, 7),
 ('gui', 'lopez', 'jula@hotmail.com', 9874565848, 41658971, 'lopez587', 5, 6),
 ('guillermo', 'pegorarto', 'guillermojesus15@gmail.com', 6542378, 416589702, 'sarmiento 4', 8, 8),
 ('gui', 'lopez', 'jula@hotmail.com', 9874565848, 41658978, 'lopez587', 6, 9),
-('gui', 'lopez', 'jula@hotmail.com', 9874565848, 41658987, 'lopez587', 9, 10);
+('gui', 'lopez', 'jula@hotmail.com', 9874565848, 41658987, 'lopez587', 9, 10),
+('gui', 'asdwd', 'dedit2@hotmail.com', 7856485, 1534567, 'xzc', 5, 11);
 
 -- --------------------------------------------------------
 
