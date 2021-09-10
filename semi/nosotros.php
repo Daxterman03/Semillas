@@ -5,7 +5,15 @@
 </head>
 <body>
 
-    <?php include('navbar.php') ?>
+    <?php 
+        session_start();
+        $dni = $_SESSION['dni'];
+        if(!isset($dni)){
+            include('navbar.php');
+        } else {
+            include('navbaru.php');
+        }
+     ?>
 
     <div class="text">
         <div>
