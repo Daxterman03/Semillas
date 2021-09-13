@@ -39,17 +39,15 @@
             }
             .button{
                 padding: 5px;
-                border: 2px solid #132C33;
+                border: 2px solid var(--nar-osc);
                 border-radius: 10px;
-                background: #D8E3E7;
-                color: #154350;
+                background: var(--blanco);
+                color: var(--nar-osc);
                 font-size: 18px;
                 font-weight: 600;
                 transition: 150ms;
             }
             .button:hover{
-                background: #ffffff;
-                color: #368ca7;
                 transition: 150ms;
             }
 

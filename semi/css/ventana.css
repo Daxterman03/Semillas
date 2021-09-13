@@ -79,8 +79,8 @@
     padding: 5px;
     border: 2px solid #132C33;
     border-radius: 10px;
-    background: #126e82;
-    color: #fff;
+    background: var(--oscuro);
+    color: var(--blanco);
     font-size: 18px;
     font-weight: 600;
     transition: 150ms;
@@ -88,8 +88,8 @@
     
 }
 .button-modal:hover{
-    background: #ffffff;
-    color: #000;
+    background: var(--blanco);
+    color: var(--oscuro);
     transition: 150ms;
 }
 

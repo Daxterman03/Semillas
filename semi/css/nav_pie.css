@@ -1,14 +1,31 @@
+/*
+Paleta de colores
+Azules
+#3B7096
+#96D3FF
+#6FB3E3
+Naranjas
+#A67730
+#FFB442
+*/
+:root
+{
+    --blanco: rgb(255, 255, 255);
+    --oscuro: #3B7096;
+    --nar-osc: #915700;
+    --nar-clar: #FFB442;
+}
 *{
     padding: 0px;
     margin: 0px;
     text-decoration: none;
 }
 body{
-    background: #D8E3E7;
+    background: var(--blanco);
     font-family: 'Source Sans Pro', sans-serif;
 }
 .icon{
-    color: #D8E3E7;
+    color: var(--blanco);
     margin-right: 5px;
     font-size: 25px;
 }
@@ -16,22 +33,21 @@ body{
 /* CSS DEL NAVBAR */
 
 .header{
-    background: #132C33;
+    background: var(--oscuro);
     padding: 10px 30px;
     height: 10vh;
     display: flex;
     align-items: center;
 }
     .header a{
-        color: #D8E3E7;
+        color: var(--blanco);
         font-family: 'Montserrat', sans-serif;
         font-size: 20px;
         margin: 0px 10px;
-        transition: 500ms;
+        transition: 300ms;
     }
     .header a:hover{
-        color: #ffffff;
-        transition: 500ms;
+        transition: 300ms;
         font-size: 25px;
     }
     .menu{
@@ -47,36 +63,26 @@ body{
         }
     
     .btn-ingre, .btn-regis {
-        background-color: #132C33;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 20px;
-        margin: 0px 10px;
-        margin: 0px 10px;
-        transition: 500ms;
         background-color: Transparent;
-        background-repeat:no-repeat;
         border: none;
-        cursor:pointer;
-        overflow: hidden;
     }
 
 /* CSS DEL PIÉ DE PÁGINA */
 
 .pie_pagina{
-    background: #132C33;
+    background: var(--oscuro);
     padding: 10px 30px;
     display: flex;
     align-items: center;
     height: 10vh;
 }
     .pie_pagina h5, .pie_pagina h6{
-        color: #D8E3E7;
+        color: var(--blanco);
         font-family: 'Montserrat', sans-serif;
-        transition: 500ms;
+        transition: 300ms;
     }
     .pie_pagina i:hover{
-        color: #ffffff;
-        transition: 500ms;
+        transition: 300ms;
         font-size: 35px;
     }
     .info{
@@ -107,5 +113,5 @@ body{
             justify-content: flex-end;
         }
             .admin i{
-                color: #D8E3E7;
+                color: var(--blanco);
             }
