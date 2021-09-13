@@ -22,7 +22,7 @@
       <nav class="menu">
         <div class="ventanas">
           <a href="home.php"><i class="fas fa-home icon"></i>Inicio</a>
-          <a href=""><i class="fas fa-info-circle icon"></i>Información</a>
+          <a href="informacion.php"><i class="fas fa-info-circle icon"></i>Información</a>
           <a href="nosotros.php"><i class="fas fa-hands icon"></i>Nosotros</a>
         </div>
         <div class="log_reg">
