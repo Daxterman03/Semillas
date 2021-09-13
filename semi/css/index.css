@@ -3,7 +3,8 @@ font-family: 'Source Sans Pro', sans-serif;*/
 
 .cuerpo{
     padding: 10px;
-    height: 75vh;
+    min-height: 75vh;
+    height: auto;
 }
     .superior{
         margin-top: 5vh;

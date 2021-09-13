@@ -1,6 +1,7 @@
 .cuerpo_ped{
     padding: 5px;
-    height: 75vh;
+    height: auto;
+    min-height: 75vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -13,8 +14,8 @@
         flex-wrap: wrap;
     }
     .pedido{
-        width: 250px;
-        height: 250px;
+        width: 300px;
+        height: 300px;
         margin: 10px;
         padding: 10px;
         background: var(--nar-clar);
@@ -72,6 +73,9 @@
                     .lugar div{
                         margin: 10px 0;
                     }
+            .pedido_usuario{
+                margin-bottom: 10px;
+            }
 
 .formulario{
     transition: 300ms;
@@ -81,17 +85,3 @@
     font-size: 20px;
     transition: 300ms;
 }
-.ped_realiz{
-    padding: 5px;
-    width: 300px;
-    background: #59a8be;
-    border: 3px solid rgb(41, 14, 138);
-    border-radius: 3px;
-    color: rgb(20, 9, 51);
-}
-    .ped_realiz h1{
-        text-align: center;
-    }
-    .info_ped{
-        padding: 10px 5px;
-    }
