@@ -5,23 +5,59 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
 }
-    .pedido{
-        padding: 5px;
-        width: 400px;
-        background: #34525a67;
-        border-radius: 10px;
-        border: 3px solid #132C33;
+    .orden_pedidos{
+        display: flex;
+        flex-wrap: wrap;
     }
-        .temporada, .retiro, .lugar{
-            text-align: center;
+    .pedido{
+        width: 250px;
+        height: 250px;
+        margin: 10px;
+        padding: 5px;
+        background: #34525a67;
+        border-radius: 10%;
+        border: 3px solid #132C33;
+        text-align: center;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+    }
+        .pedido label{
+            margin: 2px;
+            padding: 2px;
+            border-radius: 5px;
+            background-color: #132c339d;
+            color: aliceblue;
         }
+        .temporada{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+            .temporada h4{
+                font-size: 25px;
+                margin: 5px;
+            }
+        .centro_pedido{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+            .lugar div{
+                margin: 10px 0;
+            }
 
 .formulario{
     color: #000;
-    background: #34525a67;
-    border-radius: 5px;
-    border: 2px solid #132C33;
+    transition: 300ms;
+}
+.formulario:hover{
+    font-size: 20px;
+    color: #132C33;
+    transition: 300ms;
 }
 .ped_realiz{
     padding: 5px;
