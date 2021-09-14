@@ -8,13 +8,12 @@
 <body>
     <!-- Inclusión de barra de navegación por php -->
     <?php 
-        session_start();
-        $dni = $_SESSION['dni'];
-        if(!isset($dni)){
-            include('navbar.php');
-        } else {
-            include('navbaru.php');
-        }
+    session_start();
+    if(!isset($_SESSION['dni'])){
+        include('navbar.php');
+    } else {
+        include('navbaru.php');
+    }
     ?>
     <div class="descripcion">
         <h1>Huerta para todos</h1>

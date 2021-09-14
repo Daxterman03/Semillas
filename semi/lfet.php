@@ -44,7 +44,7 @@ require '1a.php';
                     echo "<td>"; echo $mostrar['zona']; echo "</td>";
                     echo "<td>"; echo $mostrar['calle']; echo "</td>";
                     echo "<td>"; echo $mostrar['dia']; echo "</td>";
-                    echo "<td>  <a href='modped.php?id=".$mostrar['id']."'> <button type='button' class='button'>modificar</button> </a> </td>";
+                    echo "<td>  <a href='modped.php?id=".$mostrar['id']."'> <button type='button' class='button'>Modificar</button> </a> </td>";
                     echo "<td> <a href='elimped.php?id=".$mostrar['id']."''><button type='button' class='button'>Eliminar</button></a> </td>";
                     echo "</tr>";}
                 ?>

@@ -7,8 +7,7 @@
 
     <?php 
         session_start();
-        $dni = $_SESSION['dni'];
-        if(!isset($dni)){
+        if(!isset($_SESSION['dni'])){
             include('navbar.php');
         } else {
             include('navbaru.php');
