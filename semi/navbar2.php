@@ -21,11 +21,11 @@
     <header class="header">
       <nav class="menu">
         <div class="ventanas">
-            <a href="admin.php">Administradores</a>
-            <a href="adm.php">Registrar Administadores</a>
-            <a href="lfet.php">Lugares y Fechas de Entrega</a>
-            <a href="peda.php">Pedidos</a>
-            <a href="serse.php">Cerrar Sesión</a>
+          <a href="lfet.php">Inicio</a>
+          <a href="admin.php">Modificar</a>
+          <a href="adm.php">Registrar Administrador</a>
+          <a href="peda.php">Pedidos</a>
+          <a href="serse.php">Cerrar Sesión</a>
         </div>
       </nav>
     </header>

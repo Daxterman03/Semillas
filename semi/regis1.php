@@ -32,7 +32,7 @@
                   <div class="miColumna">
                     <input class="entrada" type="text" name="nombre" placeholder="Nombre" required  />
                     <input class="entrada" type="text" name="apellido" placeholder="Apellido" required  />
-                    <input class="entrada" type="text" name="mail" placeholder="Mail" required  />
+                    <input class="entrada" type="mail" name="mail" placeholder="Mail" required  />
                     <input class="entrada" type="text" name="telefono" placeholder="Teléfono" required  />
 
                   </div>

@@ -11,9 +11,14 @@ session_start();
 
     if($array['contar']>0){
       $_SESSION['nombre'] = $nombre;
-      header("location: admin.php");
+      header("location: lfet.php");
 
     }else {
-      echo "datos incorrectos";
+      echo '
+      <script type="text/javascript">
+      alert("Datos incorrectos");
+      window.location.href="login_page.php";
+      </script>
+      ';
     }
  ?>

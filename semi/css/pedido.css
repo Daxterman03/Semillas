@@ -20,7 +20,7 @@
         padding: 10px;
         background: var(--nar-clar);
         border-radius: 10%;
-        border: 3px solid #132C33;
+        border: 3px solid var(--nar-osc);
         text-align: center;
         display: flex;
         flex-flow: column;
