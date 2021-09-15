@@ -29,7 +29,12 @@ $inserto = "INSERT INTO pdo (temporada, ano, zona, calle, dia, dni)
 //ejecutamos la acción inserto
 $resultado = mysqli_query($conexion, $inserto);
 if (!$resultado) {
-  echo "error al pedir";
+  echo '
+  <script type="text/javascript">
+  alert("Error al registrar su pedido");
+  window.location.href="home.php";
+  </script>
+  ';
 }else {
   echo '
   <script type="text/javascript">

@@ -23,5 +23,10 @@ require 'conexion.php';
      WHERE id='$id'")
     or die ("error al modificar");
         mysqli_close($conexion);
-        echo "datos actualisados";
+        echo '
+        <script type="text/javascript">
+        alert("El pedido fue modificado correctamente");
+        window.location.href="lfet.php";
+        </script>
+        ';;
     ?>

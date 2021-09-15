@@ -18,9 +18,14 @@ $contra = $_POST["contra"];
 
 
     WHERE id='$id'")
-   or die ("dni ya esta en uso");
+   or die ("Error al actualizar los datos");
        mysqli_close($conexion);
-       echo "datos actualisados";
+       echo '
+       <script type="text/javascript">
+       alert("Datos Modificados Correctamente");
+       window.location.href="lfet.php";
+       </script>
+       ';
 
   session_destroy();
     $_SESSION['nombre'] = $nombre;

@@ -20,7 +20,7 @@ $direccion = $_POST["direccion"];
 
 
     WHERE id='$id'")
-   or die ("dni ya esta en uso");
+   or die ("El dni ya esta en uso");
        mysqli_close($conexion);
          echo '
          <script type="text/javascript">

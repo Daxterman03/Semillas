@@ -42,12 +42,25 @@
 .pedidos_vigentes{
     text-align: center;
 }
-    .tabla{
-        border: 2px solid;
+    .pedidos_vigentes h1{
+        color: var(--nar-osc);
     }
-        .primera_fila td, .fila_pedido td{
-            margin: 5px 10px;
-            padding: 3px;
-            letter-spacing: 1px;
-            border: 1px solid;
-        }
+    .primera_fila td, .fila_pedido td{
+        padding: 5px;
+        letter-spacing: 1px;
+    }
+    .primera_fila td{
+        text-transform: uppercase;
+        border: 3px solid var(--nar-osc);
+        background: var(--blanco);
+        color: var(--nar-osc);
+    }
+    .fila_pedido td{
+        border: 3px solid var(--nar-clar);
+        background: var(--nar-osc);
+        color: var(--blanco);
+        font-weight: 600;
+    }
+    .fila_pedido a{
+        color: var(--blanco);
+    }

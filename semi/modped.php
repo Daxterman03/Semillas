@@ -11,68 +11,28 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
-    <style media="screen">
-      form{
-        background-color: rgb(227, 150, 133);
-        color: rgb(191, 27, 50);
-        margin:0 auto;
-        width: 300px;
-      }
-      body{
-        background-color: rgb(2, 128, 79)
-      }
-    </style>
+    <link rel="stylesheet" href="css/pedido_adm.css">
+    <link rel="stylesheet" href="css/ventana.css">
   </head>
   <body>
-    <h1>Lugar</h1>
-    <form action="modped1.php" method="post">
-      <table>
-        <tr>
-          <td>Temporada</td>
-          <td>
-            <label for="temporada"></label>
-            <input type="text" name="temporada"value="<?php echo $mostrar['temporada']; ?>" required  />
-          </td>
-        </tr>
-        <tr>
-          <td>Año</td>
-          <td>
-            <label for="ano"></label>
-            <input type="text" name="ano"value="<?php echo $mostrar['ano']; ?>" required  />
-          </td>
-        </tr>
-        <tr>
-          <td>Zona</td>
-          <td>
-            <label for="zona"></label>
-            <input type="text" name="zona"value="<?php echo $mostrar['zona']; ?>" required  />
-          </td>
-        </tr>
-        <tr>
-          <td>Calle</td>
-          <td>
-            <label for="calle"></label>
-            <input type="text" name="calle" value="<?php echo $mostrar['calle']; ?>"required  />
-          </td>
-        </tr>
-        <tr>
-          <td>Día</td>
-          <td>
-            <label for="dia"></label>
-            <input type="date" name="dia"value="<?php echo $mostrar['dia']; ?>" required  />
-          </td>
-        </tr>
-        <tr>
-          <td>ID</td>
-          <td>
-            <label for="id"></label>
-            <input type="hidden" name="id"value="<?php echo $mostrar['id']; ?>" required  />
-          </td>
-        </tr>
-      </table>
-      <input class="button" type="submit" value="Modificar">
-    </form>
+    <div class="cuerpo_ped_adm"></div>
+    <div class="overlay" id="overlay">
+      <div class="nuevo_pedido">
+        <a href="#" id='btn-cerrar-popup' class="btn-cerrar-popup"><i class="fas fa-times" id='btn-cerrar-popup'></i></a>
+        <h1>Ingrese los Datos a Modificar</h1>
+        <form class="inputs_adm" action="modped1.php" method="post">
+          <input type="text" name="temporada" value="<?php echo $mostrar['temporada']; ?>" required  />
+          <input type="text" name="ano" value="<?php echo $mostrar['ano']; ?>" required  />
+          <input type="date" name="dia" value="<?php echo $mostrar['dia']; ?>" required  />
+          <input type="text" name="calle" value="<?php echo $mostrar['calle']; ?>"required  />
+          <input type="text" name="zona" value="<?php echo $mostrar['zona']; ?>" required  />
+          <input type="hidden" name="id" value="<?php echo $mostrar['id']; ?>" required  />
+          <input class="button" type="submit" value="Modificar">
+        </form>
+      </div>
+    </div>
+    <script src="js/popups.js"></script>
+    <?php include('pie.php')?>
   </body>
 </html>
 <?php } ?>
