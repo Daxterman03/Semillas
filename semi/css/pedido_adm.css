@@ -39,3 +39,15 @@
                 border-radius: 5px;
                 border: 2px solid var(--nar-osc);
             }
+.pedidos_vigentes{
+    text-align: center;
+}
+    .tabla{
+        border: 2px solid;
+    }
+        .primera_fila td, .fila_pedido td{
+            margin: 5px 10px;
+            padding: 3px;
+            letter-spacing: 1px;
+            border: 1px solid;
+        }

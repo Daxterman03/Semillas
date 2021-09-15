@@ -23,34 +23,29 @@ require '1a.php';
       </div>
       <div class="pedidos_vigentes">
         <h1>Pedidos Vigentes</h1>
-        <div>
-          <div>
-            <br>
-            <table>
-              <tr>
-                <td>Temporada</td>
-                <td>Año</td>
-                <td>Zona</td>
-                <td>Calle</td>
-                <td>Día</td>
+        <table class="tabla">
+          <tr class="primera_fila">
+            <td>Temporada</td>
+            <td>Año</td>
+            <td>Zona</td>
+            <td>Calle</td>
+            <td>Día</td>
+          </tr>
+          <?php
+            $sql="SELECT * from lugares";
+            $result=mysqli_query($conexion,$sql);
+            while($mostrar=mysqli_fetch_assoc($result)) { ?>
+              <tr class="fila_pedido">
+                <td><?php echo $mostrar['temporada'] ?></td>
+                <td><?php echo $mostrar['ano'] ?></td>
+                <td><?php echo $mostrar['zona'] ?></td>
+                <td><?php echo $mostrar['calle'] ?></td>
+                <td><?php echo $mostrar['dia'] ?></td>
+                <?php echo "<td><a href='modped.php?id=".$mostrar['id']."'><button type='button' class='button'>Modificar</button></a></td>";
+                echo "<td><a href='elimped.php?id=".$mostrar['id']."''><button type='button' class='button'>Eliminar</button></a></td>"; ?>
               </tr>
-                <?php
-                  $sql="SELECT * from lugares";
-                  $result=mysqli_query($conexion,$sql);
-                  while($mostrar=mysqli_fetch_assoc($result)) {
-                    echo "<tr>";
-                    echo "<td>"; echo $mostrar['temporada']; echo "</td>";
-                    echo "<td>"; echo $mostrar['ano']; echo "</td>";
-                    echo "<td>"; echo $mostrar['zona']; echo "</td>";
-                    echo "<td>"; echo $mostrar['calle']; echo "</td>";
-                    echo "<td>"; echo $mostrar['dia']; echo "</td>";
-                    echo "<td>  <a href='modped.php?id=".$mostrar['id']."'> <button type='button' class='button'>Modificar</button> </a> </td>";
-                    echo "<td> <a href='elimped.php?id=".$mostrar['id']."''><button type='button' class='button'>Eliminar</button></a> </td>";
-                    echo "</tr>";}
-                ?>
-            </table>
-          </div>
-        </div>
+          <?php }?>
+        </table>
       </div>
     </div>
     <?php include('pie.php') ?>
