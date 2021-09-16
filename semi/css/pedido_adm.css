@@ -43,21 +43,22 @@
     text-align: center;
 }
     .pedidos_vigentes h1{
-        color: var(--nar-osc);
+        color: var(--gris-osc);
+        margin: 10px 0;
     }
     .primera_fila td, .fila_pedido td{
-        padding: 5px;
+        padding: 10px;
         letter-spacing: 1px;
     }
     .primera_fila td{
         text-transform: uppercase;
-        border: 3px solid var(--nar-osc);
+        border: 3px solid var(--gris-osc);
         background: var(--blanco);
-        color: var(--nar-osc);
+        color: var(--gris-osc);
+        font-weight: 600;
     }
     .fila_pedido td{
-        border: 3px solid var(--nar-clar);
-        background: var(--nar-osc);
+        background: var(--gris-clar);
         color: var(--blanco);
         font-weight: 600;
     }

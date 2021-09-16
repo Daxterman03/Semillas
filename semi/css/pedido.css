@@ -33,6 +33,7 @@
             font-weight: 600;
             letter-spacing: 1px;
             color: var(--blanco);
+            font-size: 20px;
         }
         .temporada{
             margin-top: 10px;
@@ -42,7 +43,7 @@
         }
             .temporada h4{
                 color: var(--nar-osc);
-                font-size: 25px;
+                font-size: 30px;
                 margin: 5px;
                 letter-spacing: 1px;
                 background: var(--blanco);
@@ -64,6 +65,7 @@
             .centro_pedido h5{
                 color: var(--nar-osc);
                 padding: 5px 0;
+                font-size: 20px;
             }
                 .lugar{
                     width: 100%;

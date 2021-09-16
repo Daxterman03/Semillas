@@ -7,6 +7,9 @@ Azules
 Naranjas
 #A67730
 #FFB442
+
+#3c4043 gris oscuro
+#657482 gris claro
 */
 :root
 {
@@ -14,6 +17,8 @@ Naranjas
     --oscuro: #3B7096;
     --nar-osc: #a76707;
     --nar-clar: #FFB442;
+    --gris-clar: #657482;
+    --gris-osc: #3c4043;
 }
 *{
     padding: 0px;
