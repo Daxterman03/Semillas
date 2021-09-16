@@ -4,7 +4,7 @@ require 'conexion.php';
  require '1a.php';
 
 
-    $entregado = "si";
+    $entregado = "Si";
     $id = $_GET['id'];
 
 
@@ -17,5 +17,5 @@ require 'conexion.php';
      WHERE id='$id'")
     or die ("Error al Modificar");
         mysqli_close($conexion);
-        echo "Datos Actualizados";
+        header('Location: peda.php');
     ?>

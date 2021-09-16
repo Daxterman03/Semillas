@@ -23,7 +23,7 @@ require '1a.php';
       </div>
       <div class="pedidos_vigentes">
         <h1>Pedidos Vigentes</h1>
-        <table class="tabla">
+        <table>
           <tr class="primera_fila">
             <td>Temporada</td>
             <td>Año</td>

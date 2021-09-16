@@ -19,7 +19,7 @@ require '1a.php';
     mysqli_query($conexion, "DELETE from pdo where id='$id'")
     or die ("Error al Eliminar");
         mysqli_close($conexion);
-        echo "Pedido Eliminado";
+        header('Location: peda.php');
     ?>
 
 

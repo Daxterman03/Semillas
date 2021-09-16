@@ -65,3 +65,18 @@
     .fila_pedido a{
         color: var(--blanco);
     }
+
+.cuerpoPedidos{
+    padding: 5px;
+    height: auto;
+    min-height: 75vh;
+}
+    .pedidosUsuarios td{
+        text-align: center;
+    }
+    .pedidosUsuarios h1{
+        color: var(--gris-osc);
+        margin: 10px 0;
+    }
+
+        

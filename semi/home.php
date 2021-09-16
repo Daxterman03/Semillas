@@ -14,6 +14,7 @@ if(!isset($dni)){
   <!DOCTYPE html>
   <html lang="en" dir="ltr">
     <head>
+      <link rel="stylesheet" href="css/pedido.css">
     </head>
     <body>
       <div class="cuerpo_ped">
