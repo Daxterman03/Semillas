@@ -12,6 +12,7 @@
     .orden_pedidos{
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
     }
     .pedido{
         width: 300px;

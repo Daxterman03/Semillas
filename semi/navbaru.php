@@ -20,13 +20,27 @@
     <header class="header">
       <nav class="menu">
         <div class="ventanas">
-          <a href="home.php"><i class="fas fa-home icon"></i>Inicio</a>
-          <a href="informacion.php"><i class="fas fa-info-circle icon"></i>Información</a>
-          <a href="nosotros.php"><i class="fas fa-hands icon"></i>Nosotros</a>
+          <ul>
+            <li>
+              <a href="home.php"><i class="fas fa-home icon"></i>Inicio</a>
+            </li>
+            <li>
+              <a href="informacion.php"><i class="fas fa-info-circle icon"></i>Información</a>
+            </li>
+            <li>
+              <a href="nosotros.php"><i class="fas fa-hands icon"></i>Nosotros</a>
+            </li>
+          </ul>
         </div>
         <div class="log_reg">
-          <button class="btn-ingre" id='btn-ingre-popup'><a href="datu.php">Modificar datos</a></button>
-          <a href="serse.php">Cerrar Sesión</a>
+          <ul>
+            <li>
+              <button class="btn-ingre" id='btn-ingre-popup'><a href="datu.php">Modificar datos</a></button>
+            </li>
+            <li>
+              <a href="serse.php">Cerrar Sesión</a>
+            </li>
+          </ul>
         </div>
       </nav>
     </header>

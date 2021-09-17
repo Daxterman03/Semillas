@@ -28,8 +28,8 @@ require 'conexion.php';
               <form class="form_order" action="modificara.php" method="post">
                 <input class="entrada" type="text" name="nombre" placeholder="<?php echo $mostrar['nombre']; ?>" required  />
                 <input class="entrada" type="text" name="apellido" placeholder="<?php echo $mostrar['apellido']; ?>"required  />
-                <input class="entrada" type="text" name="dni" placeholder="<?php echo $mostrar['dni']; ?>" required  />
-                <input class="entrada" type="text" name="contra" placeholder="<?php echo $mostrar['contra']; ?>" required  />
+                <input class="entrada" type="number" name="dni" placeholder="<?php echo $mostrar['dni']; ?>" required  />
+                <input class="entrada" type="password" name="contra" placeholder="Nueva Contraseña" required  />
                 <input type="hidden" name="id"value="<?php echo $mostrar['id']; ?>" required  />
                 <button class="button-modal" type="submit">Modificar</button>
               </form>

@@ -21,7 +21,7 @@ require 'conexion.php';
             <form class="form_order" action="dat2" method="post">
               <input class="entrada" type="text" name="nombre" placeholder="Nombre" required  />
               <input class="entrada" type="text" name="apellido" placeholder="Apellido" required  />
-              <input class="entrada" type="text" name="dni" placeholder="DNI" required  />
+              <input class="entrada" type="number" name="dni" placeholder="DNI" required  />
               <input class="entrada" type="text" name="contra" placeholder="Contraseña" required  />
               <button class="button-modal" type="submit">Enviar</button>
             </form>

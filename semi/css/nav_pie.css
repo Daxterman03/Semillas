@@ -44,6 +44,14 @@ body{
     display: flex;
     align-items: center;
 }
+    .header ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .header li{
+        margin: 10px;
+        list-style-type: none;
+    }
     .header a{
         color: var(--blanco);
         font-family: 'Montserrat', sans-serif;
@@ -65,6 +73,7 @@ body{
         }
         .log_reg{
             flex: 0 1 auto;
+
         }
     
     .btn-ingre, .btn-regis {

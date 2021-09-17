@@ -20,13 +20,27 @@
     <header class="header">
       <nav class="menu">
         <div class="ventanas">
-          <a href="lfet.php">Inicio</a>
-          <a href="admin.php">Modificar</a>
-          <a href="adm.php">Registrar Administrador</a>
+          <ul>
+            <li>
+              <a href="lfet.php">Inicio</a>
+            </li>
+            <li>
+              <a href="admin.php">Modificar</a>
+            </li>
+            <li>
+              <a href="adm.php">Registrar Administrador</a>
+            </li>
+          </ul>
         </div>
         <div class="log_reg">
-          <a href="peda.php">Registros</a>
-          <a href="serse.php">Cerrar Sesión</a>
+          <ul>
+            <li>
+              <a href="peda.php">Registros</a>
+            </li>
+            <li>
+              <a href="serse.php">Cerrar Sesión</a>
+            </li>
+          </ul>
         </div>
       </nav>
     </header>

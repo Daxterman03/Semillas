@@ -22,15 +22,29 @@
       <nav class="menu">
 
         <div class="ventanas">
-          <a href="index.php"><i class="fas fa-home icon"></i>Inicio</a>
-          <a href="informacion.php"><i class="fas fa-info-circle icon"></i>Información</a>
-          <a href="nosotros.php"><i class="fas fa-hands icon"></i>Nosotros</a>
+          <ul>
+            <li>
+              <a href="index.php"><i class="fas fa-home icon"></i>Inicio</a>
+            </li>
+            <li>
+              <a href="informacion.php"><i class="fas fa-info-circle icon"></i>Información</a>
+            </li>
+            <li>
+              <a href="nosotros.php"><i class="fas fa-hands icon"></i>Nosotros</a>
+            </li>
+          </ul>
         </div>
 
         <div class="log_reg">
-          <button class="btn-ingre" id='btn-ingre-popup'><a href="login_page.php">Ingresar</a></button>
-          <button class="btn-regis" id='btn-regis-popup'><a href="regis1.php">Registrarse</a></button>
-         </div> 
+          <ul>
+            <li>
+              <button class="btn-ingre" id='btn-ingre-popup'><a href="login_page.php">Ingresar</a></button>
+            </li>
+            <li>
+              <button class="btn-regis" id='btn-regis-popup'><a href="regis1.php">Registrarse</a></button>
+            </li>
+          </ul>
+        </div> 
 
       </nav>
 

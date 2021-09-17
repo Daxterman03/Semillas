@@ -25,19 +25,19 @@ require '1a.php';
               $result=mysqli_query($conexion,$sql);
               while($mostrar=mysqli_fetch_assoc($result)) {
             ?>
-                <tr class="fila_pedido">
-                  <td><?php echo $mostrar['temporada']?></td>
-                  <td><?php echo $mostrar['ano']?></td>
-                  <td><?php echo $mostrar['zona']?></td>
-                  <td><?php echo $mostrar['calle']?></td>
-                  <td><?php echo $mostrar['dia']?></td>
-                  <td><?php echo $mostrar['dni']?></td>
-                  <td><?php echo $mostrar['entregado']?></td>
-                  <?php
-                  echo "<td>  <a href='pedias.php?id=".$mostrar['id']."'>Entregado</td>";
-                  echo "<td> <a href='pedielim.php?id=".$mostrar['id']."''>Eliminar</td>";
-                  ?>
-                </tr>
+              <tr class="fila_pedido">
+                <td><?php echo $mostrar['temporada']?></td>
+                <td><?php echo $mostrar['ano']?></td>
+                <td><?php echo $mostrar['zona']?></td>
+                <td><?php echo $mostrar['calle']?></td>
+                <td><?php echo $mostrar['dia']?></td>
+                <td><?php echo $mostrar['dni']?></td>
+                <td><?php echo $mostrar['entregado']?></td>
+                <?php
+                echo "<td>  <a href='pedias.php?id=".$mostrar['id']."'>Entregado</td>";
+                echo "<td> <a href='pedielim.php?id=".$mostrar['id']."''>Eliminar</td>";
+                ?>
+              </tr>
             <?php }?>
         </table>
       </div>
