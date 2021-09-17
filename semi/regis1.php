@@ -38,7 +38,7 @@
                   </div>
           
                   <div class="miColumna">
-                    <input class="entrada" type="text" name="dni" placeholder="DNI (sin puntos ni guiones)" required  />
+                    <input class="entrada" type="number" name="dni" placeholder="DNI (sin puntos ni guiones)" required  />
                     <input class="entrada" type="text" name="direccion" placeholder="Dirección" required  />
                     <input class="entrada" type="text" name="inte" placeholder="Integrantes grupo familiar" required  />
                     <button class="button-modal" type="submit">Enviar</button>

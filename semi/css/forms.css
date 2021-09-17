@@ -27,6 +27,11 @@
         .form_order{
             text-align: center;
         }
+            /* Sentencia para eliminar las flechas de +- del input tipo number */
+            .form_order input[type="number"]{
+                -webkit-appearance: textfield !important;
+                -moz-appearance: textfield !important;
+            }
         .form_orderLog{
             display: flex;
             flex-direction: column;

@@ -33,10 +33,10 @@ require 'conexion.php';
                     <div class="miColumna">
                         <input class="entrada" type="text" name="nombre" placeholder="Nombre: <?php echo $mostrar['nombre']; ?>" required  />
                         <input class="entrada" type="text" name="apellido" placeholder="Apellido: <?php echo $mostrar['apellido']; ?>"required  />
-                        <input class="entrada" type="text" name="dni" placeholder="DNI: <?php echo $mostrar['dni']; ?>" required  />
+                        <input class="entrada" type="number" name="dni" placeholder="DNI: <?php echo $mostrar['dni']; ?>" required  />
                     </div>
                     <div class="miColumna">
-                        <input class="entrada" type="text" name="mail" placeholder="Mail: <?php echo $mostrar['mail']; ?>" required  />
+                        <input class="entrada" type="mail" name="mail" placeholder="Mail: <?php echo $mostrar['mail']; ?>" required  />
                         <input class="entrada" type="text" name="telefono" placeholder="Teléfono: <?php echo $mostrar['telefono']; ?>" required  />
                         <input class="entrada" type="text" name="direccion" placeholder="Dirección: <?php echo $mostrar['direccion']; ?>" required  />
                     </div>
