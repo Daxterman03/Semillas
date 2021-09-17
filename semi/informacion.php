@@ -16,7 +16,7 @@
         }
     ?>
     <div class="descripcion">
-        <h1>Tu Huerta</h1>
+        <h1>Tu huerta</h1>
         <p>
         "Llevar adelante una huerta brinda un momento que sirve de punto de encuentro con los más chicos, con amigos y con la familia. Es especialmente bueno para los niños, ya que el ver crecer una planta desarrollan la paciencia, la observación, la imaginación y la sensibilidad. Además, trabajar con la tierra genera anticuerpos y estar al sol favorece la producción de vitamina D. Trabajar en una huerta familiar significa tiempo de calidad compartido entre padres e hijos, donde se generan charlas, juegos y aprendizajes"
         </p>
@@ -35,11 +35,9 @@
                     <p>Según las dimensiones que tenga tu balcón, terraza o patio tendrás que elegir un tipo de maceta o contenedor para tu huerto. En los recipientes de 7 a 15 cm de profundidad se puede plantar (Zanahorias, tomates, albahaca), Ya que sus raíces no son de gran tamaño.</p>
                 <li>Comenzar con la siembra.</li>
                     <p>Hay dos formas que te pueden ser de utilidad para la preparación de tu huerto:
-                    </p>
-                    <p>
+                        <br>
                         a)Sembrar directamente en el huerto.     
-                    </p>
-                    <p>  
+                        <br>
                         b)Sembrar en contenedores pequeños para después trasplantarlos al huerto, lo que se conoce como plantel.    
                     </p>
                 <li>Realiza el trasplante.</li>
@@ -55,7 +53,7 @@
         </div>
         <div class="tutoriales">
             <h1>¿Desea saber más?</h1>
-            <iframe style: width="470" height="315" text-align: center; src="https://www.youtube.com/embed/kx-tGf3CcGg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe style: width="100%" height="350" text-align: center; src="https://www.youtube.com/embed/kx-tGf3CcGg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <div class="imagencultivar">
                 <img src="css/imagenprogcult.jpg" alt="Programa Cultivar">
             </div>
