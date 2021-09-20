@@ -32,42 +32,42 @@
             </tr>
 
             <tr>
-                <td>----</td>
+                <td>Acelga</td>
                 <td>Acelga</td>
             </tr>
 
             <tr>
-                <td>----</td>
+                <td>Arvejas</td>
                 <td>Albahaca</td>
             </tr>
-
+            
             <tr>
-                <td>----</td>
+                <td>Cebolla</td>
                 <td>Cebolla</td>
             </tr>
 
             <tr>
-                <td>----</td>
+                <td>Lechuga</td>
                 <td>Lechuga</td>
             </tr>
 
             <tr>
-                <td>----</td>
+                <td>Remolacha</td>
                 <td>Remolacha</td>
             </tr>
 
             <tr>
-                <td>----</td>
+                <td>Perejil</td>
                 <td>Tomate</td>
             </tr>
 
             <tr>
-                <td>----</td>
+                <td>Zanahoria</td>
                 <td>Zanahoria</td>
             </tr>
 
             <tr>
-                <td>----</td>
+                <td>Caléndula</td>
                 <td>Zapallo</td>
             </tr>
 
