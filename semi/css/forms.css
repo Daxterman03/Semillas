@@ -44,10 +44,10 @@
             }
             .button{
                 padding: 5px;
-                border: 2px solid var(--nar-osc);
+                border: 2px solid var(--gris-osc);
                 border-radius: 10px;
                 background: var(--blanco);
-                color: var(--nar-osc);
+                color: var(--gris-osc);
                 font-size: 18px;
                 font-weight: 600;
                 transition: 150ms;

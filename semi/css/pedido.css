@@ -19,9 +19,9 @@
         height: 300px;
         margin: 10px;
         padding: 10px;
-        background: var(--nar-clar);
+        background: var(--gris-clar);
         border-radius: 10%;
-        border: 3px solid var(--nar-osc);
+        border: 3px solid var(--gris-osc);
         text-align: center;
         display: flex;
         flex-flow: column;
@@ -43,7 +43,7 @@
             flex-direction: column;
         }
             .temporada h4{
-                color: var(--nar-osc);
+                color: var(--gris-osc);
                 font-size: 30px;
                 margin: 5px;
                 letter-spacing: 1px;
@@ -60,11 +60,11 @@
                 padding: 2px;
                 border-radius: 5px;
                 letter-spacing: 1px;
-                background: #99610c79;
+                background: #25242179;
                 color: var(--blanco);
             }
             .centro_pedido h5{
-                color: var(--nar-osc);
+                color: var(--gris-osc);
                 padding: 5px 0;
                 font-size: 20px;
             }
@@ -82,7 +82,7 @@
 
 .formulario{
     transition: 300ms;
-    color: var(--nar-osc);
+    color: var(--gris-osc);
 }
 .formulario:hover{
     font-size: 20px;
