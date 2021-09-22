@@ -35,7 +35,7 @@
                 <div>
                   <h5>Calle</h5>
                   <label><?php echo $mostrar['calle']; ?></label>
-                  <input type="hidden" name="calle" value="<?php echo $mostrar['calle']; ?>"required  />  
+                  <input type="hidden" name="calle" value="<?php echo $mostrar['calle']; ?>"required  />
                 </div>
                 <div>
                   <h5>Zona</h5>
@@ -47,16 +47,21 @@
               <?php } ?>
               <?php
               $dni = $_SESSION['dni'];
-              
+
               $sql="SELECT * from usu1 where dni='$dni'";
               $result=mysqli_query($conexion,$sql);
               while($mostrar=mysqli_fetch_assoc($result)) {
-                
+
                 ?>
               <div class="pedido_usuario">
                 <h5>DNI</h5>
                 <label><?php echo $mostrar['dni']; ?></label>
                 <input type="hidden" name="dni"value="<?php echo $mostrar['dni']; ?>" required  />
+              </div>
+              <div>
+                <h5>nombre</h5>
+                <label><?php echo $mostrar['nombre']; ?></label>
+                <input type="hidden" name="nombre"value="<?php echo $mostrar['nombre']; ?>" required  />
               </div>
             </div>
           </div>
