@@ -57,11 +57,10 @@
                 <h5>DNI</h5>
                 <label><?php echo $mostrar['dni']; ?></label>
                 <input type="hidden" name="dni"value="<?php echo $mostrar['dni']; ?>" required  />
-              </div>
-              <div>
-                <h5>nombre</h5>
-                <label><?php echo $mostrar['nombre']; ?></label>
-                <input type="hidden" name="nombre"value="<?php echo $mostrar['nombre']; ?>" required  />
+                <div>
+          
+                  <input type="hidden" name="nombre"value="<?php echo $mostrar['nombre']; ?>" required  />
+                </div>
               </div>
             </div>
           </div>
