@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 23-09-2021 a las 19:23:11
+-- Tiempo de generación: 24-09-2021 a las 01:56:17
 -- Versión del servidor: 10.4.20-MariaDB
 -- Versión de PHP: 8.0.9
 
@@ -33,7 +33,7 @@ CREATE TABLE `admin` (
   `dni` int(8) NOT NULL,
   `contra` varchar(30) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL,
   `id` int(2) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
 
 --
 -- Volcado de datos para la tabla `admin`
@@ -49,13 +49,13 @@ INSERT INTO `admin` (`nombre`, `apellido`, `dni`, `contra`, `id`) VALUES
 --
 
 CREATE TABLE `lugares` (
-  `temporada` varchar(20) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL,
+  `temporada` varchar(20) COLLATE utf8_spanish2_ci NOT NULL,
   `ano` int(4) NOT NULL,
-  `zona` varchar(15) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL,
-  `calle` varchar(15) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL,
+  `zona` varchar(15) COLLATE utf8_spanish2_ci NOT NULL,
+  `calle` varchar(15) COLLATE utf8_spanish2_ci NOT NULL,
   `dia` date NOT NULL,
   `id` int(2) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
 
 --
 -- Volcado de datos para la tabla `lugares`
@@ -73,15 +73,15 @@ INSERT INTO `lugares` (`temporada`, `ano`, `zona`, `calle`, `dia`, `id`) VALUES
 --
 
 CREATE TABLE `pdo` (
-  `temporada` varchar(20) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL,
+  `temporada` varchar(20) COLLATE utf8_spanish2_ci NOT NULL,
   `ano` int(4) NOT NULL,
-  `zona` varchar(15) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL,
-  `calle` varchar(15) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL,
+  `zona` varchar(15) COLLATE utf8_spanish2_ci NOT NULL,
+  `calle` varchar(15) COLLATE utf8_spanish2_ci NOT NULL,
   `dia` date NOT NULL,
   `dni` int(8) NOT NULL,
-  `entregado` varchar(2) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL DEFAULT 'No',
+  `entregado` varchar(2) COLLATE utf8_spanish2_ci NOT NULL DEFAULT 'No',
   `id` int(10) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
 
 --
 -- Volcado de datos para la tabla `pdo`
@@ -97,23 +97,23 @@ INSERT INTO `pdo` (`temporada`, `ano`, `zona`, `calle`, `dia`, `dni`, `entregado
 --
 
 CREATE TABLE `usu1` (
-  `nombre` varchar(20) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL,
-  `apellido` varchar(20) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL,
-  `mail` varchar(30) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL,
-  `telefono` varchar(15) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL,
+  `nombre` varchar(20) COLLATE utf8_spanish2_ci NOT NULL,
+  `apellido` varchar(20) COLLATE utf8_spanish2_ci NOT NULL,
+  `mail` varchar(30) COLLATE utf8_spanish2_ci NOT NULL,
+  `telefono` varchar(15) COLLATE utf8_spanish2_ci NOT NULL,
   `dni` int(8) NOT NULL,
-  `direccion` varchar(15) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL,
+  `direccion` varchar(15) COLLATE utf8_spanish2_ci NOT NULL,
   `inte` int(2) NOT NULL,
   `id` int(10) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
 
 --
 -- Volcado de datos para la tabla `usu1`
 --
 
 INSERT INTO `usu1` (`nombre`, `apellido`, `mail`, `telefono`, `dni`, `direccion`, `inte`, `id`) VALUES
-('Diego Agust?n', 'Marmiroli', 'diegomarmiroli20@gmail.com', '3462681684', 11111111, 'Eva Per?n 191', 3, 20),
-('Diego', 'Marmiroli', 'diegomarmiroli20@gmail.com', '3462681684', 42182999, 'Eva Per?n 191', 3, 19);
+('Diego Agustín', 'Marmiroli', 'diegomarmiroli20@gmail.com', '3462681684', 11111111, 'Eva Perón 191', 3, 20),
+('Diego', 'Marmiroli', 'diegomarmiroli20@gmail.com', '3462681684', 42182999, 'Eva Perón 191', 3, 19);
 
 --
 -- Índices para tablas volcadas
