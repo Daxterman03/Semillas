@@ -42,7 +42,7 @@ if(!isset($dni)){
                       <label for="calle"><?php echo $mostrar['calle']?></label>
                     </div>
                     <div>
-                      <h5>Zona</h5>
+                      <h5>Barrio</h5>
                       <label for="zona"><?php echo $mostrar['zona']?></label>
                     </div>
                   </div>

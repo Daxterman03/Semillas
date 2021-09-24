@@ -17,7 +17,7 @@ $num = '1';
           <tr class="primera_fila">
             <td>Temporada</td>
             <td>Año</td>
-            <td>Zona</td>
+            <td>Barrio</td>
             <td>Calle</td>
             <td>Día</td>
             <td>DNI</td>

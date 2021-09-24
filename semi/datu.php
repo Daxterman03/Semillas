@@ -36,7 +36,7 @@ require 'conexion.php';
                         <input class="entrada" type="number" name="dni" placeholder="DNI: <?php echo $mostrar['dni']; ?>" required  />
                     </div>
                     <div class="miColumna">
-                        <input class="entrada" type="mail" name="mail" placeholder="Mail: <?php echo $mostrar['mail']; ?>" required  />
+                        <input class="entrada" type="mail" name="mail" placeholder="Mail: <?php echo $mostrar['mail']; ?>"/>
                         <input class="entrada" type="text" name="telefono" placeholder="Teléfono: <?php echo $mostrar['telefono']; ?>" required  />
                         <input class="entrada" type="text" name="direccion" placeholder="Dirección: <?php echo $mostrar['direccion']; ?>" required  />
                     </div>

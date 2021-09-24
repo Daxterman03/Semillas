@@ -32,7 +32,7 @@
                   <div class="miColumna">
                     <input class="entrada" type="text" name="nombre" placeholder="Nombre" required  />
                     <input class="entrada" type="text" name="apellido" placeholder="Apellido" required  />
-                    <input class="entrada" type="mail" name="mail" placeholder="Mail" required  />
+                    <input class="entrada" type="mail" name="mail" placeholder="Mail"/>
                     <input class="entrada" type="text" name="telefono" placeholder="Teléfono" required  />
 
                   </div>
@@ -40,7 +40,7 @@
                   <div class="miColumna">
                     <input class="entrada" type="number" name="dni" placeholder="DNI (sin puntos ni guiones)" required  />
                     <input class="entrada" type="text" name="direccion" placeholder="Dirección" required  />
-                    <input class="entrada" type="text" name="inte" placeholder="Integrantes grupo familiar" required  />
+                    <input class="entrada" type="text" name="inte" placeholder="Integrantes grupo familiar"/>
                     <button class="button-modal" type="submit">Enviar</button>
 
                   </div>

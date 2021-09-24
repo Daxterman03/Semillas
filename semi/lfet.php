@@ -16,7 +16,7 @@ require '1a.php';
           <input type="text" name="temporada" placeholder="Temporada" required  />
           <input type="text" name="ano" placeholder="Año" required  />
           <input type="date" name="dia" required  />
-          <input type="text" name="zona" placeholder="Zona" required  />
+          <input type="text" name="zona" placeholder="Barrio" required  />
           <input type="text" name="calle" placeholder="Calle" required  />
           <input class="button" type="submit" value="Enviar">
         </form>
@@ -27,7 +27,7 @@ require '1a.php';
           <tr class="primera_fila">
             <td>Temporada</td>
             <td>Año</td>
-            <td>Zona</td>
+            <td>Barrio</td>
             <td>Calle</td>
             <td>Día</td>
           </tr>
