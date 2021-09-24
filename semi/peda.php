@@ -6,8 +6,8 @@ require '1a.php';
   <head>
     <link rel="stylesheet" href="css/pedido_adm.css">
     <?php
-$num = '1';
-?>
+      $num = '1';
+    ?>
   </head>
   <body>
     <div class="cuerpoPedidos">
@@ -21,7 +21,6 @@ $num = '1';
             <td>Calle</td>
             <td>Día</td>
             <td>DNI</td>
-            <td>Nombre</td>
             <td>Entregado</td>
             <td>pedido</td>
           </tr>
@@ -38,11 +37,10 @@ $num = '1';
                 <td><?php echo $mostrar['calle']?></td>
                 <td><?php echo $mostrar['dia']?></td>
                 <td><?php echo $mostrar['dni']?></td>
-                <td><?php echo $mostrar['nombre']?></td>
                 <td><?php echo $mostrar['entregado']?></td>
-                <td><?php echo  $num++?></td>
+                <td><?php echo $num++?></td>
                 <?php
-                echo "<td>  <a href='pedias.php?id=".$mostrar['id']."'>Entregado</td>";
+                echo "<td> <a href='pedias.php?id=".$mostrar['id']."'>Entregado</td>";
                 echo "<td> <a href='pedielim.php?id=".$mostrar['id']."''>Eliminar</td>";
                 ?>
               </tr>

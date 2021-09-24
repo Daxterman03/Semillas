@@ -12,8 +12,8 @@
   $dni       = $_POST['dni'];
   $nombre       = $_POST['nombre'];
 //insertamos los datos obtenidos
-$inserto = "INSERT INTO pdo (temporada, ano, zona, calle, dia, dni, nombre)
-            VALUES ('$temporada','$ano','$zona','$calle','$dia','$dni','$nombre')";
+$inserto = "INSERT INTO pdo (temporada, ano, zona, calle, dia, dni)
+            VALUES ('$temporada','$ano','$zona','$calle','$dia','$dni')";
 
             $veri_ped = mysqli_query($conexion, "SELECT * FROM pdo WHERE dni = '$dni' AND dia = '$dia'");
             if (mysqli_num_rows($veri_ped) > 0){
