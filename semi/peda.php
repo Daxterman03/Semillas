@@ -45,6 +45,8 @@ require '1a.php';
                 ?>
               </tr>
             <?php }?>
+            <a href="./exel.php" class="btn-small blue">descargar exel</a>
+
         </table>
       </div>
     </div>
