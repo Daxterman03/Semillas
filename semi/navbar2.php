@@ -38,7 +38,7 @@
               <a href="peda.php">Registros</a>
             </li>
             <li>
-              <a href="manped.php">pedido manual</a>
+              <a href="pedido_manual.php">Pedido Manual</a>
             </li>
             <li>
               <a href="serse.php">Cerrar Sesión</a>
