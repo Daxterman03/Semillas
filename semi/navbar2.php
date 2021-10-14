@@ -19,29 +19,29 @@
   <body>
     <header class="header">
       <nav class="menu">
-        <div class="ventanas">
+        <div class="ventanas_adm_izq">
           <ul>
             <li>
               <a href="lfet.php">Inicio</a>
             </li>
             <li>
-              <a href="admin.php">Modificar</a>
+              <a href="admin.php">Modificar Ingreso</a>
             </li>
             <li>
               <a href="adm.php">Registrar Administrador</a>
             </li>
           </ul>
         </div>
-        <div class="log_reg">
+        <div class="ventanas_adm_der">
           <ul>
             <li>
               <a href="peda.php">Registros</a>
             </li>
             <li>
-              <a href="pedido_manual.php">Pedido Manual</a>
+              <a href="pedido_manual.php">Ingresar Pedido</a>
             </li>
             <li>
-              <a href="serse.php">Cerrar Sesión</a>
+              <a href="serse.php">Salir</a>
             </li>
           </ul>
         </div>

@@ -24,6 +24,10 @@ Naranjas
     padding: 0px;
     margin: 0px;
     text-decoration: none;
+    list-style: none;
+}
+html{
+    font-size: 100%;
 }
 body{
     background: var(--blanco);
@@ -31,95 +35,123 @@ body{
 }
 .icon{
     color: var(--blanco);
-    margin-right: 5px;
-    font-size: 25px;
+    font-size: 1.5rem;
+    padding: 0 0.25em;
 }
 
 /* CSS DEL NAVBAR */
 
 .header{
     background: var(--oscuro);
-    padding: 10px 30px;
+    padding: 1em 1em;
     height: 10vh;
+    max-height: 10vh;
     display: flex;
     align-items: center;
 }
-    .header ul{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .header li{
-        margin: 10px;
-        list-style-type: none;
-    }
-    .header a{
-        color: var(--blanco);
-        font-family: 'Montserrat', sans-serif;
-        font-size: 20px;
-        margin: 0px 10px;
-        transition: 300ms;
-    }
-    .header a:hover{
-        transition: 300ms;
-        font-size: 25px;
-    }
     .menu{
         width: 100%;
         display: flex;
-        padding: 15px;
+        justify-content: space-between;
     }
         .ventanas{
-            flex: 5 1 auto;
+            width: 45%;
         }
         .log_reg{
-            flex: 0 1 auto;
-
+            width: 40%;
         }
-    
-    .btn-ingre, .btn-regis {
-        background-color: Transparent;
-        border: none;
-    }
+        .ventanas_adm_der{
+            width: 40%;
+        }
+        .ventanas_adm_izq{
+            width: 50%;
+        }
+            .menu ul{
+                display: flex;
+                justify-content: space-evenly;
+            }
+            .ventanas a, .log_reg a{
+                display: flex;
+                flex-wrap: nowrap;
+                align-items: center;
+                color: var(--blanco);
+                font-family: 'Montserrat', sans-serif;
+                font-size: 1.875rem;
+                transition: 150ms;
+            }
+            .ventanas a:hover, .log_reg a:hover{
+                font-size: 2.125rem;
+                color: rgba(255, 255, 255, 0.7);
+            }
+            .log_reg li a{
+                text-align: center;
+            }
+            .btn-ingre, .btn-regis {
+                background-color: Transparent;
+                border: none;
+            }
+            .ventanas_adm_der a, .ventanas_adm_izq a{
+                display: flex;
+                flex-wrap: nowrap;
+                color: var(--blanco);
+                font-family: 'Montserrat', sans-serif;
+                font-size: 1.25rem;
+                transition: 150ms; 
+            }
+            .ventanas_adm_der a:hover, .ventanas_adm_izq a:hover{
+                font-size: 1.5625rem;
+                color: rgba(255, 255, 255, 0.7);
+            }
 
 /* CSS DEL PIÉ DE PÁGINA */
 
 .pie_pagina{
     background: var(--oscuro);
-    padding: 10px 30px;
+    padding: 0 1em 0 2em;
     display: flex;
     align-items: center;
-    height: 10vh;
+    height: 15vh;
+    max-height: 15vh;
+    justify-content: space-between;
 }
-    .pie_pagina h5, .pie_pagina h6{
+    .info{
+        width: 50%;
+        display: flex;
+        align-items: center;
+    }
+    .info h5, .celular h6{
         color: var(--blanco);
         font-family: 'Montserrat', sans-serif;
-        transition: 300ms;
     }
-    .pie_pagina i:hover{
-        transition: 300ms;
-        font-size: 35px;
+    .info h5{
+        font-size: 1.2rem;
     }
-    .info{
-        display: flex;
-        align-items: center;
-        flex: 4 1 auto;
+    .info span{
+        font-size: 1.5rem;
     }
     .contacto{
+        height: 100%;
+        width: 20%;
         display: flex;
-        align-items: center;
         flex-direction: column;
-        flex: 0.3 1 auto;
+        justify-content: space-evenly;
+        align-items: center;
     }
+        .icon_pie:hover{
+            transition: 300ms;
+            font-size: 2rem;
+        }
         .redes{
-            margin: 10px 0;
-            width: 100%;
+            width: 50%;
             display: flex;
             justify-content: space-evenly;
         }
         .celular{
-            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 100%;
-            font-size: 20px;
+            font-size: 1.5rem;
         }
         .admin{
             width: 100%;
@@ -129,3 +161,48 @@ body{
             .admin i{
                 color: var(--blanco);
             }
+
+@media all and (max-width:1130px){
+    html{
+        font-size: 90%;
+    }
+    .ventanas{
+        width: 60%;
+    }   
+}
+@media all and (max-width:870px){
+    html{
+        font-size: 75%;
+    }
+}
+@media all and (max-width:650px){
+    .header{
+        height: 15vh;
+        max-height: 20vh;
+    }
+    .menu{
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .ventanas, .log_reg{
+        width: 80%;
+    }
+    .ventanas ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    .log_reg ul{
+        justify-content: space-evenly;
+    }
+    .ventanas_adm_der ul, .ventanas_adm_izq ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    .ventanas_adm_der a:hover, .ventanas_adm_izq a:hover{
+        font-size: 1.25rem;
+        color: rgba(255, 255, 255, 0.7);
+    }
+}
