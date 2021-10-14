@@ -3,39 +3,40 @@ font-family: 'Source Sans Pro', sans-serif;
 font-family: 'Inter', sans-serif;*/
 
 .cuerpo{
-    padding: 10px;
-    min-height: 75vh;
-    height: auto;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-    .superior{
-        margin-top: 5vh;
+    .superior, .logoMuni{
         text-align: center;
-        margin-bottom: 3%;
     }
-        .superior img{
-            width: 25%;
-        }
-    .logos{
+    .superior{
+        width: 30%;
+    }
+    .logoMuni{
+        width: 15%;
+    }
+    .superior img{
         width: 100%;
-        height: 200px;
-        float: left;
     }
-        .logoMuni{
-            width: 50%;
-            height: 130px;
-            float: left;
-            text-align: right;
-        }
-            .logoMuni img{
-                width: 25%;
-                padding-top: 7%;
-            }
-        .logoProv{
-            width: 50%;
-            height: 130px;
-            float: left;
-        }
-            .logoProv img{
-                padding-top: 4%;
-                width: 15%;
-            }
+    .logoMuni img{
+        width: 100%;
+    }
+@media all and (max-width:1150px){
+    .superior{
+        width: 40%;
+    }
+    .logoMuni{
+        width: 25%;
+    }
+}
+@media all and (max-width:700px){
+    .superior{
+        width: 60%;
+    }
+    .logoMuni{
+        width: 35%;
+    }
+}

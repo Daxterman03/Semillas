@@ -43,9 +43,9 @@ body{
 
 .header{
     background: var(--oscuro);
-    padding: 1em 1em;
-    height: 10vh;
-    max-height: 10vh;
+    padding: 0 1em;
+    height: 15vh;
+    max-height: 15vh;
     display: flex;
     align-items: center;
 }
@@ -161,7 +161,16 @@ body{
             .admin i{
                 color: var(--blanco);
             }
-
+@media all and (min-height:1080px){
+    .header{
+        height: 10vh;
+        max-height: 10vh;
+    }
+    .pie_pagina{
+        height: 10vh;
+        max-height: 10vh;
+    }
+}
 @media all and (max-width:1130px){
     html{
         font-size: 90%;

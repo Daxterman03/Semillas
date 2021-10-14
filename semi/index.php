@@ -12,13 +12,8 @@
         <div class="superior">
             <img src="css/logo_cultivar.png" alt="Logo Programa Cultivar">
         </div>
-        <div class="logos">
-            <div class="logoMuni">
-                <img src="css/logoMuni.png" alt="Logo Municipalidad Venado Tuerto">
-            </div>
-            <div class="logoProv">
-                <img src="css/logo_Prov.jpeg" alt="Logo Provincia de Santa Fe">
-            </div>
+        <div class="logoMuni">
+            <img src="css/logoMuni.png" alt="Logo Municipalidad Venado Tuerto">
         </div>
     </div>
     
