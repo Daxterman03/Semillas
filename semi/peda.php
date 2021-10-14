@@ -2,54 +2,79 @@
 require 'conexion.php';
 require '1a.php';
  ?>
- <html>
+<!DOCTYPE html>
+<html>
   <head>
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="css/pedido_adm.css">
-    <?php
-      $num = '1';
-    ?>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js"></script>
   </head>
   <body>
     <div class="cuerpoPedidos">
+      <a href="./excel.php" class="download">Descargar Excel</a>
       <div class="pedidosUsuarios">
         <h1>Pedidos de los Usuarios</h1>
-        <table>
-          <tr class="primera_fila">
-            <td>Temporada</td>
-            <td>Año</td>
-            <td>Barrio</td>
-            <td>Calle</td>
-            <td>Día</td>
-            <td>DNI</td>
-            <td>Entregado</td>
-            <td>pedido</td>
-          </tr>
-            <?php
-              $sql="SELECT * from pdo";
-              $result=mysqli_query($conexion,$sql);
-              while($mostrar=mysqli_fetch_assoc($result))  {
-
-            ?>
-              <tr class="fila_pedido">
-                <td><?php echo $mostrar['temporada']?></td>
-                <td><?php echo $mostrar['ano']?></td>
-                <td><?php echo $mostrar['zona']?></td>
-                <td><?php echo $mostrar['calle']?></td>
-                <td><?php echo $mostrar['dia']?></td>
-                <td><?php echo $mostrar['dni']?></td>
-                <td><?php echo $mostrar['entregado']?></td>
-                <td><?php echo $num++?></td>
-                <?php
-                echo "<td> <a href='pedias.php?id=".$mostrar['id']."'>Entregado</td>";
-                echo "<td> <a href='pedielim.php?id=".$mostrar['id']."''>Eliminar</td>";
-                ?>
+        <div>
+          <table id="pdo_register">
+            <thead>
+              <tr>
+                <th>Temporada</th>
+                <th>Año</th>
+                <th>Barrio</th>
+                <th>Calle</th>
+                <th>Día</th>
+                <th>DNI</th>
+                <th>Entregado</th>
               </tr>
-            <?php }?>
-            <a href="./exel.php" class="download">Descargar Excel</a>
+            </thead>
+            <tbody>
 
-        </table>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
+    <script>
+      $(document).ready( function () {
+        $('#pdo_register').DataTable({
+            language: {
+                  "decimal": "",
+                  "emptyTable": "No posee ningún dato",
+                  "info": "Mostrando _START_ a _END_ de _TOTAL_ Entradas",
+                  "infoEmpty": "Mostrando 0 to 0 of 0 Entradas",
+                  "infoFiltered": "(Filtrado de _MAX_ total entradas)",
+                  "infoPostFix": "",
+                  "thousands": ",",
+                  "lengthMenu": "Mostrar _MENU_ Entradas",
+                  "loadingRecords": "Cargando...",
+                  "processing": "Procesando...",
+                  "search": "Buscar:",
+                  "zeroRecords": "Sin resultados encontrados",
+                  "paginate": {
+                      "first": "Primero",
+                      "last": "Ultimo",
+                      "next": "Siguiente",
+                      "previous": "Anterior"
+                  }
+            },
+            "ajax":{
+              "method":"POST",
+              "url":"list_register.php"
+            },
+            "columns":[
+              {"data":"temporada"},
+              {"data":"ano"},
+              {"data":"zona"},
+              {"data":"calle"},
+              {"data":"dia"},
+              {"data":"dni"},
+              {"data":"entregado"}
+            ]
+        });
+      } );
+    </script>
     <?php include('pie.php') ?>
   </body>
 </html>
