@@ -3,7 +3,7 @@ font-family: 'Source Sans Pro', sans-serif;
 font-family: 'Inter', sans-serif;*/
 
 .cuerpo{
-    min-height: 70vh;
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,7 +26,12 @@ font-family: 'Inter', sans-serif;*/
     }
 @media all and (min-height:1080px){
     .cuerpo{
-        min-height: 80vh;
+        min-height: 90vh;
+    }
+}
+@media all and (max-height:870px){
+    .cuerpo{
+        min-height: 76vh;
     }
 }
 @media all and (max-width:1150px){

@@ -44,8 +44,8 @@ body{
 .header{
     background: var(--oscuro);
     padding: 0 1em;
-    height: 15vh;
-    max-height: 15vh;
+    height: 10vh;
+    max-height: 10vh;
     display: flex;
     align-items: center;
 }
@@ -110,8 +110,8 @@ body{
     padding: 0 1em 0 2em;
     display: flex;
     align-items: center;
-    height: 15vh;
-    max-height: 15vh;
+    height: 10vh;
+    max-height: 10vh;
     justify-content: space-between;
 }
     .info{
@@ -161,14 +161,27 @@ body{
             .admin i{
                 color: var(--blanco);
             }
-@media all and (min-height:1080px){
+@media all and (min-height:1440px){
     .header{
-        height: 10vh;
-        max-height: 10vh;
+        height: 5vh;
+        max-height: 5vh;
     }
     .pie_pagina{
-        height: 10vh;
-        max-height: 10vh;
+        height: 5vh;
+        max-height: 5vh;
+    }
+}
+@media all and (max-height:870px){
+    html{
+        font-size: 90%;
+    }
+    .header{
+        height: 12vh;
+        max-height: 12vh;
+    }
+    .pie_pagina{
+        height: 12vh;
+        max-height: 12vh;
     }
 }
 @media all and (max-width:1130px){
