@@ -31,7 +31,7 @@ require 'conexion.php';
                 <input class="entrada" type="number" name="dni" placeholder="<?php echo $mostrar['dni']; ?>" required  />
                 <input class="entrada" type="password" name="contra" placeholder="Nueva Contraseña" required  />
                 <input type="hidden" name="id"value="<?php echo $mostrar['id']; ?>" required  />
-                <button class="button-modal" type="submit">Modificar</button>
+                <input type="submit" class="button-modal" value="Enviar">
               </form>
             </div>
           </div>

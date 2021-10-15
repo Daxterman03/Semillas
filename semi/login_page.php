@@ -12,34 +12,22 @@
     <?php include('index.php')?>
     
     <div class="overlay" id='overlay'>
-
       <div class="cuerpo_forms">
-
         <div class="popup" id='popup'>
           <a href="#" id='btn-cerrar-popup' class="btn-cerrar-popup"><i class="fas fa-times" id='btn-cerrar-popup'></i></a>
           <div class="form_head">
             <h1>Inicio de Sesión</h1>
           </div>
-
           <div class="contenedor-inputs">
-
             <form class="form_order" action="login.php" method="post">
               <input class="entrada" type="text" name="nombre" placeholder="Nombre" required  />
               <input class="entrada" type="number" name="dni" placeholder="DNI" required  />
-             
-              <button class="button-modal" type="submit">Enviar</button>
+              <input type="submit" class="button-modal" value="Enviar">
             </form>
-
           </div>
-
         </div>
-
       </div>
-
     </div>
-     
     <script src="js/popups.js"></script>
-
-
   </body>
 </html>

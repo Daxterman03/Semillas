@@ -27,6 +27,7 @@ require '1a.php';
                 <th>Día</th>
                 <th>DNI</th>
                 <th>Entregado</th>
+                <th></th>
               </tr>
             </thead>
             <tbody>

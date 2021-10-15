@@ -23,7 +23,7 @@ require 'conexion.php';
               <input class="entrada" type="text" name="apellido" placeholder="Apellido" required  />
               <input class="entrada" type="number" name="dni" placeholder="DNI" required  />
               <input class="entrada" type="text" name="contra" placeholder="Contraseña" required  />
-              <button class="button-modal" type="submit">Enviar</button>
+              <input type="submit" class="button-modal" value="Enviar">
             </form>
           </div>
         </div>

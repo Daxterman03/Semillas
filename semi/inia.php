@@ -20,7 +20,7 @@ require 'conexion.php';
             <form class="form_order" action="login1.php" method="post">
               <input class="entrada" type="text" name="nombre" placeholder="Nombre" required  />
               <input class="entrada" type="password" name="contra" placeholder="Contraseña" required  />
-              <button class="button-modal" type="submit">Enviar</button>
+              <input type="submit" class="button-modal" value="Enviar">
             </form>
           </div>
         </div>
