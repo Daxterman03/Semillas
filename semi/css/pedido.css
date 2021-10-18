@@ -1,54 +1,62 @@
 .cuerpo_ped{
-    padding: 5px;
-    height: auto;
-    min-height: 75vh;
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-evenly;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
 }
+    .header_ped{
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+        .header_ped h1{
+            font-size: 2rem;
+        }
+        .header_ped h2{
+            font-size: 1.5rem;
+        }
     .orden_pedidos{
+        width: 80%;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-evenly;
     }
     .pedido{
-        width: 300px;
-        height: 350px;
-        margin: 10px;
-        padding: 10px;
-        background: var(--gris-clar);
+        min-width: 18rem;
+        min-height: 21.25rem;
+        padding: 1em;
+        margin: 1em 0;
+        background: var(--nar-clar);
         border-radius: 10%;
-        border: 3px solid var(--gris-osc);
+        border: 3px solid var(--nar-osc);
         text-align: center;
         display: flex;
         flex-flow: column;
         justify-content: space-between;
     }
-        .temporada label{
-            margin: 2px;
-            padding: 2px;
-            border-radius: 5px;
-            font-weight: 600;
-            letter-spacing: 1px;
-            color: var(--blanco);
-            font-size: 20px;
-        }
         .temporada{
-            margin-top: 10px;
             text-align: center;
             display: flex;
             flex-direction: column;
         }
             .temporada h4{
                 color: var(--gris-osc);
-                font-size: 30px;
-                margin: 5px;
+                font-size: 2rem;
+                margin: 0.5em;
                 letter-spacing: 1px;
                 background: var(--blanco);
-                border-radius: 10px;
+                border-radius: 28px;
+            }
+            .temporada label{
+                font-size: 1.375rem;
+                font-weight: 600;
+                letter-spacing: 1px;
+                color: var(--blanco);
             }
         .centro_pedido{
             display: flex;
@@ -56,35 +64,64 @@
             justify-content: space-around;
             align-items: center;
         }
-            .centro_pedido label{
-                padding: 2px;
-                border-radius: 5px;
-                letter-spacing: 1px;
-                background: #25242179;
-                color: var(--blanco);
-            }
             .centro_pedido h5{
+                font-size: 1.375rem;
                 color: var(--gris-osc);
-                padding: 5px 0;
-                font-size: 20px;
+                margin: 0.5em;
+            }
+            .centro_pedido label{
+                font-size: 1rem;
+                padding: 0.5em;
+                border-radius: 28px;
+                letter-spacing: 1px;
+                background: #5c502b79;
+                color: var(--blanco);
             }
                 .lugar{
                     width: 100%;
                     display: flex;
-                    justify-content: space-around;
+                    justify-content: space-evenly;
                 }
                     .lugar div{
-                        margin: 10px 0;
+                        margin: 0.625rem 0;
                     }
-            .pedido_usuario{
-                margin-bottom: 10px;
-            }
-
-.formulario{
-    transition: 300ms;
-    color: var(--gris-osc);
+        .button{
+            width: 50%;
+            font-size: 1rem;
+            font-weight: 600;
+            padding: 0.5em;
+            border-radius: 28px;
+            border: 2px solid var(--nar-osc);
+            color: var(--blanco);
+            background-color: var(--nar-osc);
+            text-align: center;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+        .button:hover{
+            background-color: var(--nar-clar);
+            color: var(--nar-osc);
+        }
+    .formulario{
+        font-size: 1.25rem;
+        transition: 300ms;
+        color: var(--gris-osc);
+        margin-bottom: 1rem;
+    }
+    .formulario:hover{
+        font-size: 1.5rem;
+        transition: 300ms;
+    }
+    .pedido_usuario{
+        margin: 0.5em 0 1em 0;
+    }
+@media all and (min-height:1440px){
+    .cuerpo_ped{
+        min-height: 90vh;
+    }
 }
-.formulario:hover{
-    font-size: 20px;
-    transition: 300ms;
+@media all and (max-height:870px){
+    .cuerpo_ped{
+        min-height: 76vh;
+    }
 }

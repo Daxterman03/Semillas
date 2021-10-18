@@ -5,8 +5,7 @@ require '1a.php';
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="css/pedido_adm.css">
+    <link rel="stylesheet" href="css/pedido_adm.css">
   </head>
   <body>
     <div class="cuerpo_ped_adm">
@@ -41,8 +40,10 @@ require '1a.php';
                 <td><?php echo $mostrar['zona'] ?></td>
                 <td><?php echo $mostrar['calle'] ?></td>
                 <td><?php echo $mostrar['dia'] ?></td>
-                <?php echo "<td><a href='modped.php?id=".$mostrar['id']."'>Modificar</a></td>";
-                echo "<td><a href='elimped.php?id=".$mostrar['id']."''>Eliminar</a></td>"; ?>
+                <?php 
+                echo "<td><a href='modped.php?id=".$mostrar['id']."'>Modificar</a></td>";
+                echo "<td><a href='elimped.php?id=".$mostrar['id']."''>Eliminar</a></td>"; 
+                ?>
               </tr>
           <?php }?>
         </table>

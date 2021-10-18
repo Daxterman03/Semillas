@@ -24,7 +24,7 @@ font-family: 'Inter', sans-serif;*/
     .logoMuni img{
         width: 100%;
     }
-@media all and (min-height:1080px){
+@media all and (min-height:1440px){
     .cuerpo{
         min-height: 90vh;
     }

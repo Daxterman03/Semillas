@@ -14,7 +14,9 @@
   </head>
   <body>
     <div class="cuerpo_ped">
-      <h1>Pedido</h1>
+      <header class="header_ped">
+        <h1>Pedido</h1>
+      </header>
       <div class="pedido">
         <form action="envio.php" method="post">
           <div class="info_ped">

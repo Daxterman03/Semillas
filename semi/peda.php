@@ -38,43 +38,50 @@ require '1a.php';
       </div>
     </div>
     <script>
+      // Funcion principal para crear el datatable
       $(document).ready( function () {
-        $('#pdo_register').DataTable({
-            language: {
-                  "decimal": "",
-                  "emptyTable": "No posee ningún dato",
-                  "info": "Mostrando _START_ a _END_ de _TOTAL_ Entradas",
-                  "infoEmpty": "Mostrando 0 to 0 of 0 Entradas",
-                  "infoFiltered": "(Filtrado de _MAX_ total entradas)",
-                  "infoPostFix": "",
-                  "thousands": ",",
-                  "lengthMenu": "Mostrar _MENU_ Entradas",
-                  "loadingRecords": "Cargando...",
-                  "processing": "Procesando...",
-                  "search": "Buscar:",
-                  "zeroRecords": "Sin resultados encontrados",
-                  "paginate": {
-                      "first": "Primero",
-                      "last": "Ultimo",
-                      "next": "Siguiente",
-                      "previous": "Anterior"
-                  }
-            },
-            "ajax":{
-              "method":"POST",
-              "url":"list_register.php"
-            },
-            "columns":[
-              {"data":"temporada"},
-              {"data":"ano"},
-              {"data":"zona"},
-              {"data":"calle"},
-              {"data":"dia"},
-              {"data":"dni"},
-              {"data":"entregado"}
-            ]
-        });
+        register();
       } );
+      var register = function(){
+        var table =  $('#pdo_register').DataTable({
+                      "ajax":{
+                        "method":"POST",
+                        "url":"list_register.php"
+                      },
+                      "columns":[
+                        {"data":"temporada"},
+                        {"data":"ano"},
+                        {"data":"zona"},
+                        {"data":"calle"},
+                        {"data":"dia"},
+                        {"data":"dni"},
+                        {"data":"entregado"},
+                        {"defaultContent":"<button class='button_small' id='check'><a href='#'><i class='fas fa-check'></i></a></button><button class='button_small' id='delete'><a href='#'><i class='fas fa-minus'></i></a></button>"}
+                      ],
+                      "language": idioma_español
+                    });
+      }
+
+      var idioma_español = {
+        "decimal": "",
+        "emptyTable": "No posee ningún dato",
+        "info": "Mostrando _START_ a _END_ de _TOTAL_ Entradas",
+        "infoEmpty": "Mostrando 0 to 0 of 0 Entradas",
+        "infoFiltered": "(Filtrado de _MAX_ total entradas)",
+        "infoPostFix": "",
+        "thousands": ",",
+        "lengthMenu": "Mostrar _MENU_ Entradas",
+        "loadingRecords": "Cargando...",
+        "processing": "Procesando...",
+        "search": "Buscar:",
+        "zeroRecords": "Sin resultados encontrados",
+        "paginate": {
+            "first": "Primero",
+            "last": "Ultimo",
+            "next": "Siguiente",
+            "previous": "Anterior"
+        }
+      }
     </script>
     <?php include('pie.php') ?>
   </body>

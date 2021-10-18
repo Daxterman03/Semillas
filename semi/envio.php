@@ -10,7 +10,6 @@
   $calle      = $_POST['calle'];
   $dia  = $_POST['dia'];
   $dni       = $_POST['dni'];
-  $nombre       = $_POST['nombre'];
 //insertamos los datos obtenidos
 $inserto = "INSERT INTO pdo (temporada, ano, zona, calle, dia, dni)
             VALUES ('$temporada','$ano','$zona','$calle','$dia','$dni')";

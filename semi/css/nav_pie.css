@@ -184,7 +184,7 @@ body{
         max-height: 12vh;
     }
 }
-@media all and (max-width:1130px){
+@media all and (max-width:1150px){
     html{
         font-size: 90%;
     }
@@ -195,6 +195,13 @@ body{
 @media all and (max-width:870px){
     html{
         font-size: 75%;
+    }
+    .contacto{
+        width: 50%;
+    }
+    .redes{
+        width: 100%;
+        justify-content: space-evenly;
     }
 }
 @media all and (max-width:650px){
