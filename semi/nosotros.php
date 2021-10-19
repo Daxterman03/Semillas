@@ -87,7 +87,7 @@
                 <img src="css/img2.jpeg" alt="">
             </div>
             <div class = "img3">
-                <img src="css/img3.jpeg" alt="">
+                <img src="css/imagen6.jpg" alt="">
             </div>
         </div>
         <div class="sectorvideos">
@@ -106,7 +106,7 @@
         </div>
     </div>
 
-    <?php include('pie.php') ?>
+<?php include('pie.php') ?>
 
 </body>
 </html>
