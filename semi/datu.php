@@ -31,14 +31,14 @@ require 'conexion.php';
                 <form class="form_order" action="modificaru.php" method="post">
                   <div class="dosColum">
                     <div class="miColumna">
-                        <input class="entrada" type="text" name="nombre" placeholder="Nombre: <?php echo $mostrar['nombre']; ?>" required  />
-                        <input class="entrada" type="text" name="apellido" placeholder="Apellido: <?php echo $mostrar['apellido']; ?>"required  />
-                        <input class="entrada" type="number" name="dni" placeholder="DNI: <?php echo $mostrar['dni']; ?>" required  />
+                        <input class="entrada" type="text" name="nombre" value="<?php echo $mostrar['nombre']; ?>" required/>
+                        <input class="entrada" type="text" name="apellido" placeholder="Apellido: <?php echo $mostrar['apellido']; ?>"/>
+                        <input class="entrada" type="number" name="dni" value="<?php echo $mostrar['dni']; ?>" required/>
                     </div>
                     <div class="miColumna">
                         <input class="entrada" type="mail" name="mail" placeholder="Mail: <?php echo $mostrar['mail']; ?>"/>
-                        <input class="entrada" type="text" name="telefono" placeholder="Teléfono: <?php echo $mostrar['telefono']; ?>" required  />
-                        <input class="entrada" type="text" name="direccion" placeholder="Dirección: <?php echo $mostrar['direccion']; ?>" required  />
+                        <input class="entrada" type="text" name="telefono" placeholder="Teléfono: <?php echo $mostrar['telefono']; ?>" />
+                        <input class="entrada" type="text" name="direccion" placeholder="Dirección: <?php echo $mostrar['direccion']; ?>"/>
                     </div>
                   </div>
                   

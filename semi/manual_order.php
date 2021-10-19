@@ -13,7 +13,7 @@ $sql = "INSERT INTO pdo (temporada, ano, zona, calle, dia, dni, entregado)
 $verify_pdo = mysqli_query($conexion, "SELECT * FROM pdo WHERE dni = '$dni' and dia = '$dia'");
 
 $sql_new = "INSERT into usu1 (nombre, apellido, mail, telefono, dni, direccion, inte)
-                        values ('$nombre', 'NULL', 'Null', 'null', '$dni', 'null', 'null')";
+                        values ('$nombre', ' ', ' ', ' ', '$dni', ' ', ' ')";
 $verify_user = mysqli_query($conexion, "SELECT * FROM usu1 Where dni = '$dni'");
 
 if (mysqli_num_rows($verify_user) == 0 and mysqli_num_rows($verify_pdo) == 0){
