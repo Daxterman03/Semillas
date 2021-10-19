@@ -106,6 +106,69 @@ input[type="number"]{
                     color: var(--oscuro);
                     transition: 150ms;
                 }
+/* ESTILOS DEL APARTADO DE LOS DESARROLLADORES */
+.desplegable{
+    width: 80%;
+    padding: 1rem;
+    background-color: #ffb342d0;
+    border: 5px solid #a76707;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+}
+    .button_dev{
+        font-size: 1.5rem;
+        width: 1.5rem;
+        height: 2rem;
+        display: flex;
+        color: #a76707;
+        justify-content: center;
+        align-items: center;
+        float: right;
+        transition: 150ms;
+    }
+    .button_dev:hover{
+        color: #a767075e;
+        font-size: 2rem;
+    }
+    .personas{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 2rem;
+    }
+        .integrantes{
+            width: 30%;
+            height: 8rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .integrantes h1{
+            color: #3f2705;
+            font-size: 2.5rem;
+        }
+            .redes_dev{
+                width: 100%;
+                display: flex;
+                justify-content: space-evenly;
+            }
+            .redes_dev a i{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 4.5rem;
+                height: 4.5rem;
+                font-size: 3rem;
+                color: #3f2705;
+                transition: 300ms;
+            }
+            .redes_dev a i:hover{
+                background-color: #3f2705;
+                color: #d3af7b;
+                border-radius: 50%;
+            }
 
 @media all and (max-width:860px){
     .form_order_regis{
