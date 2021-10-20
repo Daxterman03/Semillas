@@ -18,7 +18,10 @@ $inserto = "INSERT INTO lugares (temporada, ano, zona, calle,dia)
   if (!$resultado) {
     echo "error al registrar";
   }else {
-    echo "registrado correcto";
+    echo '<script type="text/javascript">
+    alert("Se agregó el pedido correctamente");
+    window.location.href="lfet.php";
+    </script>';
   }
   mysqli_close($conexion);
 
