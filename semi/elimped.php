@@ -16,7 +16,10 @@ require '1a.php';
     mysqli_query($conexion, "DELETE from lugares where id='$id'")
     or die ("error al eliminar");
         mysqli_close($conexion);
-        echo "lugar eliminado";
+        echo '<script type="text/javascript">
+        alert("Pedido eliminado correctamente");
+        window.location.href="lfet.php";
+        </script>';
     ?>
     
   </body>
