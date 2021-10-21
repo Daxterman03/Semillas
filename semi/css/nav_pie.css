@@ -196,7 +196,70 @@ body{
         max-height: 12vh;
     }
 }
-@media all and (max-width:1150px){
+@media all and (min-height:1440px) and (max-width:750px){
+    .header{
+        height: 10vh;
+        max-height: 10vh;
+    }
+    .pie_pagina{
+        height: 5vh;
+        max-height: 5vh;
+    }
+}
+@media all and (max-height:1150px) and (max-width:750px){
+    html{
+        font-size: 90%;
+    }
+    .header{
+        height: 15vh;
+        max-height: 15vh;
+    }
+    .pie_pagina{
+        height: 15vh;
+        max-height: 15vh;
+    }
+}
+@media all and (max-height:770px) and (max-width:750px){
+    .header{
+        height: 20vh;
+        max-height: 20vh;
+    }
+    .pie_pagina{
+        height: 18vh;
+        max-height: 18vh;
+    }
+}
+@media all and (max-height:600px) and (max-width:750px){
+    .header{
+        height: 25vh;
+        max-height: 25vh;
+    }
+    .pie_pagina{
+        height: 20vh;
+        max-height: 20vh;
+    }
+}
+@media all and (max-height:460px) and (max-width:750px){
+    .header{
+        height: 30vh;
+        max-height: 30vh;
+    }
+    .pie_pagina{
+        height: 22vh;
+        max-height: 22vh;
+    }
+}
+@media all and (max-height:360px) and (max-width:750px){
+    .header{
+        height: 40vh;
+        max-height: 40vh;
+    }
+    .pie_pagina{
+        height: 22vh;
+        max-height: 22vh;
+    }
+}
+@media all and (max-width:1300px){
     html{
         font-size: 90%;
     }
@@ -206,7 +269,7 @@ body{
 }
 @media all and (max-width:870px){
     html{
-        font-size: 75%;
+        font-size: 80%;
     }
     .contacto{
         width: 50%;
@@ -216,11 +279,8 @@ body{
         justify-content: space-evenly;
     }
 }
-@media all and (max-width:650px){
-    .header{
-        height: 15vh;
-        max-height: 20vh;
-    }
+@media all and (max-width:750px){
+
     .menu{
         height: 100%;
         width: 100%;
@@ -228,8 +288,8 @@ body{
         align-items: center;
         justify-content: space-evenly;
     }
-    .ventanas, .log_reg{
-        width: 80%;
+    .ventanas, .log_reg, .ventanas_adm_der, .ventanas_adm_izq{
+        width: 100%;
     }
     .ventanas ul{
         flex-direction: column;
@@ -245,5 +305,10 @@ body{
     .ventanas_adm_der a:hover, .ventanas_adm_izq a:hover{
         font-size: 1.25rem;
         color: rgba(255, 255, 255, 0.7);
+    }
+}
+@media all and (max-width:600px){
+    html{
+        font-size: 70%;
     }
 }
