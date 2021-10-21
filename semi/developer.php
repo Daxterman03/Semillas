@@ -27,7 +27,7 @@
                  <div class="integrantes">
                     <h1>Guillermo Pegoraro</h1>
                     <div class="redes_dev">
-                        <a href="mailto:guillermojesus15@gmail.com?"><i class="fas fa-at"></i></a>
+                        <a href="mailto:guillermojesus15@gmail.com"><i class="fas fa-at"></i></a>
                         <a href="https://www.linkedin.com/in/guillermo-pegoraro-54958620b/"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
