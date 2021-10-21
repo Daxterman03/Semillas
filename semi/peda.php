@@ -20,6 +20,7 @@ require '1a.php';
           <table id="pdo_register">
             <thead>
               <tr>
+                <th class="id_ped"></th>
                 <th>Temporada</th>
                 <th>Año</th>
                 <th>Barrio</th>
@@ -49,6 +50,7 @@ require '1a.php';
                         "url":"list_register.php"
                       },
                       "columns":[
+                        {"data":"id"},
                         {"data":"temporada"},
                         {"data":"ano"},
                         {"data":"zona"},
@@ -56,7 +58,7 @@ require '1a.php';
                         {"data":"dia"},
                         {"data":"dni"},
                         {"data":"entregado"},
-                        {"defaultContent":"<button class='button_small' id='check'><a href='#'><i class='fas fa-check'></i></a></button><button class='button_small' id='delete'><a href='#'><i class='fas fa-minus'></i></a></button>"}
+                        {"defaultContent":"<button class='button_small-check' id='check'><a href='#'><i class='fas fa-check'></i></a></button><button class='button_small-del' id='delete'><a href='#'><i class='fas fa-minus'></i></a></button>"}
                       ],
                       "language": idioma_español
                     });

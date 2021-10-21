@@ -1,6 +1,6 @@
 <div class="pie_pagina">
     <div class="info">
-        <h5><span>&copy;</span> "<a href="developer.php">Alumnos de 3°</a> año en Desarrollo de Software, IES N°7, Año 2021"</h5>
+        <h5><span>&copy;</span> "<a href="developer.php" id="developers">Alumnos de 3°</a> año en Desarrollo de Software, IES N°7, Año 2021"</h5>
     </div>
     <div class="contacto">
         <div class="redes">

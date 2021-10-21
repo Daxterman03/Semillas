@@ -81,8 +81,34 @@
 .download{
     padding: 10px;
     color: var(--blanco);
-    background-color: var(--gris-osc);
+    background-color: #4783ad;
     border-radius: 5px;
     float: right;
 }
         
+.id_ped, .sorting_1{
+    display: none;
+}
+.button_small-check, .button_small-del{
+    width: 2rem;
+    height: 2rem;
+    padding: 0.5rem;
+    margin: 0 0.3rem;
+    border: none;
+    border-radius: 10px;
+    transition: 100ms;
+}
+.button_small-check{
+    background-color: #6FB3E3;
+
+}
+.button_small-del{
+    background-color: #F03A30;
+}
+.button_small-check i, .button_small-del i{
+    color: #fff;
+}
+
+.button_small-check:hover, .button_small-del:hover{
+    filter: brightness(120%);
+}

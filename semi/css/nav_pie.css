@@ -129,6 +129,18 @@ body{
     .info span{
         font-size: 1.5rem;
     }
+    #developers{
+        color: var(--blanco);
+        background-color: #a6773086;
+        border-radius: 10px;
+        padding: 0.2em;
+        transition: 300ms;
+    }
+    #developers:hover{
+        font-size: 1.5rem;
+        background-color: #a67730;
+        filter: brightness(125%);
+    }
     .contacto{
         height: 100%;
         width: 20%;
