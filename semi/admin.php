@@ -1,7 +1,6 @@
 <?php
-require '1a.php';
 require 'conexion.php';
-
+require 'lfet.php';
   $nombre = $_SESSION['nombre'];
 
   $sql="SELECT * from admin where nombre='$nombre'";
@@ -16,7 +15,6 @@ require 'conexion.php';
       <link rel="stylesheet" href="css/ventana.css">
     </head>
     <body>
-      <div class="cuerpo"></div>
       <div class="overlay" id="overlay">
         <div class="cuerpo_forms">
           <div class="popup" id="popup">
@@ -39,7 +37,6 @@ require 'conexion.php';
       </div>
         
       <script src="js/popups.js"></script>
-      <?php include('pie.php') ?>
 
   <?php } ?>
   </html>

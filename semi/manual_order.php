@@ -22,7 +22,6 @@ if (mysqli_num_rows($verify_user) == 0 and mysqli_num_rows($verify_pdo) == 0){
     echo '
     <script type="text/javascript">
     alert("Pedido Registrado y Usuario Registrado");
-    window.location.href="peda.php";
     </script>
     ';
 }elseif (mysqli_num_rows($verify_pdo) == 0 and mysqli_num_rows($verify_user) != 0){
@@ -30,14 +29,12 @@ if (mysqli_num_rows($verify_user) == 0 and mysqli_num_rows($verify_pdo) == 0){
     echo '
     <script type="text/javascript">
     alert("Pedido Registrado y el usuario ya estaba registrado");
-    window.location.href="peda.php";
     </script>
     ';
 }else{
     echo '
     <script type="text/javascript">
     alert("El pedido y el usuario ya estaban registrados");
-    window.location.href="peda.php";
     </script>
     ';
 }

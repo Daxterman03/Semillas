@@ -1,18 +1,19 @@
+*{
+    box-sizing: border-box;
+}
 .cuerpo_ped_adm{
-    padding: 5px;
-    height: auto;
-    min-height: 75vh;
+    padding: 1rem;
+    min-height: 80vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
     .nuevo_pedido{
-        width: 300px;
-        height: 350px;
-        margin: 10px;
-        padding: 10px;
+        width: 22rem;
+        height: 28rem;
+        padding: 1rem;
         background: var(--nar-clar);
-        border-radius: 10%;
+        border-radius: 50px;
         border: 3px solid var(--nar-osc);
         text-align: center;
         display: flex;
@@ -21,33 +22,51 @@
     }
         .nuevo_pedido h1{
             color: var(--nar-osc);
-            font-size: 30px;
-            margin: 5px;
+            font-size: 2rem;
             letter-spacing: 1px;
             background: var(--blanco);
-            border-radius: 10px;
+            border-radius: 50px;
         }
         .inputs_adm{
+            width: 100%;
             display: flex;
             flex-flow: column;
             align-items: center;
         }
             .inputs_adm input{
-                width: 200px;
-                margin: 5px 0;
-                padding: 5px;
+                font-size: 1rem;
+                width: 80%;
+                margin: 0.5em 0;
+                padding: 0.4em;
                 border-radius: 5px;
                 border: 2px solid var(--nar-osc);
+            }
+            .button{
+                width: 50%;
+                font-size: 1rem;
+                font-weight: 600;
+                padding: 0.5em;
+                border-radius: 28px;
+                border: 2px solid var(--nar-osc);
+                color: var(--blanco);
+                background-color: var(--nar-osc);
+                text-align: center;
+                text-transform: uppercase;
+                cursor: pointer;
+            }
+            .button:hover{
+                background-color: var(--nar-clar);
+                color: var(--nar-osc);
             }
 .pedidos_vigentes{
     text-align: center;
 }
     .pedidos_vigentes h1{
         color: var(--gris-osc);
-        margin: 10px 0;
+        margin: 1rem 0;
     }
     .primera_fila td, .fila_pedido td{
-        padding: 10px;
+        padding: 0.8rem;
         letter-spacing: 1px;
     }
     .primera_fila td{
@@ -67,19 +86,22 @@
     }
 
 .cuerpoPedidos{
-    padding: 5px 20px 30px 20px;
-    height: auto;
-    min-height: 75vh;
+    padding: 1rem;
+    min-height: 80vh;
 }
+    .pedidosUsuarios{
+        width: 100%;
+        overflow:auto;
+    }
     .pedidosUsuarios td{
         text-align: center;
     }
     .pedidosUsuarios h1{
         color: var(--gris-osc);
-        margin: 10px 0;
+        margin: 1rem 0;
     }
 .download{
-    padding: 10px;
+    padding: 0.8rem;
     color: var(--blanco);
     background-color: #4783ad;
     border-radius: 5px;
@@ -90,10 +112,10 @@
     display: none;
 }
 .button_small-check, .button_small-del{
-    width: 2rem;
-    height: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
     padding: 0.5rem;
-    margin: 0 0.3rem;
+    margin: 0.5rem 0.3rem;
     border: none;
     border-radius: 10px;
     transition: 100ms;
@@ -111,4 +133,26 @@
 
 .button_small-check:hover, .button_small-del:hover{
     filter: brightness(120%);
+}
+
+@media all and (min-height:1440px){
+    .cuerpo_ped_adm, .cuerpoPedidos{
+        min-height: 90vh;
+    }
+}
+@media all and (max-height:870px){
+    .cuerpo_ped_adm, .cuerpoPedidos{
+        min-height: 76vh;
+    }
+}
+@media all and (max-width:1050px){
+    .cuerpo_ped_adm{
+        flex-direction: column;
+    }
+}
+@media all and (max-width:730px){
+    .pedidos_vigentes{
+        width: 95%;
+        overflow: auto;
+    }
 }

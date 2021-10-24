@@ -1,6 +1,6 @@
 <?php 
 require 'conexion.php';
-require '1a.php';
+require 'peda.php';
 $sql = 'SELECT * from lugares';
 $query = mysqli_query($conexion, $sql);
 $fetch = mysqli_fetch_assoc($query);
@@ -11,9 +11,8 @@ $fetch = mysqli_fetch_assoc($query);
         <link rel="stylesheet" href="css/ventana.css">
     </head>
     <body>
-        <section class="cuerpo"></section>
         <section class="overlay" id="overlay">
-            <div class="cuerpo_forms">
+            <div class="cuerpo_forms_regis">
                 <div class="popup" id="popup">
                     <a href="peda.php" id='btn-cerrar-popup' class="btn-cerrar-popup"><i class="fas fa-times" id='btn-cerrar-popup'></i></a>
                     <div class="form_head">

@@ -1,6 +1,6 @@
 <?php
-require '1a.php';
 require 'conexion.php';
+require 'lfet.php';
  ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -9,7 +9,6 @@ require 'conexion.php';
     <link rel="stylesheet" href="css/ventana.css">
   </head>
   <body>
-    <div class="cuerpo"></div>
     <div class="overlay" id="overlay">
       <div class="cuerpo_forms">
         <div class="popup" id="popup">
@@ -30,6 +29,5 @@ require 'conexion.php';
       </div>
     </div>
     <script src="js/popups.js"></script>
-      <?php include('pie.php') ?>
   </body>
 </html>

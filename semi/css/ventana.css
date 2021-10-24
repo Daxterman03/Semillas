@@ -24,7 +24,7 @@ input[type="number"]{
         font-family: 'Source Sans Pro', sans-serif;
     }
     .cuerpo_forms{
-        width: 50%;
+        width: 40%;
     }
     .cuerpo_forms_regis{
         width: 75%;
@@ -37,7 +37,7 @@ input[type="number"]{
             font-family: 'Montserrat', sans-serif;
             text-align: center;
             padding: 1em;
-            width: 50%;
+            width: 75%;
             transition: 1s ease all;
             transform: scale(1);
             opacity: 1;
@@ -109,7 +109,7 @@ input[type="number"]{
 /* ESTILOS DEL APARTADO DE LOS DESARROLLADORES */
 .desplegable{
     width: 80%;
-    padding: 1rem;
+    padding: 0.2rem 1rem;
     background-color: #ffb342d0;
     border: 5px solid #a76707;
     border-radius: 30px;
@@ -135,10 +135,10 @@ input[type="number"]{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        padding: 2rem;
+        padding: 0.2rem 2rem;
     }
         .integrantes{
-            width: 30%;
+            width: 18rem;
             height: 8rem;
             display: flex;
             flex-direction: column;
@@ -147,7 +147,8 @@ input[type="number"]{
         }
         .integrantes h1{
             color: #3f2705;
-            font-size: 2.5rem;
+            font-size: 2rem;
+            text-align: center;
         }
             .redes_dev{
                 width: 100%;
@@ -158,9 +159,9 @@ input[type="number"]{
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 4.5rem;
-                height: 4.5rem;
-                font-size: 3rem;
+                width: 3.5rem;
+                height: 3.5rem;
+                font-size: 2.5rem;
                 color: #3f2705;
                 transition: 300ms;
             }
@@ -169,17 +170,23 @@ input[type="number"]{
                 color: #d3af7b;
                 border-radius: 50%;
             }
-
-@media all and (max-width:860px){
+@media all and (max-width:870px){
+    .cuerpo_forms_regis{
+        width: 100%;
+    }
+    .cuerpo_forms{
+        width: 60%;
+    }
+}
+@media all and (max-width:500px){
     .form_order_regis{
         flex-direction: column;
     }
 }
-@media all and (max-width:670px){
-    .cuerpo_forms{
-        width: 100%;
-    }
-    .cuerpo_forms_regis{
+@media all and (max-width:750px) and (max-height:350px){
+    .desplegable{
+        overflow: auto;
+        height: 90%;
         width: 100%;
     }
 }
