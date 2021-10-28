@@ -32,11 +32,10 @@
                     </div>
                 </div>
                 <div class="integrantes">
-                    <h1>Nombre</h1>
+                    <h1>Tomas Frasca</h1>
                     <div class="redes_dev">
-                        <a href=""></a>
-                        <a href=""></a>
-                        <a href=""></a>
+                        <a href="https://www.linkedin.com/in/tomas-frasca-2917a821a/"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:tomasfrasca07@gmail.com"><i class="fas fa-at"></i></a>
                     </div>
                 </div>
                 <div class="integrantes">
