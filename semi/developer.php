@@ -39,11 +39,12 @@
                     </div>
                 </div>
                 <div class="integrantes">
-                    <h1>Nombre</h1>
+                    <h1>Celso Brito</h1>
                     <div class="redes_dev">
-                        <a href=""></a>
-                        <a href=""></a>
-                        <a href=""></a>
+                    <a href="mailto:celsocarp9@gmail.com"><i class="fas fa-at"></i></a>
+                    <a href="https://www.linkedin.com/in/celso-brito-993b6b224/"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/celso_britoo/"><i class="fab fa-instagram"></i></a>
+                        
                     </div>
                 </div>
                 <div class="integrantes">
