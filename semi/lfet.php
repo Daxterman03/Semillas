@@ -6,6 +6,9 @@ require '1a.php';
 <html lang="en" dir="ltr">
   <head>
     <link rel="stylesheet" href="css/pedido_adm.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js"></script>
   </head>
   <body>
     <div class="cuerpo_ped_adm">
@@ -22,33 +25,25 @@ require '1a.php';
       </div>
       <div class="pedidos_vigentes">
         <h1>Pedidos Vigentes</h1>
-        <table>
-          <tr class="primera_fila">
-            <td>Temporada</td>
-            <td>Año</td>
-            <td>Barrio</td>
-            <td>Calle</td>
-            <td>Día</td>
-          </tr>
-          <?php
-            $sql="SELECT * from lugares";
-            $result=mysqli_query($conexion,$sql);
-            while($mostrar=mysqli_fetch_assoc($result)) { ?>
-              <tr class="fila_pedido">
-                <td><?php echo $mostrar['temporada'] ?></td>
-                <td><?php echo $mostrar['ano'] ?></td>
-                <td><?php echo $mostrar['zona'] ?></td>
-                <td><?php echo $mostrar['calle'] ?></td>
-                <td><?php echo $mostrar['dia'] ?></td>
-                <?php 
-                echo "<td><a href='modped.php?id=".$mostrar['id']."'>Modificar</a></td>";
-                echo "<td><a href='elimped.php?id=".$mostrar['id']."''>Eliminar</a></td>"; 
-                ?>
-              </tr>
-          <?php }?>
+        <table id="pdoVigentes">
+          <thead>
+            <tr>
+              <th class="id_ped">id</th>
+              <th>Temporada</th>
+              <th>Año</th>
+              <th>Barrio</th>
+              <th>Calle</th>
+              <th>Día</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
         </table>
       </div>
     </div>
+    <script src="js/tablePdoVigentes.js"></script>
     <?php include('pie.php') ?>
   </body>
 </html>

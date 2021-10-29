@@ -1,7 +1,7 @@
 <?php require 'conexion.php';
  require '1a.php';
 
-    $clave = $_GET['id'];
+    $clave = $_POST['id'];
 
     $sql="SELECT * from lugares where id='$clave'";
     $result=mysqli_query($conexion,$sql);

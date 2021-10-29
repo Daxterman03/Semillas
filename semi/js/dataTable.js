@@ -14,15 +14,41 @@ $(document).ready( function () {
                   {"data":"dia"},
                   {"data":"dni"},
                   {"data":"entregado"},
-                  {"defaultContent":"<button class='button_small-check' id='check'><i class='fas fa-check'></i></button><button class='button_small-del' id='delete'><a href='#'><i class='fas fa-minus'></i></a></button>"}
+                  {"defaultContent":"<button class='button_small-check' id='check'><i class='fas fa-check'></i></button><button class='button_small-del' id='delete'><i class='fas fa-minus'></i></button>"}
                 ],
                 "language": idioma_español
               });
-  //  Función para traer el dato ID de la tabla
+  //  Función para traer el dato ID de la tabla y modificar el entregado
   $('#pdo_register tbody').on('click', 'button#check', function(){
-    var data = table.row($(this).parents('tr')).data();
-    console.log(data);
-  });    
+    let data = table.row($(this).parents('tr')).data();
+    let parametros = {
+      id: data.id,
+      entregado: data.entregado
+    }
+    $.ajax({
+      type: "post",
+      url:"/php/semillas/semi/pdo_check.php",
+      data: parametros,
+      success: function(data){
+        table.ajax.reload();
+      }
+    })
+  });
+  //  Función para eliminar los registros
+  $('#pdo_register tbody').on('click', 'button#delete', function(){
+    let data = table.row($(this).parents('tr')).data();
+    let parametros = {
+      id: data.id
+    }
+    $.ajax({
+      type:"post",
+      url:"/php/semillas/semi/tableDelete.php",
+      data: parametros,
+      success: function(data){
+        table.ajax.reload();
+      }
+    })
+  })
 } );
 var idioma_español = {
   "decimal": "",

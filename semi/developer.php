@@ -32,7 +32,7 @@
                     </div>
                 </div>
                 <div class="integrantes">
-                    <h1>Nombre</h1>
+                    <h1>Celso Brito</h1>
                     <div class="redes_dev">
                         <a href=""></a>
                         <a href=""></a>
@@ -40,7 +40,7 @@
                     </div>
                 </div>
                 <div class="integrantes">
-                    <h1>Nombre</h1>
+                    <h1>Tomás Frasca</h1>
                     <div class="redes_dev">
                         <a href=""></a>
                         <a href=""></a>
@@ -48,7 +48,7 @@
                     </div>
                 </div>
                 <div class="integrantes">
-                    <h1>Nombre</h1>
+                    <h1>Ignacio Lemos</h1>
                     <div class="redes_dev">
                         <a href=""></a>
                         <a href=""></a>

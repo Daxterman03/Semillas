@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 .cuerpo_ped_adm{
-    padding: 1rem;
+    padding: 0.5rem;
     min-height: 80vh;
     display: flex;
     justify-content: space-around;
@@ -59,7 +59,10 @@
                 color: var(--nar-osc);
             }
 .pedidos_vigentes{
+    margin-left: 1rem;
+    width: 70%;
     text-align: center;
+    overflow: auto;
 }
     .pedidos_vigentes h1{
         color: var(--gris-osc);
@@ -108,7 +111,7 @@
     float: right;
 }
         
-.id_ped, .sorting_1{
+.id_ped, #pdo_register tbody tr td:first-child, #pdoVigentes tbody tr td:first-child{
     display: none;
 }
 .button_small-check, .button_small-del{
@@ -130,7 +133,13 @@
 .button_small-check i, .button_small-del i{
     color: #fff;
 }
-
+#deletePdo{
+    width: 8rem;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+}
 .button_small-check:hover, .button_small-del:hover{
     filter: brightness(120%);
 }
